@@ -31,7 +31,7 @@ module.exports = function (grunt) {
                 ],
                 options: {
                     wrapper: false,
-                    runtime: true,
+                    runtime: false,
                     relative: true,
                     basePath: 'templates/'
                 }
@@ -110,7 +110,14 @@ module.exports = function (grunt) {
                 }]
             },
             js: {
-                files: [{src: 'bower_components/jquery/dist/jquery.min.js', dest: 'dist/js/jquery.min.js'}]
+                files: [{
+                    expand: true,
+                    src: ['bower_components/jquery/dist/jquery.min.js',
+                          'bower_components/dustjs-linkedin/dist/dust-core.js',
+                          'bower_components/dustjs-linkedin-helpers/dist/dust-helpers.js'],
+                    dest: 'dist/js/',
+                    flatten: true
+                }]
             }
         }
     });
