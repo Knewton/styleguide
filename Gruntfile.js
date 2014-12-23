@@ -58,7 +58,6 @@ module.exports = function (grunt) {
                 files: ['styles/fonts/**/*'],
                 tasks: ['copy:fonts', 'growl:fontsUpdate']
             }
-
         },
 
         // Compiles Sass to CSS and generates necessary files if requested
@@ -110,6 +109,9 @@ module.exports = function (grunt) {
                     ]
                 }]
             },
+            js: {
+                files: [{src: 'bower_components/jquery/dist/jquery.min.js', dest: 'dist/js/jquery.min.js'}]
+            }
         }
     });
 };
