@@ -1,0 +1,25 @@
+{
+  "name": "knewton-style",
+  "version": "0.0.0",
+  "authors": [
+    "Remi Carton <remi@knewton.com>"
+  ],
+  "description": "Style guide",
+  "keywords": [
+    "style"
+  ],
+  "license": "copyright",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-twbs": "~3.3.1",
+    "dustjs-linkedin": "~2.5.1",
+    "neat": "~1.7.0"
+  }
+}

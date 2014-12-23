@@ -1,0 +1,18 @@
+
+<header class="sg-header">
+    <h1>Knewton Style Guide / UI Library</h1>
+</header>
+
+
+<div class="main sg">
+
+    <nav class="sg-nav">
+        <ul></ul>
+    </nav>
+
+    <div class="sg-sections">
+        {>"_local/sections/typography" /}
+        {>"_local/sections/forms" /}
+    </div>
+</div>
+

@@ -1,0 +1,18 @@
+@mixin placeholder-color($color, $delay) {
+    &::-webkit-input-placeholder { 
+        @include transition-link($delay);
+        color: $color;
+    }
+    &:-moz-placeholder { 
+        @include transition-link($delay);
+        color: $color;
+    }
+    &::-moz-placeholder { 
+        @include transition-link($delay);
+        color: $color;
+    }
+    &:-ms-input-placeholder { 
+        @include transition-link($delay);
+        color: $color;
+    }
+}

@@ -1,0 +1,52 @@
+/*
+ *  This file contains styles specific to the style guide
+ */
+
+@import "application.scss";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin main {
+    max-width: 1000px;
+    margin: 2em auto 2em auto;
+}
+
+.sg-header {
+    @include clearfix;
+
+    background-color: $header-background;
+    color: $header-text;
+    line-height: 100px;
+
+    h1 {
+        @include main;
+
+        font-weight: lighter;
+        font-size: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.sg {
+    @include main;
+    @include clearfix;
+}
+
+.sg-nav {
+    @include span-columns(6);
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.sg-sections {
+    @include span-columns(18);
+}

@@ -1,0 +1,70 @@
+@mixin clear-transition {
+    -o-transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+@mixin transition-active($delay) {
+    -o-transition: border-color $delay ease-in-out, background-color $delay ease-in-out, background-image $delay ease-in-out, color $delay linear;
+    -webkit-transition: border-color $delay ease-in-out, background-color $delay ease-in-out, background-image $delay ease-in-out, color $delay linear;
+    -moz-transition: border-color $delay ease-in-out, background-color $delay ease-in-out, background-image $delay ease-in-out, color $delay linear;
+    transition: border-color $delay ease-in-out, background-color $delay ease-in-out, background-image $delay ease-in-out, color $delay linear;
+}
+
+@mixin transition-opacity($delay) {
+    -o-transition: opacity $delay linear;
+    -webkit-transition: opacity $delay linear;
+    -moz-transition: opacity $delay linear;
+    transition: opacity $delay linear;
+}
+
+@mixin transition-color($delay) {
+    -o-transition: background-color $delay ease-in-out, color $delay linear, opacity $delay linear;
+    -webkit-transition: background-color $delay ease-in-out, color $delay linear, opacity $delay linear;
+    -moz-transition: background-color $delay ease-in-out, color $delay linear, opacity $delay linear;
+    transition: background-color $delay ease-in-out, color $delay linear, opacity $delay linear;
+}
+
+@mixin transition-tab($delay) {
+    -o-transition: border-color $delay ease-in-out, z-index $delay ease-in-out;
+    -webkit-transition: border-color $delay ease-in-out, z-index $delay ease-in-out;
+    -moz-transition: border-color $delay ease-in-out, z-index $delay ease-in-out;
+    transition: border-color $delay ease-in-out, z-index $delay ease-in-out;
+}
+
+@mixin transition-link($delay) {
+    -o-transition: color $delay ease-in-out;
+    -webkit-transition: color $delay ease-in-out;
+    -moz-transition: color $delay ease-in-out;
+    transition: color $delay ease-in-out;
+}
+
+@mixin transition-height($delay) {
+    -o-transition: height $delay ease-in-out, min-height $delay ease-in-out;
+    -webkit-transition: height $delay ease-in-out, min-height $delay ease-in-out;
+    -moz-transition: height $delay ease-in-out, min-height $delay ease-in-out;
+    transition: height $delay ease-in-out, min-height $delay ease-in-out;
+}
+
+@mixin transition-textarea($delay) {
+    -o-transition: border-color $delay ease-in-out, height .2s;
+    -webkit-transition: border-color $delay ease-in-out, height .2s;
+    -moz-transition: border-color $delay ease-in-out, height .2s;
+    transition: border-color $delay ease-in-out, height .2s;
+}
+
+@mixin transition-background($delay) {
+    -o-transition: background-image $delay ease-in-out;
+    -webkit-transition: background-image $delay ease-in-out;
+    -moz-transition: background-image $delay ease-in-out;
+    transition: background-image $delay ease-in-out;
+}
+
+@mixin transition-border($delay) {
+    -o-transition: border-color $delay ease-in-out;
+    -webkit-transition: border-color $delay ease-in-out;
+    -moz-transition: border-color $delay ease-in-out;
+    transition: border-color $delay ease-in-out;
+}
+
