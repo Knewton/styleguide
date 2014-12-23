@@ -1,20 +1,23 @@
-===================
+
  Style guide
 ===================
 
 Getting started
 ----------------
 Requires: npm, grunt, bower
-  brew install node
-  npm install -g grunt-cli bower
+
+    brew install node
+    npm install -g grunt-cli bower
 
 To setup:
-  npm install
-  bower install
+
+    npm install
+    bower install
 
 To run:
-  grunt watch
-  open dist/index.htm
+
+    grunt watch
+    open dist/index.htm
 
 
 Requirements
