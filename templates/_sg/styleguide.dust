@@ -11,8 +11,8 @@
     </nav>
 
     <div class="sg-sections">
-        {>"_local/sections/typography" /}
-        {>"_local/sections/forms" /}
+        {>"_sg/sections/typography" /}
+        {>"_sg/sections/forms" /}
     </div>
 </div>
 
