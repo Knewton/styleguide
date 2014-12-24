@@ -1,0 +1,22 @@
+
+@mixin rainbow {
+  $rainbow-green:   #46c46b;
+  $rainbow-orange:  #f6b62a;
+  $rainbow-pink:    #ef5ca1;
+  $rainbow-green-2: #68cd35;
+  $rainbow-blue:    #1cc4c9;
+
+  position: relative;
+
+  &:before {
+      @include linear-gradient(50deg, $rainbow-green 0%, $rainbow-orange 25%, $rainbow-pink 50%, $rainbow-green-2 75%, $rainbow-blue 100%);
+
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: rem(3);
+  }
+}

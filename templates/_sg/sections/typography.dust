@@ -1,7 +1,3 @@
 <section id="typography" title="Typography" class="sg-section">
-    Typography section
-
-    <section id="typography-fonts" title="Fonts" class="sg-section">
-        Fonts
-    </section>
+    <section id="typography-fonts" title="Fonts" class="sg-section"></section>
 </section>

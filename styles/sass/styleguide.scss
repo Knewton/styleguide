@@ -26,21 +26,30 @@
 
 @import "application";
 
+$header-background: $black-enough;
+$header-text: $white;
+
 html,
 body {
     margin: 0;
     padding: 0;
+
+    background-color: $background-grey;
 }
 
 @mixin main {
-    max-width: 1000px;
+    @include outer-container(800px);
+
     margin: 2em auto;
 }
 
 .sg-header {
     @include clearfix;
+    @include rainbow;
 
     line-height: 100px;
+    background-color: $black-enough;
+    color: $header-text;
 
     h1 {
         @include main;
@@ -96,4 +105,29 @@ a {
 
 .sg-sections {
     @include span-columns(18);
+}
+
+.sg-section {
+    @include fill-parent;
+    @include clearfix;
+    @include pad;
+
+    background-color: $white;
+}
+
+// Colors
+.color {
+    @include span-columns(5);
+
+    text-align: center;
+
+    .color-sample {
+        $color-sample-height: 48px;
+        height: $color-sample-height;
+        line-height: $color-sample-height;
+
+        &.light {
+            color: $white;
+        }
+    }
 }

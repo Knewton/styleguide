@@ -1,11 +1,10 @@
-{>"_sg/common/sg-section" id="colors" title="Colors"/}
+<section id="colors" title="Colors" class="sg-section">
+    <h2>Colors</h2>
 
-{<title}
-    Colors title
-{/title}
+    <h3>Knewton Blues</h3>
+    {>"_sg/components/color" hex="#234166" name="$dark-blue" light="1" /}
+    {>"_sg/components/color" hex="#02b4d0" name="$blue" light="1" /}
+    {>"_sg/components/color" hex="#1abcc1" name="$turquoise" light="1" /}
+    {>"_sg/components/color" hex="#159fa3" name="$dark-turquoise" light="1" /}
 
-{<section-body}
-    {>"_local/components/swatch" /}
-{/section-body}
-
-{<section-footer}{/section-footer}
+</section>
