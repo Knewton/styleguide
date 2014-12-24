@@ -18,15 +18,31 @@
     <script src="js/templates.js"></script>
     <script>
         function generateNav() {
-            var sections = $('.sg-section'),
+            var sections = $('.sg-sections > .sg-section'),
                 $nav = $('.sg-nav ul');
 
-            sections.each(function(i) {
-                var $s = $(sections[i]),
-                    title = $s.attr('title'),
+            var getLiHtmlForSection = function($s) {
+                var title = $s.attr('title'),
                     id = $s.attr('id');
 
-                var liHtml = '<li><a href="#' + id + '">' + title + '</a></li>';
+                var subSections = $s.find('.sg-section');
+                var subsectionHtml = '';
+                if (subSections.length) {
+                    subsectionHtml = '<ul>';
+                    subSections.each(function(i) {
+                        var $ss = $(subSections[i]);
+                        subsectionHtml += getLiHtmlForSection($ss);
+                    });
+                    subsectionHtml += '</ul>';
+                }
+
+                var liHtml = '<li><a href="#' + id + '">' + title + '</a>' + subsectionHtml + '</li>';
+                return liHtml;
+            };
+
+            sections.each(function(i) {
+                var $s = $(sections[i]);
+                var liHtml = getLiHtmlForSection($s);
                 $nav.append(liHtml);
             });
         };
