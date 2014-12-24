@@ -1,0 +1,4 @@
+<section id="colors" title="Colors" class="sg-section">
+    Colors section
+    {>"_local/components/swatch" /}
+</section>

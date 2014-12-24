@@ -2,6 +2,28 @@
  *  This file contains styles specific to the style guide
  */
 
+@font-face {
+  font-family: "museo-sans";
+  src: url("../fonts/MuseoSans_300.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "museo-sans";
+  src: url("../fonts/MuseoSans_500.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "museo-sans";
+  src: url("../fonts/MuseoSans_700.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 @import "application";
 
 html,
@@ -30,6 +52,19 @@ body {
     }
 }
 
+.rainbow {
+    display: block;
+    height: 3px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    background-color: #46c46b;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #46c46b), color-stop(25%, #f6b62a), color-stop(50%, #ef5ca1), color-stop(75%, #68cd35), color-stop(100%, #1cc4c9));
+    background-image: -webkit-linear-gradient(-320deg, #46c46b 0%, #f6b62a 25%, #ef5ca1 50%, #68cd35 75%, #1cc4c9 100%);
+    background-image: linear-gradient(50deg, #46c46b 0%, #f6b62a 25%, #ef5ca1 50%, #68cd35 75%, #1cc4c9 100%);
+}
+
 .sg {
     @include main;
     @include clearfix;
@@ -42,6 +77,19 @@ body {
         list-style-type: none;
         margin: 0 0 0 1rem;
         padding: 0;
+    
+        li {
+            margin: 1.5em 0;
+        }
+    }
+}
+
+a {
+    @include action-link-font;
+    text-decoration: none;
+
+    &:hover {
+        color: $black-enough;
     }
 }
 
