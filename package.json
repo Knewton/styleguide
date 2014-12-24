@@ -12,6 +12,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-dust": "^0.9.2",
     "grunt-growl": "^0.1.5",
+    "grunt-scss-lint": "^0.3.4",
     "load-grunt-tasks": "^2.0.0"
   },
   "scripts": {

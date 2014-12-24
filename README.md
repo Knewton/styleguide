@@ -7,6 +7,7 @@ Getting started
 Requires: npm, grunt, bower
 
     brew install node
+    gem update --system && gem install scss-lint
     npm install -g grunt-cli bower
 
 To setup:
@@ -16,8 +17,13 @@ To setup:
 
 To run:
 
-    grunt watch
+    grunt run
     open dist/index.htm
+
+
+To configure your sublime text to use only 2 spaces per tab for scss, install the scss plugin,
+open a .scss file, and open preferences > settings - more > syntax specific, and paste:
+{ "tab_size": 2, "translate_tabs_to_spaces": true }
 
 
 Requirements

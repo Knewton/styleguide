@@ -1,12 +1,12 @@
-$museo-sans-font-stack: "museo-sans",sans-serif;
+$museo-sans-font-stack: "museo-sans", sans-serif;
 
-$grey_bababa: #bababa;
-$grey_999:    #999;
-$grey_757575: #757575;
-$grey_454545: #454545;
+$grey-bababa: #bababa;
+$grey-999:    #999;
+$grey-757575: #757575;
+$grey-454545: #454545;
 
-$aqua_00acb7: #00acb7;
-$orange_f05400: #f05400;
+$aqua-00acb7: #00acb7;
+$orange-f05400: #f05400;
 
 @mixin standard-body-font {
     // ./partials/_global.scss
@@ -49,7 +49,7 @@ $orange_f05400: #f05400;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: $grey_bababa;
+    color: $grey-bababa;
 }
 
 @mixin header-tab-font {
@@ -63,7 +63,7 @@ $orange_f05400: #f05400;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: $grey_bababa;
+    color: $grey-bababa;
 }
 
 @mixin tab-font {
@@ -78,7 +78,7 @@ $orange_f05400: #f05400;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: $grey_bababa;
+    color: $grey-bababa;
 }
 
 @mixin pending-request-font {
@@ -89,8 +89,9 @@ $orange_f05400: #f05400;
         weight: 500;
     }
     letter-spacing: 0.025em;
-    color: $orange_f05400;
+    color: $orange-f05400;
 }
+
 @mixin link-font {
     // ./partials/_page-control-pagination.scss
 
@@ -99,7 +100,7 @@ $orange_f05400: #f05400;
         weight: 300;
     }
     line-height: 18px;
-    color: $aqua_00acb7;
+    color: $aqua-00acb7;
 }
 
 @mixin std-link {
@@ -110,6 +111,7 @@ $orange_f05400: #f05400;
 
     @include link-font;
     text-decoration: none;
+
     &:hover {
         text-decoration: underline;
     }
@@ -146,7 +148,7 @@ $orange_f05400: #f05400;
         weight: 500;
     }
     letter-spacing: 0.015em;
-    color: $grey_757575;
+    color: $grey-757575;
 }
 
 @mixin counter-font {
@@ -156,7 +158,7 @@ $orange_f05400: #f05400;
         size: 12px;
         weight: 500;
     }
-    color: $grey_757575;
+    color: $grey-757575;
     line-height: 20px;
 }
 
@@ -179,7 +181,7 @@ $orange_f05400: #f05400;
         size: 12px;
         weight: 500;
     }
-    color: $grey_999;
+    color: $grey-999;
 }
 
 @mixin table-row-font {
@@ -191,7 +193,7 @@ $orange_f05400: #f05400;
     }
     letter-spacing: 0.015em;
     line-height: 19px;
-    color: $grey_454545;
+    color: $grey-454545;
 }
 
 @mixin content-subtitle-font {
@@ -203,7 +205,7 @@ $orange_f05400: #f05400;
         weight: 300;
     }
     line-height: 20px;
-    color: $grey_757575;
+    color: $grey-757575;
 }
 
 @mixin content-title-font {
@@ -216,7 +218,7 @@ $orange_f05400: #f05400;
     }
     letter-spacing: 0.015em;
     line-height: 32px;
-    color: $grey_454545;
+    color: $grey-454545;
 }
 
 @mixin content-font {
@@ -229,7 +231,7 @@ $orange_f05400: #f05400;
     }
     letter-spacing: 0.015em;
     line-height: 21px;
-    color: $grey_454545;
+    color: $grey-454545;
 }
 
 @mixin action-text {
@@ -237,6 +239,6 @@ $orange_f05400: #f05400;
         size: 12px;
         weight: 500;
     }
-    color: $grey_757575;
+    color: $grey-757575;
 }
 

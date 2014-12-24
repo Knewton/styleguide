@@ -1,9 +1,8 @@
-@import "colors";
 @import "knewcons";
 
-@import "modules/_base";
+@import "modules/base";
 
 body {
-    @include standard-body-font;
-    margin: 0;
+  @include standard-body-font;
+  margin: 0;
 }

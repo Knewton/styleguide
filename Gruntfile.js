@@ -45,7 +45,7 @@ module.exports = function (grunt) {
             },
             compass: {
                 files: ['styles/**/*.{scss,sass}'],
-                tasks: ['compass', 'autoprefixer','growl:sassCompile'],
+                tasks: ['scsslint', 'compass', 'autoprefixer','growl:sassCompile'],
                 options: {
                     livereload: true
                 }
@@ -119,6 +119,20 @@ module.exports = function (grunt) {
                     flatten: true
                 }]
             }
-        }
-    });
+        },
+
+        scsslint: {
+            allFiles: [
+                'styles/sass/**/*.scss',
+            ],
+            options: {
+                config: '.scss-lint.yml',
+                compact: true,
+                colorizeOutput: true
+          },
+      }
+  });
+
+    grunt.registerTask('run', 'Builds and watches the style guide for changes.', ['scsslint', 'copy', 'dust', 'compass', 'watch']);
+
 };
