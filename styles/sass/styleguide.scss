@@ -44,9 +44,10 @@ body {
 
     h1 {
         @include main;
+        @include headline-font;
 
         font-weight: lighter;
-        font-size: 1.2rem;
+        //font-size: 1.2rem;
         margin-top: 0;
         margin-bottom: 0;
     }

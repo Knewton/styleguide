@@ -1,4 +1,11 @@
-<section id="colors" title="Colors" class="sg-section">
-    Colors section
+{>"_sg/common/sg-section" id="colors" title="Colors"/}
+
+{<title}
+    Colors title
+{/title}
+
+{<section-body}
     {>"_local/components/swatch" /}
-</section>
+{/section-body}
+
+{<section-footer}{/section-footer}
