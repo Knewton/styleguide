@@ -7,4 +7,25 @@
     {>"_sg/components/color" hex="#1abcc1" name="$turquoise" light="1" /}
     {>"_sg/components/color" hex="#159fa3" name="$dark-turquoise" light="1" /}
 
+    <h3>Secondary colors</h3>
+    {>"_sg/components/color" hex="#F3B528" name="$dark-blue" light="1" /}
+    {>"_sg/components/color" hex="#EE5723" name="$blue" light="1" /}
+    {>"_sg/components/color" hex="#CF2E33" name="$turquoise" light="1" /}
+    {>"_sg/components/color" hex="#EE5CA0" name="$dark-turquoise" light="1" /}
+    {>"_sg/components/color" hex="#B7CB34" name="$turquoise" light="1" /}
+
+    <h3>Background colors</h3>
+    {>"_sg/components/color" hex="#F5FAFC" name="$dark-blue" light="1" /}
+    {>"_sg/components/color" hex="#EDF8F9" name="$blue" light="1" /}
+
+    <h3>Text colors</h3>
+    {>"_sg/components/color" hex="#454545" name="$dark-blue" light="1" /}
+    {>"_sg/components/color" hex="#757575" name="$blue" light="1" /}
+    {>"_sg/components/color" hex="#959595" name="$turquoise" light="1" /}
+
+    <h3>Interaction colors</h3>
+    {>"_sg/components/color" hex="#9BA0A4" name="$dark-blue" light="1" /}
+    {>"_sg/components/color" hex="#1BACB6" name="$blue" light="1" /}
+    {>"_sg/components/color" hex="#CCCCCC" name="$turquoise" light="1" /}
+
 </section>

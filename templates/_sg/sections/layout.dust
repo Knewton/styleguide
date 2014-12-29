@@ -1,0 +1,74 @@
+<section id="layout" title="Layout" class="sg-section">
+
+    <section id="grids" title="Grids" class="sg-section">
+
+        <h2>Layout and grids and stuff</h2>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+    </section>
+
+    <section id="tables" title="Tables" class="sg-section">
+        <h2>Tables</h2>
+
+        Here some tables and stuff
+    </section>
+
+    <section id="navigation" title="Navigation" class="sg-section">
+
+        <h2>Navigation stuff</h2>
+
+        <h3>Menus</h3>
+        Menus and stuff
+
+        <h3>Tabs</h3>
+
+        <div class="tabs">
+            <li><a href="">Tab</a></li>
+            <li><a href="">Tab</a></li>
+            <li><a href="">Tab</a></li>
+        </div>
+
+        <h3>Pagination</h3>
+        <div class="page-controls">
+            <a href="#" class="pager next" style="visibility: visible;">Next&nbsp;›</a>
+            <a href="#" class="pager prev" style="visibility: visible;">‹&nbsp;Previous</a>
+
+            {#firstPage}
+                <a data-page="{@math key="{number}" method="subtract" operand="1"/}" class="view-page{@if cond="{number} == {pageNum}"} active{/if}" href="{url}">{number}</a>...
+            {/firstPage}
+
+            {#pages}
+                <a data-page="{@math key="{number}" method="subtract" operand="1"/}" class="view-page{@if cond="{number} == {pageNum}"} active{/if}" href="{url}">{number}</a>
+            {/pages}
+
+
+            {#lastPage}
+                ...<a data-page="{@math key="{number}" method="subtract" operand="1"/}" class="view-page{@if cond="{number} == {pageNum}"} active{/if}" href="{url}">{number}</a>
+            {/lastPage}
+        </div>
+
+    </section>
+
+    <section id="lists" title="Lists" class="sg-section">
+
+        <h2>Lists</h2>
+        Here some lists and stuff
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+
+    </section>
+
+    <section id="navigation" title="Navigation" class="sg-section">
+
+        <h2>Responsiveness</h2>
+        Here some notes about responsiveness and stuff
+
+    </section>
+
+</section>

@@ -109,6 +109,15 @@ module.exports = function (grunt) {
                     ]
                 }]
             },
+            images: {
+                files: [{
+                    expand: true,
+                    dest: 'dist',
+                    src: [
+                        'styles/images/{,*/}*.*'
+                    ]
+                }]
+            },
             js: {
                 files: [{
                     expand: true,

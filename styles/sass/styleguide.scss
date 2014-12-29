@@ -37,7 +37,7 @@ body {
 }
 
 @mixin main {
-    @include outer-container(800px);
+    @include outer-container(1200px);
 
     margin: 2em auto;
 }
@@ -46,18 +46,37 @@ body {
     @include clearfix;
     @include rainbow;
 
-    line-height: 100px;
+    height: 60px;
     background-color: $black-enough;
     color: $header-text;
 
+    .wrapper {
+        width: 100%;
+
+        .container {
+            @include outer-container(1200px);
+            overflow: visible;
+        }
+    }
+
+    .logo-header {
+        @include span-columns(6);
+        margin-top: 10px;
+    }
+
     h1 {
         @include main;
-        @include headline-font;
+        @include header-tab-font;
+        @include span-columns(18);        
 
-        font-weight: lighter;
+        //font-weight: lighter;
         //font-size: 1.2rem;
         margin-top: 0;
         margin-bottom: 0;
+        line-height: 60px;
+        vertical-align: middle;
+        color: $very-light-grey;
+
     }
 }
 
@@ -68,11 +87,29 @@ body {
 
 .sg-nav {
     @include span-columns(6);
+    @include pad(20px 10px);
+    background-color: $white;
 
     ul {
         list-style-type: none;
-        margin: 0 0 0 1rem;
-        padding: 0;
+        margin: 0;
+        padding: 0 1rem;
+    }
+
+    li {
+        line-height: 35px;
+    }
+
+    a {
+        @include action-link-font;
+        
+        &:hover {
+            color: $grey-757575;
+        }
+
+        &.active {
+            color: $grey-757575;
+        }
     }
 }
 
@@ -81,7 +118,8 @@ body {
     @include span-columns(18);
 
     > .sg-section {
-      display: none;
+        @include pad(20px);
+        display: none;
     }
 }
 
@@ -95,11 +133,43 @@ body {
     &.active {
       display: block;
     }
+
+    h2,
+    .content-title-font {
+        @include content-title-font;
+    }
+
+    h3,
+    .content-subtitle-font {
+        @include content-subtitle-font;
+        clear: both;
+    }
+
+    .standard-body-font { @include standard-body-font; }
+    .headline-font { @include headline-font; }
+    .subhead-font { @include subhead-font; }
+    .action-link-font { @include action-link-font; }
+    .header-tab-font { @include header-tab-font; }
+    .tab-font { @include tab-font; }
+    .pending-request-font { @include pending-request-font; }
+    .link-font { @include link-font; }
+    .std-link { @include std-link; }
+    .std-body-link { @include std-body-link; }
+    .subtle-font { @include subtle-font; }
+    .sidebar-font { @include sidebar-font; }
+    .result-paginator-font { @include result-paginator-font; }
+    .counter-font { @include counter-font; }
+    .action-font { @include action-font; }
+    .input-font { @include input-font; }
+    .table-row-font { @include table-row-font; }
+    .content-font { @include content-font; }
+    .action-text { @include action-text; }
+
 }
 
 // Colors
 .color {
-    @include span-columns(5);
+    @include span-columns(6);
 
     text-align: center;
 
@@ -107,9 +177,16 @@ body {
         $color-sample-height: 48px;
         height: $color-sample-height;
         line-height: $color-sample-height;
+        font-size: 1.5em;
 
         &.light {
             color: $white;
         }
+    }
+
+    .color-name {
+        $color-name-height: 48px;
+        height: $color-name-height;
+        line-height: $color-name-height;        
     }
 }

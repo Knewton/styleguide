@@ -50,6 +50,9 @@
                 var $el = $(this),
                     id = $el.attr('href');
 
+                $('.sg-nav li a').removeClass('active');
+                $el.addClass('active');
+
                 // Find the parent sg-section if any
                 var $toShow = $(id).closest('.sg-sections > .sg-section');
 

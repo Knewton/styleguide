@@ -1,0 +1,225 @@
+@import "modules/transition-effects";
+@import "modules/base";
+
+/* --- EASYDROPDOWN METRO THEME --- */
+
+/* PREFIXED CSS */
+
+.dropdown,
+.dropdown div,
+.dropdown li,
+.dropdown div::after,
+.dropdown .selected::after,
+.dropdown:after {
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.dropdown .selected::after,
+.dropdown.scrollable div::after {
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+}
+
+/* WRAPPER */
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+    float: left;
+    padding-right: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.dropdown.open {
+    z-index: 6;
+}
+
+.dropdown:hover {
+    background: #fff;
+}
+
+.dropdown.focus:after {
+    background: #0180d1;
+}
+
+/* CARAT */
+
+.dropdown .carat {
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    top: 0;
+    border: 1px solid #eaeaea;
+    background-position: center center;
+    background-repeat: no-repeat;
+    //background-image: inline-image('../styles/images/dropdown-arrow.png');
+    background-image: url('../styles/images/dropdown-arrow.png');
+}
+
+.dropdown:not(.disabled):hover .carat {
+    background-image: url('../styles/images/dropdown-arrow-active.png');
+}
+
+/* OLD SELECT (HIDDEN) */
+
+.dropdown .old {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.dropdown select {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.dropdown.touch .old {
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown.touch select {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+/* SELECTED FEEDBACK ITEM */
+
+.dropdown .selected,
+.dropdown li {
+    @include input-font;
+
+    border: 1px solid #eaeaea;
+    border-right: 0;
+    display: block;
+    padding: 0 8px;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.dropdown.disabled .selected,
+.dropdown.disabled .carat {
+    border-color: #bebebe;
+    background-color: #eaeaea;
+    color: #bebebe;
+}
+
+.dropdown li {
+    border: 0;
+    height: 25px;
+    line-height: 25px;
+}
+
+.dropdown .selected::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+}
+
+/* DROP DOWN WRAPPER */
+
+.dropdown div {
+    border: 1px solid #eaeaea;
+    position: absolute;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 28px;
+    overflow: hidden;
+    opacity: 0;
+    background: #fff;
+}
+
+/* Height is adjusted by JS on open */
+
+.dropdown.open div {
+    opacity: 1;
+    z-index: 8;
+}
+
+/* DROP DOWN LIST */
+
+.dropdown ul {
+    padding: 0;
+    margin: -1px 0 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 150px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.dropdown.scrollable.open ul {
+    overflow-y: auto;
+}
+
+/* DROP DOWN LIST ITEMS */
+
+.dropdown li {
+    list-style: none;
+}
+
+/* .focus class is also added on hover */
+
+.dropdown li {
+    &.focus {
+        background-color: #edf9fa;
+        color: #1bacb6;
+    }
+}
+
+.dropdown li {
+    &.active {
+        background-color: #9da2a6;
+        color: #fff;
+    }
+}
+
+.alt-dropdown .dropdown {
+    width: 105px;
+
+    ul {
+        width: 105px;
+    }
+
+    .carat,
+    .selected,
+    li {
+        border-color: #ccc;
+        text-align: left;
+    }
+
+    .selected {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .carat {
+        background-color: #ccc;
+        background-image: url('../styles/images/dropdown-arrow-alt.png');
+    }
+}
+

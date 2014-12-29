@@ -1,0 +1,55 @@
+@import "modules/base";
+@import "modules/transition-effects";
+
+.page-controls {
+    border: 0 dashed #ccc;
+    border-width: 1px 0;
+    text-align: center;
+    height: 34px;
+    margin: 7px 0 30px;
+    padding: 0 12px;
+
+    a {
+        &.view-page {
+            @include link-font;
+            width: 21px;
+            height: 18px;
+            text-align: center;
+            display: inline-block;
+            margin: 8px 1.5px 0;
+            text-decoration: none;
+            color: #aaa;
+        }
+
+        &.view-page:hover {
+            @include transition-color(.4s);
+            color: #fff;
+            background: #00acb7;
+        }
+
+        &.view-page.active {
+            color: #fff;
+            background: #9da2a6;
+        }
+    }
+
+    a {
+        &.pager {
+            @include transition-opacity(.2s);
+            line-height: 34px;
+            font-weight: 300;
+            font-size: 14px;
+            display: block;
+            text-decoration: none;
+            color: #00acb7;
+        }
+
+        &.prev { float: left; }
+
+        &.next { float: right; }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

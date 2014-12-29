@@ -1,3 +1,49 @@
 <section id="typography" title="Typography" class="sg-section">
-    <section id="typography-fonts" title="Fonts" class="sg-section"></section>
+
+        <h2>Type</h2>
+
+        <!--h1>Very heading</h1>
+        <h2>Quite heading</h2>
+        <h3>Some heading</h3>
+        <h4>Heading</h4>
+        <h5>Not so heading</h5>
+        <h6>Barely any heading</h6-->
+
+        {!>"_sg/components/text" class="headline-font" text="yodaug" /}
+        {>"_sg/components/text" class="standard-body-font" text="something" /}
+        {>"_sg/components/text" class="headline-font" text="something" /}
+        {>"_sg/components/text" class="subhead-font" text="something" /}
+        {>"_sg/components/text" class="action-link-font" text="something" /}
+        {>"_sg/components/text" class="header-tab-font" text="something" /}
+        {>"_sg/components/text" class="tab-font" text="something" /}
+        {>"_sg/components/text" class="pending-request-font" text="something" /}
+        {>"_sg/components/text" class="link-font" text="something" /}
+        {>"_sg/components/text" class="std-link" text="something" /}
+        {>"_sg/components/text" class="std-body-link" text="something" /}
+        {>"_sg/components/text" class="subtle-font" text="something" /}
+        {>"_sg/components/text" class="sidebar-font" text="something" /}
+        {>"_sg/components/text" class="result-paginator-font" text="something" /}
+        {>"_sg/components/text" class="counter-font" text="something" /}
+        {>"_sg/components/text" class="action-font" text="something" /}
+        {>"_sg/components/text" class="input-font" text="something" /}
+        {>"_sg/components/text" class="table-row-font" text="something" /}
+        {>"_sg/components/text" class="content-font" text="something" /}
+        {>"_sg/components/text" class="action-text" text="something" /!}
+
+    <h3>A heading with MuseoSans 300, 16px at #757575.</h3>
+
+    <p>This is body copy 15/21 px Museo Sans 300 #555555 (#NOT) dolor sit amet, consectetur adipiscing elit. Proin semper consectetur lectus vitae dignissim. Ut tempor placerat lectus, id faucibus sem blandit non. Nullam porttitor risus turpis, quis auctor turpis semper nec. Morbi non justo pellentesque, varius ipsum at, lobortis justo. In tortor nibh, semper ac tempus vitae, porta eget sem. Suspendisse varius, urna eu vestibulum convallis, metus lorem adipiscing ligula, in dignissim augue orci ac lacus. Aliquam vel nisl blandit lectus cursus sollicitudin. Vivamus sed ipsum turpis. Sed non lectus dictum, vehicula eros vel, varius massa.</p>
+
+    <h3>Links</h3>
+
+    <a href="" class="action-link-font">Here's a link</a>
+    <a href="" class="action-link-font">Here's a disabled link</a>
+
+    <section id="typography-fonts" title="Fonts" class="sg-section">
+
+        <h2>Fonts</h2>
+
+        Some notes on how to deal with fonts, where to get them, how to call and stuff.
+
+    </section>
 </section>

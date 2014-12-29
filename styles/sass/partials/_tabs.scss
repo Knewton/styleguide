@@ -1,0 +1,60 @@
+@import "modules/transition-effects";
+@import "modules/base";
+
+.tabs {
+    @include clearfix;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    border-bottom: 1px solid #e2e2e2;
+
+    &.unbound {
+        border-bottom: 0;
+    }
+
+    li {
+        margin-bottom: -1px;
+        float: left;
+        width: 112px;
+        border: 1px solid #e2e2e2;
+        text-align: center;
+        position: relative;
+        z-index: 5;
+
+        + li {
+            margin-left: -1px;
+        }
+
+        a {
+            @include tab-font;
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+
+        &:hover:not(.active):not(.solicitation-tabs) {
+            @include transition-tab(.4s);
+            z-index: 10;
+            border-color: #1bacb6;
+
+//            a {
+//                @include transition-link(.4s);
+//                color: #1bacb6;
+//            }
+        }
+
+        &.active {
+            background: #9da2a6;
+            border-color: #9da2a6;
+
+//            a {
+//                color: #fff;
+//            }
+        }
+
+        &.solicitation-tabs {
+            border-bottom: 0;
+        }
+    }
+}

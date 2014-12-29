@@ -1,0 +1,11 @@
+{!
+    parameters:
+        hex: hex code
+        label: name of the colors
+        state: interaction state?
+!}
+
+
+<div class="Button">
+    <button type="button" class="button {?class}{class}{/class}">{?label}{label}{/label}</button>
+</div>

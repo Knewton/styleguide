@@ -11,11 +11,12 @@
     </nav>
 
     <div class="sg-sections">
+        {>"_sg/sections/layout" /}
         {>"_sg/sections/colors" /}
-        <section id="layout" title="Layout" class="sg-section"></section>
         {>"_sg/sections/typography" /}
         {>"_sg/sections/forms" /}
-        <section id="components" title="UI Components" class="sg-section"></section>
+        {>"_sg/sections/ui-components" /}
+        <section id="guidelines" title="Guidelines" class="sg-section"></section>
     </div>
 </div>
 
