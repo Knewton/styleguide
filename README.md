@@ -109,6 +109,10 @@ Misc:
 - put the bootstrap dependency inside the style package?
 - duster for autorecompiling
 - client side dust rendering
+- how to do event driven (pubsub)
+- helpers:
+  formatDate
+  plural
 - structure:
 
 knewton-style/
