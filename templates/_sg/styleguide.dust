@@ -3,6 +3,7 @@
     {>"_sg/sg-header" /}
 {/header}
 
+
 <div class="main sg">
 
     <nav class="sg-nav">
@@ -10,8 +11,11 @@
     </nav>
 
     <div class="sg-sections">
+        {>"_sg/sections/colors" /}
+        <section id="layout" title="Layout" class="sg-section"></section>
         {>"_sg/sections/typography" /}
         {>"_sg/sections/forms" /}
-        {>"_sg/sections/colors" /}
+        <section id="components" title="UI Components" class="sg-section"></section>
     </div>
 </div>
+
