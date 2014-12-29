@@ -79,6 +79,10 @@ body {
 
 .sg-sections {
     @include span-columns(18);
+
+    > .sg-section {
+      display: none;
+    }
 }
 
 .sg-section {
@@ -87,6 +91,10 @@ body {
     @include pad;
 
     background-color: $white;
+
+    &.active {
+      display: block;
+    }
 }
 
 // Colors

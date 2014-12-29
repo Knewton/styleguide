@@ -45,6 +45,17 @@
                 var liHtml = getLiHtmlForSection($s);
                 $nav.append(liHtml);
             });
+
+            $('.sg-nav li a').on('click', function(e) {
+                var $el = $(this),
+                    id = $el.attr('href');
+
+                // Find the parent sg-section if any
+                var $toShow = $(id).closest('.sg-sections > .sg-section');
+
+                $('.sg-section').removeClass('active');
+                $toShow.addClass('active');
+            });
         };
 
         dust.render("_sg/styleguide", {}, function(err, out) {
@@ -54,6 +65,9 @@
                 $('.content').html(out);
 
                 generateNav();
+
+                // Make the first section visible
+                $('.sg-sections > .sg-section').first().addClass('active');
             }
         });
     </script>
