@@ -1,0 +1,5 @@
+<div class="tabs">
+    <li><a href="">Tab</a></li>
+    <li class="active"><a href="">Tab</a></li>
+    <li><a href="">Tab</a></li>
+</div>

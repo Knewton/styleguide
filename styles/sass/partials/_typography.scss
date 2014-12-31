@@ -1,0 +1,101 @@
+body {
+    @include standard-body-font;
+    color: $grey-on-grey;
+    background: $background-grey;
+}
+
+h1 {
+    @include headline-font;
+}
+
+h2 {
+    @include subhead-font;
+    margin-top: 0;
+    line-height: 1.3em;
+}
+
+h3 {
+    @include subhead-font;
+    @include clearfix;
+
+    margin: 0;
+    border-bottom: 1px solid $ashen-grey;
+    padding-bottom: rem(10);
+
+    .action {
+        @include action-link-font;
+        float: right;
+    }
+
+    &.breathe {
+        padding: rem(20) 0;
+        margin-bottom: rem(20);
+    }
+}
+
+h4 {
+    @include content-title-font;
+    line-height: rem(27);
+    color: $grey-757575;
+    font-weight: 500;
+}
+
+h5 {
+    @include content-subtitle-font;
+    margin: 0 0 rem(5);
+}
+
+h6 {
+    @include standard-body-font;
+    font-weight: 500;
+    color: $grey-757575;
+    margin: 0 0 rem(5);
+}
+
+.link,
+a {
+    color: $medium-turquoise;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &.action {
+        @include action-link-font;
+        float: right;
+    }
+}
+
+a {
+    &.standard {
+        color: $medium-turquoise;
+        text-decoration: none;
+    }
+
+    &:hover.standard {
+        text-decoration: underline;
+    }
+}
+
+/*
+    .standard-body-font { @include standard-body-font; }
+    .headline-font { @include headline-font; }
+    .subhead-font { @include subhead-font; }
+    .action-link-font { @include action-link-font; }
+    .header-tab-font { @include header-tab-font; }
+    .tab-font { @include tab-font; }
+    .pending-request-font { @include pending-request-font; }
+    .link-font { @include link-font; }
+    .std-link { @include std-link; }
+    .std-body-link { @include std-body-link; }
+    .subtle-font { @include subtle-font; }
+    .sidebar-font { @include sidebar-font; }
+    .result-paginator-font { @include result-paginator-font; }
+    .counter-font { @include counter-font; }
+    .action-font { @include action-font; }
+    .input-font { @include input-font; }
+    .table-row-font { @include table-row-font; }
+    .content-font { @include content-font; }
+    .action-text { @include action-text; }
+*/

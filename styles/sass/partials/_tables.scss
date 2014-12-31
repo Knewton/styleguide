@@ -1,0 +1,35 @@
+@import "modules/transition-effects";
+@import "modules/base";
+
+table {
+    @include clearfix;
+    @include fill-parent;
+
+    border-collapse: collapse;
+
+    tr {
+        height: 45px;
+
+        &:nth-child td {
+            border-bottom: 1px solid #e3e3e3;
+        }
+    }
+
+    td {
+        @include table-row-font;
+        padding: 20px 50px 20px 0;
+        border-top: 1px solid #e3e3e3;
+        color: $default;
+        font-size: 15px;
+
+        a {
+            text-decoration: none;
+        }
+
+        &.title {
+            color: $black-enough;
+            font-weight: 500;
+        }        
+    }
+
+}
