@@ -1,19 +1,29 @@
 <section id="ui_components" title="Other UI components" class="sg-section">
-    <h2>UI components</h2>
+    <h1>UI components</h1>
 
-    <h3>Progress bars</h3>
-    Here are some progress bar notes and stuff.
+    <section id="" title="" class="sg-component">
+        <h2>Progress bars</h2>
+        Here are some progress bar notes and stuff.
+    </section>
 
-    <h3>Alers</h3>
-    Here are some alerts notes and stuff.
+    <section id="" title="" class="sg-component">
+        <h2>Alerts</h2>
+        Here are some alerts notes and stuff.
+    </section>
 
-    <h3>Modal</h3>
-    Here are some modal notes and stuff.
+    <section id="" title="" class="sg-component">
+        <h2>Modal</h2>
+        Here are some modal notes and stuff.
+    </section>
 
-    <h3>Carousel</h3>
-    Here are some carousel notes and stuff.
+    <section id="" title="" class="sg-component">
+        <h2>Carousel</h2>
+        Here are some carousel notes and stuff.
+    </section>
 
-    <h3>Spinner</h3>
-    Here are some spinner notes and stuff.
+    <section id="" title="" class="sg-component">
+        <h2>Spinner</h2>
+        Here are some spinner notes and stuff.
+    </section>
 
 </section>

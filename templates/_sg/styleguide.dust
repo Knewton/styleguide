@@ -11,10 +11,10 @@
     </nav>
 
     <div class="sg-sections">
+        {>"_sg/sections/forms" /}        
         {>"_sg/sections/layout" /}
-        {>"_sg/sections/colors" /}
         {>"_sg/sections/typography" /}
-        {>"_sg/sections/forms" /}
+        {>"_sg/sections/colors" /}
         {>"_sg/sections/ui-components" /}
         <section id="guidelines" title="Guidelines" class="sg-section"></section>
     </div>

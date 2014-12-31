@@ -28,6 +28,7 @@
 
         a {
             @include tab-font;
+            color: $black-enough;
             display: block;
             height: 100%;
             width: 100%;
@@ -36,21 +37,21 @@
         &:hover:not(.active):not(.solicitation-tabs) {
             @include transition-tab(.4s);
             z-index: 10;
-            border-color: #1bacb6;
+            border-color: $medium-turquoise;
+        }
 
-//            a {
-//                @include transition-link(.4s);
-//                color: #1bacb6;
-//            }
+        &:hover:not(.active):not(.solicitation-tabs) a {
+            @include transition-link(.4s);
+            color: $black-enough;
         }
 
         &.active {
-            background: #9da2a6;
-            border-color: #9da2a6;
+            background: $black-enough;
+            border-color: $black-enough;
+        }
 
-//            a {
-//                color: #fff;
-//            }
+        &.active a {
+            color: $white;
         }
 
         &.solicitation-tabs {

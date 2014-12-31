@@ -2,71 +2,49 @@
 
     <section id="grids" title="Grids" class="sg-section">
 
-        <h2>Layout and grids and stuff</h2>
+        <h1>Layout and grids and stuff</h1>
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
     </section>
 
     <section id="tables" title="Tables" class="sg-section">
-        <h2>Tables</h2>
-
-        Here some tables and stuff
+        <h1>Tables</h1>
+        {>"_sg/components/table" /}
     </section>
 
     <section id="navigation" title="Navigation" class="sg-section">
 
-        <h2>Navigation stuff</h2>
+        <h1>Navigation stuff</h1>
 
-        <h3>Menus</h3>
-        Menus and stuff
+        <section id="menus" title="Menus" class="sg-component">
+            <h2>Menus</h2>
+            Menus and stuff
+        </section>
 
-        <h3>Tabs</h3>
+        <section id="tabs" title="Tabs" class="sg-component">
+            <h2>Tabs</h2>
+            {>"_sg/components/tabs" /}
+        </section>
 
-        <div class="tabs">
-            <li><a href="">Tab</a></li>
-            <li><a href="">Tab</a></li>
-            <li><a href="">Tab</a></li>
-        </div>
-
-        <h3>Pagination</h3>
-        <div class="page-controls">
-            <a href="#" class="pager next" style="visibility: visible;">Next&nbsp;›</a>
-            <a href="#" class="pager prev" style="visibility: visible;">‹&nbsp;Previous</a>
-
-            {#firstPage}
-                <a data-page="{@math key="{number}" method="subtract" operand="1"/}" class="view-page{@if cond="{number} == {pageNum}"} active{/if}" href="{url}">{number}</a>...
-            {/firstPage}
-
-            {#pages}
-                <a data-page="{@math key="{number}" method="subtract" operand="1"/}" class="view-page{@if cond="{number} == {pageNum}"} active{/if}" href="{url}">{number}</a>
-            {/pages}
-
-
-            {#lastPage}
-                ...<a data-page="{@math key="{number}" method="subtract" operand="1"/}" class="view-page{@if cond="{number} == {pageNum}"} active{/if}" href="{url}">{number}</a>
-            {/lastPage}
-        </div>
+        <section id="pagination" title="Pagination" class="sg-component">
+            <h2>Pagination</h2>
+            {>"_sg/components/page-controls" /}
+        </section>
 
     </section>
 
     <section id="lists" title="Lists" class="sg-section">
 
-        <h2>Lists</h2>
-        Here some lists and stuff
-
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-        </ul>
+        <h1>Lists</h1>
+        Here some lists and stuff.
+        {>"_sg/components/list" /}
 
     </section>
 
     <section id="navigation" title="Navigation" class="sg-section">
 
-        <h2>Responsiveness</h2>
+        <h1>Responsiveness</h1>
         Here some notes about responsiveness and stuff
 
     </section>

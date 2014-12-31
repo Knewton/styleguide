@@ -1,50 +1,65 @@
 <section id="forms" title="Forms" class="sg-section">
+    <h1>Form elements</h1>
 
     <section id="buttons" title="Buttons" class="sg-section">
         <h2>Buttons</h2>
 
-        <h3>Large button</h3>
+        <section id="large-buttons" class="sg-component">
+            <h4>Large button</h4>
+            {>"_sg/components/button" label="Four column" class="button long"/}
+            {>"_sg/components/button" label="Four column" class="button white-button long"/}
+            {>"_sg/components/button" label="Four column" class="button long disabled"/}
+        </section>
 
-        {>"_sg/components/button" label="Four column" class="long"/}
-        {>"_sg/components/button" label="Four column" class="disabled long"/}
+        <section id="big-buttons" class="sg-component">
+            <h4>Button</h4>
+            {>"_sg/components/button" label="Three column" class="button medium"/}
+            {>"_sg/components/button" label="Three column" class="button white-button medium"/}
+            {>"_sg/components/button" label="Three column" class="button medium disabled"/}
+        </section>
 
-        <h3>Button</h3>
-        {>"_sg/components/button" label="Three column" class="big-button"/}
-        {>"_sg/components/button" label="Three column" class="disabled big-button"/}
+        <section id="small-buttons" class="sg-component">
+            <h4>Small button</h4>
+            {>"_sg/components/button" label="Small" class="button short lil-button"/}
+            {>"_sg/components/button" label="Small" class="button short white-button lil-button"/}
+            {>"_sg/components/button" label="Small" class="button disabled lil-button"/}
+        </section>
 
-        <h3>Small button</h3>
-        {>"_sg/components/button" label="Small" class="lil-button"/}
-        {>"_sg/components/button" label="Small" class="disabled lil-button"/}
-
-        <h3>Mini button</h3>
-        {>"_sg/components/button" label="+" class="mini-button"/}
-        {>"_sg/components/button" label="+" class="disabled mini-button"/}
-
-        <h3>Button groups</h3>
-        {>"_sg/components/button" label="Button" class="button group"/}
-        {>"_sg/components/button" label="Button" class="button group"/}
-        {>"_sg/components/button" label="Button" class="button group"/}
-
-        <h3>Dropdown</h3>
-        {>"_sg/components/dropdown" label="drop me!" class="button group"/}
-
-        <h3>Datepicker</h3>
+        <section id="button-groups" class="sg-component">
+            <h4>Button groups</h4>
+            {>"_sg/components/button" label="Button" class="button group"/}
+            {>"_sg/components/button" label="Button" class="button group"/}
+            {>"_sg/components/button" label="Button" class="button group"/}
+        </section>
 
     </section>
 
     <section id="fields" title="Fields" class="sg-section">
-        <h2>Form fields</h2>
+        <h4>Form fields</h4>
 
         {>"_sg/components/field" /}
+
+        <section id="dropdown-buttons" class="sg-component">
+            <h4>Dropdown</h4>
+            {>"_sg/components/dropdown" label="drop me!" class="button group"/}
+        </section>
+
+        <section id="datepicker" class="sg-component">
+            <h4>Datepicker</h4>
+            {>"_sg/components/datepicker" label="pick a date!" /}
+        </section>
 
     </section>
 
     <section id="other" title="Other" class="sg-section">
         <h2>Radio buttons</h2>
+        {>"_sg/components/radio-button" label="pick a date!" /}
 
         <h2>Checkboxes</h2>
+        {>"_sg/components/checkbox" label="pick a date!" /}
 
         <h2>Toggle</h2>
+        {>"_sg/components/switch-button" label="pick a date!" /}
 
     </section>
 
