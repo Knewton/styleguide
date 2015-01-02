@@ -12,7 +12,7 @@ dust.helpers.snippet = function(chunk, context, bodies, params) {
         if (err) throw err;
 
         out = safe_tags(out);
-        var s = '<pre><code class="html">'+ out + '</code></pre>';
+        var s = '<pre class="snippet">'+ out + '</pre>';
         result = chunk.write(s);
     });
     return result;

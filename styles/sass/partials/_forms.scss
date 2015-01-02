@@ -35,7 +35,7 @@ ul {
             border-top: 1px solid #e2e2e2;
             padding-top: 10px;
             margin-top: 10px;
-        } 
+        }
 
         li:first-child {
             border-top: 0 none;
@@ -56,16 +56,45 @@ ul {
 }
 
 input,
+.input-text,
 .thick-input {
-    font-size: .85em;
-    line-height: 2em;
+    @include fill-parent;
+
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0 .5rem;
     border: 1px solid #d0d0d0;
+
+    &:focus {
+        outline: none;
+        border: 1px solid $medium-turquoise;
+    }
+}
+
+.input-text {
+    position: relative;
+
+    // Pencil icon
+    &:not(:focus):after {
+        content: "\e012";
+        position: absolute;
+        font-family: knewcons;
+        color: #b6b6b6;
+        right: 0;
+        padding: 0 .5rem;
+    }
+
+    // Placeholder
+    &:empty:not(:focus):before {
+        content: attr(data-placeholder);
+        color: #a9a9a9;
+    }
 }
 
 .labels {
     label {
         font-weight: 300;
-        
+
         input {
             margin-right: 5px;
         }
@@ -168,7 +197,7 @@ form {
         vertical-align: middle;
         display: table-cell;
     }
-    
+
     .input-group-addon .icon {
         position: relative;
         top: 1px;

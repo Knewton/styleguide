@@ -1,0 +1,16 @@
+<section id="fields" title="Fields" class="sg-section">
+    <h2>Fields</h2>
+
+    <section id="fields-input-text" class="sg-component">
+        <h4>Text input</h4>
+
+        {>"_sg/components/input-text" /}
+        {@snippet src="_sg/components/input-text" /}
+
+        <h4>Dynamic text input</h4>
+        <p>This input submits changes. <em>note: js not implemented yet.</em></p>
+        {>"_sg/components/input-text-dynamic" /}
+        {@snippet src="_sg/components/input-text-dynamic" /}
+
+    </section>
+</section>

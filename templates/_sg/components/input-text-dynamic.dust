@@ -1,0 +1,2 @@
+<div class="input-text" contenteditable="true" name="field-name"{~n}
+     data-placeholder="Field value" data-submit="/course/123-456" />

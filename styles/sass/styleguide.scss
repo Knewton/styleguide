@@ -164,6 +164,10 @@ h2 {
     @include clearfix;
 
     margin-bottom: 1rem;
+
+    p {
+      margin: .5rem 0;
+    }
 }
 
 // Colors
@@ -192,14 +196,18 @@ h2 {
 
 
 // Code sample
+.snippet,
 .sample {
   background: $background-grey;
   margin: 1rem 0;
   padding: .5rem;
   font-family: monospace;
+  overflow-x: scroll;
 
-  pre {
+  // .snippet can be outside of a sample
+  .snippet {
     margin: 0;
+    padding: 0;
   }
 }
 

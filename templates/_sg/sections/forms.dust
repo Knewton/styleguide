@@ -1,62 +1,8 @@
 <section id="forms" title="Forms" class="sg-section">
     <h1>Form elements</h1>
 
-    <section id="buttons" title="Buttons" class="sg-section">
-        <h2>Buttons</h2>
-
-        <section id="large-buttons" class="sg-component">
-            <h4>Large button</h4>
-            {>"_sg/components/button" label="Four column" class="button long"/}
-            {>"_sg/components/button" label="Four column" class="button white-button long"/}
-            {>"_sg/components/button" label="Four column" class="button long disabled"/}
-
-            <div class="sample">
-                {@snippet src="_sg/components/button" label="Four column" class="button long" /}
-                {@snippet src="_sg/components/button" label="Four column" class="button white-button long" /}
-                {@snippet src="_sg/components/button" label="Four column" class="button long disabled" /}
-            </div>
-        </section>
-
-        <section id="big-buttons" class="sg-component">
-            <h4>Button</h4>
-            {>"_sg/components/button" label="Three column" class="button medium"/}
-            {>"_sg/components/button" label="Three column" class="button white-button medium"/}
-            {>"_sg/components/button" label="Three column" class="button medium disabled"/}
-
-            <div class="sample">
-                {@snippet src="_sg/components/button" label="Three column" class="button medium" /}
-                {@snippet src="_sg/components/button" label="Three column" class="button white-button medium" /}
-                {@snippet src="_sg/components/button" label="Three column" class="button medium disabled" /}
-            </div>
-        </section>
-
-        <section id="small-buttons" class="sg-component">
-            <h4>Small button</h4>
-            {>"_sg/components/button" label="Small" class="button short lil-button"/}
-            {>"_sg/components/button" label="Small" class="button short white-button lil-button"/}
-            {>"_sg/components/button" label="Small" class="button disabled lil-button"/}
-
-            <div class="sample">
-                {@snippet src="_sg/components/button" label="Small" class="button short lil-button" /}
-                {@snippet src="_sg/components/button" label="Small" class="button white-button short lil-button" /}
-                {@snippet src="_sg/components/button" label="Small" class="button short lil-button disabled" /}
-            </div>
-        </section>
-
-        <section id="button-groups" class="sg-component">
-            <h4>Button groups</h4>
-            {>"_sg/components/button" label="Button" class="button group"/}
-            {>"_sg/components/button" label="Button" class="button group"/}
-            {>"_sg/components/button" label="Button" class="button group"/}
-
-            <div class="sample">
-                {@snippet src="_sg/components/button" label="Button" class="button group"/}
-                {@snippet src="_sg/components/button" label="Button" class="button group"/}
-                {@snippet src="_sg/components/button" label="Button" class="button group"/}
-            </div>
-        </section>
-
-    </section>
+    {>"_sg/sections/forms/fields" /}
+    {>"_sg/sections/forms/buttons" /}
 
     <section id="fields" title="Fields" class="sg-section">
         <h4>Form fields</h4>
