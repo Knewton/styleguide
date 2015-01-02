@@ -4,3 +4,4 @@ bower_components
 dist/styles
 dist/js/templates.js
 .DS_Store
+_site

@@ -124,4 +124,5 @@ knewton-style/
     js/
     img/
 
-
+todo:
+headers: -webkit-font-smoothing

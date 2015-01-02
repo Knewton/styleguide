@@ -127,6 +127,16 @@ module.exports = function (grunt) {
                     dest: 'dist/js/',
                     flatten: true
                 }]
+            },
+            deploy: {
+                files: [{
+                    expand: true,
+                    dest: '_site',
+                    cwd: 'dist',
+                    src: [
+                        '**/*'
+                    ]
+                }]
             }
         },
 
@@ -138,10 +148,24 @@ module.exports = function (grunt) {
                 config: '.scss-lint.yml',
                 compact: true,
                 colorizeOutput: true
-          },
-      }
-  });
+            },
+        },
 
-    grunt.registerTask('run', 'Builds and watches the style guide for changes.', ['scsslint', 'copy', 'dust', 'compass', 'watch']);
+        // Follow instructions here: https://www.npmjs.com/package/grunt-github-pages
+        githubPages: {
+            target: {
+                options: {
+                    // The default commit message for the gh-pages branch
+                    commitMessage: 'push'
+                },
+                // The folder where your gh-pages repo is
+                src: '_site'
+            }
+        }
+    });
+
+    grunt.registerTask('build', 'Builds.', ['scsslint', 'copy', 'dust', 'compass']);
+    grunt.registerTask('run', 'Builds and watches the style guide for changes.', ['build', 'watch']);
+    grunt.registerTask('deploy', 'Deploys to github', ['build', 'copy:deploy', 'githubPages:target']);
 
 };
