@@ -49,6 +49,14 @@ body {
     margin: 2em auto;
 }
 
+h1 {
+  margin: 1rem 0;
+}
+
+h2 {
+  margin: 0;
+}
+
 .sg-header {
     @include clearfix;
     @include rainbow;
@@ -73,11 +81,11 @@ body {
 
     h1 {
         @include main;
-//        @include header-tab-font;
-        @include span-columns(18);        
+        @include span-columns(18);
 
         font-weight: lighter;
-        //font-size: 1.2rem;
+        font-size: 1rem;
+        text-align: center;
         margin-top: 0;
         margin-bottom: 0;
         line-height: 60px;
@@ -109,7 +117,7 @@ body {
 
     a {
         @include action-link-font;
-        
+
         &:hover {
             color: $grey-757575;
         }
@@ -124,6 +132,16 @@ body {
 .sg-sections {
     @include span-columns(18);
 
+    h1 {
+      text-align: center;
+    }
+
+    h4 {
+      margin: 0;
+      font-weight: 300;
+      color: $ashen-grey;
+    }
+
     > .sg-section {
         @include pad(20px);
         display: none;
@@ -133,7 +151,6 @@ body {
 .sg-section {
     @include fill-parent;
     @include clearfix;
-    @include pad;
 
     background-color: $white;
 
@@ -145,7 +162,8 @@ body {
 .sg-component {
     @include fill-parent;
     @include clearfix;
-    @include pad(1.3em 0);
+
+    margin-bottom: 1rem;
 }
 
 // Colors
@@ -168,6 +186,22 @@ body {
     .color-name {
         $color-name-height: 48px;
         height: $color-name-height;
-        line-height: $color-name-height;        
+        line-height: $color-name-height;
     }
 }
+
+
+// Code sample
+.sample {
+  background: $background-grey;
+  margin: 1rem 0;
+  padding: .5rem;
+  font-family: monospace;
+
+  pre {
+    margin: 0;
+  }
+}
+
+
+

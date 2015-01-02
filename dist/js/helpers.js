@@ -8,7 +8,7 @@ dust.helpers.snippet = function(chunk, context, bodies, params) {
     // Make sure the template has been loaded
     var result;
     //dust.loadSource(src);
-    dust.render(src, {}, function(err, out) {
+    dust.render(src, params, function(err, out) {
         if (err) throw err;
 
         out = safe_tags(out);
