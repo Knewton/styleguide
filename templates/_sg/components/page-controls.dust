@@ -8,10 +8,5 @@
         <a class="view-page" href="{url}">5</a>
         <a class="view-page" href="{url}">6</a>
         <a class="view-page" href="{url}">7</a>
-        <a class="view-page" href="{url}">8</a>
-        <a class="view-page" href="{url}">9</a>
-        <a class="view-page" href="{url}">10</a>
-        <a class="view-page" href="{url}">11</a>
-        <a class="view-page" href="{url}">12</a>
         <a class="view-page" href="{url}">...</a>
 </div>

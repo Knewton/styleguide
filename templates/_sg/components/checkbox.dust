@@ -1,0 +1,1 @@
+<input type="checkbox" id="{?idp}{idp}{/idp}" checked />Hello, I'm a checkbox.

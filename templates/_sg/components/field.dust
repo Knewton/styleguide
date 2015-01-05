@@ -1,6 +1,12 @@
-<div class="form-group chosen-date">
-    <label>Optional: Choose an end date</label>
-    <div class="input-group date date-field">
-        <input id="endsAt" type="text" name="endsAt" {#endsAt}value="{@formatDate date="{.}" format="MM/DD/YYYY" /}"{/endsAt} class="form-control"><span class="input-group-addon"><span class="icon icon-calendar"></span></span>
-    </div>
+<div class="input-group form-item">
+    <input id="endsAt" type="text" name="endsAt" class="form-control" value="Name your course" focus=>
+</div>
+
+<div class="input-group form-item">
+    <span class="label">Name your course</span>
+        <input id="endsAt" type="text" name="endsAt" class="form-control" value="" focus=>
+</div>
+
+<div class="input-group form-item">
+    <input id="endsAt" type="text" name="endsAt" class="form-control disabled" disabled value="Yo guys">
 </div>

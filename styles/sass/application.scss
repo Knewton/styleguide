@@ -5,6 +5,7 @@
 @import "partials/forms";
 @import "partials/page-control-pagination";
 @import "partials/standard-button";
+@import "partials/switch-button";
 @import "partials/tables";
 @import "partials/tabs";
 @import "partials/typography";
@@ -23,6 +24,9 @@
 // ACCORDION
 @import "bootstrap/panels";
 @import "bootstrap/component-animations";
+
+// HIGHLIGHTJS
+@import "highlightjs";
 
 body {
   @include standard-body-font;

@@ -21,6 +21,8 @@
     "bootstrap-sass-twbs": "~3.3.1",
     "dustjs-linkedin": "~2.5.1",
     "neat": "~1.7.0",
-    "dustjs-linkedin-helpers": "~1.5.0"
+    "dustjs-linkedin-helpers": "~1.5.0",
+    "highlightjs": "~8.4.0",
+    "easydropdown": "~2.1.4"
   }
 }

@@ -22,14 +22,24 @@
     </section>
 
     <section id="other" title="Other" class="sg-section">
-        <h2>Radio buttons</h2>
-        {>"_sg/components/radio-button" label="pick a date!" /}
+        <section id="datepicker" class="sg-component">
+            <h2>Radio buttons</h2>
+            {>"_sg/components/radio-button" label="pick a date!" /}
+            {@snippet src="_sg/components/radio-button" /}
+        </section>
 
-        <h2>Checkboxes</h2>
-        {>"_sg/components/checkbox" label="pick a date!" /}
+        <section id="datepicker" class="sg-component">
+            <h2>Checkboxes</h2>
+            {>"_sg/components/checkbox" label="pick a date!" /}
+        </section>
 
-        <h2>Toggle</h2>
-        {>"_sg/components/switch-button" label="pick a date!" /}
+        <section id="datepicker" class="sg-component">
+            <h2>Toggle</h2>
+            {>"_sg/components/switch-button" class="switch-on" label="toggle" /}
+            {>"_sg/components/switch-button" class="switch-off"  label="Toggle"/}
+
+            {@snippet src="_sg/components/switch-button" label="toggle" /}
+        </section>
 
     </section>
 

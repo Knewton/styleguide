@@ -11,6 +11,7 @@
     <section id="tables" title="Tables" class="sg-section">
         <h1>Tables</h1>
         {>"_sg/components/table" /}
+        {@snippet src="_sg/components/table" /}
     </section>
 
     <section id="navigation" title="Navigation" class="sg-section">
@@ -25,11 +26,13 @@
         <section id="tabs" title="Tabs" class="sg-component">
             <h2>Tabs</h2>
             {>"_sg/components/tabs" /}
+            {@snippet src="_sg/components/tabs" /}
         </section>
 
         <section id="pagination" title="Pagination" class="sg-component">
             <h2>Pagination</h2>
             {>"_sg/components/page-controls" /}
+            {@snippet src="_sg/components/page-controls" /}
         </section>
 
     </section>

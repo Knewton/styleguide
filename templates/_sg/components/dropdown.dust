@@ -3,18 +3,7 @@
         options: options
 !}
 
-<!--div class="dropdown">
-    <span class="selected">Option 1</span>
-    <span class="carat"></span>
-    {#options}
-        <li>{option}</li>
-    {:else}
-        <li>Option 1</li>
-        <li>Option 2</li>
-    {/options}
-</div-->
-
-<select class="dropdown">  
+<select class="dropdown alt-dropdown">  
     <option value="" class="label">Setting</option>  
     <option value="1">Option 1</option>  
     <option value="2">Option 2</option>  
