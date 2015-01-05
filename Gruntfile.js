@@ -47,7 +47,7 @@ module.exports = function (grunt) {
                 files: ['styles/**/*.{scss,sass}'],
                 tasks: ['scsslint', 'compass', 'autoprefixer','growl:sassCompile'],
                 options: {
-                    livereload: true
+                    livereload: false
                 }
             },
             partials: {
