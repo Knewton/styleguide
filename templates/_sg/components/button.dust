@@ -4,6 +4,6 @@
         state: interaction state?
 !}
 
-<button type="button" class="button {?class}{class}{/class}">
+<button type="button" class="{?class}{class}{/class}">
     {?label}{label}{/label}
 </button>

@@ -6,11 +6,21 @@
 
         {>"_sg/components/input-text" /}
         {@snippet src="_sg/components/input-text" /}
+    </section>
 
+    <section id="fields-dynamic-input-text" class="sg-component">
         <h4>Dynamic text input</h4>
+
         <p>This input submits changes. <em>note: js not implemented yet.</em></p>
+
         {>"_sg/components/input-text-dynamic" /}
         {@snippet src="_sg/components/input-text-dynamic" /}
+    </section>
 
+    <section id="fields-input-text" class="sg-component">
+        <h4>Disabled text input</h4>
+
+        {>"_sg/components/input-text" class="disabled" /}
+        {@snippet src="_sg/components/input-text" class="disabled" /}
     </section>
 </section>

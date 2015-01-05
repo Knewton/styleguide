@@ -4,41 +4,50 @@
     {>"_sg/sections/forms/fields" /}
     {>"_sg/sections/forms/buttons" /}
 
-    <section id="fields" title="Fields" class="sg-section">
-        <h4>Form fields</h4>
+    <section id="other" title="Other inputs" class="sg-section">
 
-        {>"_sg/components/field" /}
+        <h2>Other inputs</h2>
 
         <section id="dropdown-buttons" class="sg-component">
             <h4>Dropdown</h4>
-            {>"_sg/components/dropdown" label="drop me!" class="button group"/}
+            {>"_sg/components/dropdown" /}
+
+            <div class="sample">
+                {@snippet src="_sg/components/dropdown" /}
+            </div>
         </section>
 
         <section id="datepicker" class="sg-component">
             <h4>Datepicker</h4>
             {>"_sg/components/datepicker" label="pick a date!" /}
+
+            <div class="sample">
+                {@snippet src="_sg/components/datepicker" /}
+            </div>
         </section>
 
-    </section>
-
-    <section id="other" title="Other" class="sg-section">
-        <section id="datepicker" class="sg-component">
+        <section id="radio-button" class="sg-component">
             <h2>Radio buttons</h2>
             {>"_sg/components/radio-button" label="pick a date!" /}
-            {@snippet src="_sg/components/radio-button" /}
+
+            <div class="sample">
+                {@snippet src="_sg/components/radio-button" /}
+            </div>
         </section>
 
-        <section id="datepicker" class="sg-component">
+        <section id="checkbox" class="sg-component">
             <h2>Checkboxes</h2>
             {>"_sg/components/checkbox" label="pick a date!" /}
         </section>
 
-        <section id="datepicker" class="sg-component">
+        <section id="switch-buttons" class="sg-component">
             <h2>Toggle</h2>
             {>"_sg/components/switch-button" class="switch-on" label="toggle" /}
             {>"_sg/components/switch-button" class="switch-off"  label="Toggle"/}
 
-            {@snippet src="_sg/components/switch-button" label="toggle" /}
+            <div class="sample">
+                {@snippet src="_sg/components/switch-button" label="toggle" /}
+            </div>
         </section>
 
     </section>

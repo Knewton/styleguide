@@ -1,7 +1,7 @@
 .switch-button {
     @include action-link-font;
 
-    color: #fff;
+    color: $white;
     cursor: pointer;
     width: 90px;
     height: 35px;
@@ -21,7 +21,7 @@
 
     &.switch-off {
         background: $light-grey;
-        color: #ccc;
+        color: $border-grey;
     }
 
     &:hover {

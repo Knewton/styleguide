@@ -1,14 +1,15 @@
 @import "modules/transition-effects";
 @import "modules/base";
 
-.button {
+%button {
     @include action-link-font;
     display: inline-block;
-    border: 3px solid $light-turquoise;
-    background: $light-turquoise;    
+    border: 3px solid $turquoise;
+    background: $turquoise;    
     color: #fff;
     cursor: pointer;
     width: 175px;
+    margin: 0 5px;
     /*padding: 5px 0;*/
 
     text: {
@@ -24,85 +25,77 @@
     &:hover:not(.disabled) {
         @include transition-active(.1s);
         color: #fff;
-        background: $hard-turquoise;
-        border: 3px solid $hard-turquoise;
+        background: $dark-turquoise;
+        border: 3px solid $dark-turquoise;
     }
 
-    &.long {
-        width: 190px;
-        height: 35px;
-    }
-
-    &.medium {
-        width: 140px;
-        height: 35px;
-    }
-
-    &.short {
-        width: 90px;
-        height: 25px;   
-    }
-
-    &.big-button {
-        width: 220px;
-        border-width: 3px;
-        font: {
-            size: 14px;
-            weight: 900;
-        }
-        height: 50px;
-        line-height: 50px;
-        text-transform: uppercase;
-        letter-spacing: 0.09em;
-        margin-bottom: 10px;
+    &.white-button {
+        border: 3px solid $turquoise;
         padding: 0;
-    }
+        color: $turquoise;
+        background: #fff;
 
-    &.lil-button {
-        font-weight: 700;
-        font-size: 9px;
-        line-height: 18px;
-        letter-spacing: 0.1em;
-        padding: .2em 1em;
-        width: 70px;        
-    }
+        &:hover:not(.disabled) {
+            @include transition-active(.1s);
+            color: #fff;
+            background: $dark-turquoise;
+            border-color: $dark-turquoise;
+        }
 
-    &.disabled,
-    &:disabled {
-        color: #ccc;
-        background: $background-grey;
-        border: 3px solid $background-grey;
-        cursor: not-allowed;
+        &.short {
+            border: 1px solid $turquoise;
+        }
     }
 
     + .button {
         margin-left: 10px;
     }
 
-    &.white-button {
-        border: 3px solid $medium-turquoise;
-        padding: 0;
-        color: $medium-turquoise;
-        background: #fff;
-
-        &:hover:not(.disabled) {
-            @include transition-active(.1s);
-            color: #fff;
-            background: $medium-turquoise;
-            border-color: $medium-turquoise;
-        }
-
-        &.short {
-            border: 1px solid $medium-turquoise;
-        }
+    &.disabled,
+    &:disabled {
+        color: $border-grey;
+        background: $background-grey;
+        border: 3px solid $background-grey;
+        cursor: not-allowed;
     }
+}
 
+
+.long {
+    @extend %button;
+    width: 190px;
+    height: 35px;
+}
+
+.medium {
+    @extend %button;
+    width: 140px;
+    height: 35px;
+}
+
+.short {
+    @extend %button;
+    width: 90px;
+    height: 25px;   
+    font-size: 9px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    padding: .2em 1em;
+}
+
+.mini {
+    @extend %button;
+    width: 35px;
+    height: 35px;
+}
+
+button {
     &.group {
-        border: 1px solid $medium-turquoise;
+        @extend %button;
+        border: 1px solid $turquoise;
         padding: 0;
-        color: $medium-turquoise;
-        background: #fff;
-        border-left: 0;
+        color: $turquoise;
+        background: $white;
         margin: 0;
         font-weight: 700;
         font-size: 9px;
@@ -112,14 +105,14 @@
 
         &:hover:not(.disabled) {
             @include transition-active(.1s);
-            color: #fff;
-            background: $medium-turquoise;
-            border: 1px solid $hard-turquoise;
+            color: $white;
+            background: $dark-turquoise;
+            border: 1px solid $dark-turquoise;
         }
 
-        + &.group {
-            border-left: 1px;
+        + button {
+            border-left: 1px solid $turquoise;
+            margin-left: -1px;
         }
     }
-
 }

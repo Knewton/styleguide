@@ -20,15 +20,15 @@
 
     <section id="large-buttons" class="sg-component">
         <h2>Background colors</h2>
-        {>"_sg/components/color" hex="#F5FAFC" name="$dark-blue" light="1" /}
-        {>"_sg/components/color" hex="#EDF8F9" name="$blue" light="1" /}
+        {>"_sg/components/color" hex="#F1F1F1" name="$background-grey" light="1" /}
+        {>"_sg/components/color" hex="#555" name="$grey-on-grey" light="1" /}
     </section>
 
     <section id="large-buttons" class="sg-component">
         <h2>Text colors</h2>
-        {>"_sg/components/color" hex="#454545" name="$dark-blue" light="1" /}
-        {>"_sg/components/color" hex="#757575" name="$blue" light="1" /}
-        {>"_sg/components/color" hex="#959595" name="$turquoise" light="1" /}
+        {>"_sg/components/color" hex="#454545" name="$black-enough" light="1" /}
+        {>"_sg/components/color" hex="#757575" name="$default" light="1" /}
+        {>"_sg/components/color" hex="#B5B5B5" name="$ashen-grey" light="1" /}
     </section>
 
     <section id="large-buttons" class="sg-component">

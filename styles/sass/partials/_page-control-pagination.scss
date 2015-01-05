@@ -2,7 +2,7 @@
 @import "modules/transition-effects";
 
 .page-controls {
-    border: 0 dashed #ccc;
+    border: 0 dashed $border-grey;
     border-width: 1px 0;
     text-align: center;
     height: 34px;
@@ -24,12 +24,12 @@
         &.view-page:hover {
             @include transition-color(.4s);
             color: #fff;
-            background: #00acb7;
+            background: $turquoise;
         }
 
         &.view-page.active {
             color: #fff;
-            background: #9da2a6;
+            background: $ashen-grey;
         }
     }
 
@@ -41,7 +41,7 @@
             font-size: 14px;
             display: block;
             text-decoration: none;
-            color: #00acb7;
+            color: $turquoise;
         }
 
         &.prev { float: left; }

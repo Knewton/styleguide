@@ -203,6 +203,9 @@
 /* CUSTOM SCSS */
 
 .dropdown {
+    position: relative;
+    display: table;
+    border-collapse: separate;    
     padding-right: 0;
     padding-left: 30px;
     border: 1px solid #ccc;
@@ -217,7 +220,7 @@
     .carat {
         left: 0;
         border: 0;
-    }
+    }    
 }
 
 .alt-dropdown .dropdown {

@@ -36,7 +36,7 @@ h3 {
 h4 {
     @include content-title-font;
     line-height: rem(27);
-    color: $grey-757575;
+    color: $default;
     font-weight: 500;
 }
 
@@ -48,28 +48,38 @@ h5 {
 h6 {
     @include standard-body-font;
     font-weight: 500;
-    color: $grey-757575;
+    color: $default;
     margin: 0 0 rem(5);
 }
 
 .link,
 a {
-    color: $medium-turquoise;
+    color: $turquoise;
     text-decoration: none;
 
     &:hover {
         text-decoration: underline;
     }
 
-    &.action {
-        @include action-link-font;
-        float: right;
+    &.link {
+        &.action {
+            @include action-link-font;
+            color: $turquoise;
+        }
+
+        &.disabled {
+            color: $ashen-grey;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
 a {
     &.standard {
-        color: $medium-turquoise;
+        color: $turquoise;
         text-decoration: none;
     }
 

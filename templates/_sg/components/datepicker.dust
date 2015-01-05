@@ -1,5 +1,3 @@
-<div class="form-group chosen-date">
-    <div class="input-group date date-field">
-        <input id="endsAt" type="text" name="endsAt" {#endsAt}value="{@formatDate date="{.}" format="MM/DD/YYYY" /}"{/endsAt} value="mm/dd/yyyy" class="form-control"><span class="input-group-addon"><span class="icon icon-calendar"></span></span>
-    </div>
+<div class="input-group date date-field">
+    <input type="text" name="endsAt" {#endsAt}value="{@formatDate date="{.}" format="MM/DD/YYYY" /}"{/endsAt} placeholder="mm/dd/yyyy" class="form-control"><span class="input-group-addon"><span class="icon icon-calendar"></span></span>
 </div>

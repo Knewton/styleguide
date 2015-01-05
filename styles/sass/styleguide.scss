@@ -90,7 +90,11 @@ h2 {
         margin-bottom: 0;
         line-height: 60px;
         vertical-align: middle;
-        color: $very-light-grey;
+
+        a {
+          text-decoration: none;
+          color: $very-light-grey;
+        }
 
     }
 }
@@ -120,11 +124,11 @@ h2 {
         @include action-link-font;
 
         &:hover {
-            color: $grey-757575;
+            color: $default;
         }
 
         &.active {
-            color: $grey-757575;
+            color: $default;
         }
     }
 }
@@ -166,10 +170,21 @@ h2 {
     @include clearfix;
     @include pad(0 0 1.3em 0);
 
-    margin-bottom: 1rem;
-
     p {
       margin: .5rem 0;
+    }
+
+    h4 {
+      margin: 10px 0;
+    }
+
+    ul {
+    list-style-type: none;
+
+      li:before {
+          content: "·"; 
+          font-size: 12px;
+      }
     }
 }
 
@@ -206,6 +221,7 @@ h2 {
   padding: .5rem;
   font-family: monospace;
   overflow-x: auto;
+  clear: both;
 
   // .snippet can be outside of a sample
   .snippet {

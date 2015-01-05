@@ -9,18 +9,24 @@ table {
 
     tr {
         height: 45px;
+    }
 
-        &:nth-child td {
-            border-bottom: 1px solid #e3e3e3;
+    tr:first-child {
+        font-size: 45px;
+
+        td {
+            border-top: 0;
         }
     }
 
     td {
         @include table-row-font;
-        padding: 20px 50px 20px 0;
-        border-top: 1px solid #e3e3e3;
+
+        padding: 15px 50px 15px 0;
+        border-top: 1px solid $light-grey;
         color: $default;
         font-size: 15px;
+        line-height: 15px;
 
         a {
             text-decoration: none;

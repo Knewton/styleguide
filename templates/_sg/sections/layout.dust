@@ -18,11 +18,6 @@
 
         <h1>Navigation stuff</h1>
 
-        <section id="menus" title="Menus" class="sg-component">
-            <h2>Menus</h2>
-            Menus and stuff
-        </section>
-
         <section id="tabs" title="Tabs" class="sg-component">
             <h2>Tabs</h2>
             {>"_sg/components/tabs" /}
@@ -37,17 +32,9 @@
 
     </section>
 
-    <section id="lists" title="Lists" class="sg-section">
-
-        <h1>Lists</h1>
-        Here some lists and stuff.
-        {>"_sg/components/list" /}
-
-    </section>
-
     <section id="navigation" title="Navigation" class="sg-section">
 
-        <h1>Responsiveness</h1>
+        <h4>Responsiveness</h4>
         Here some notes about responsiveness and stuff
 
     </section>

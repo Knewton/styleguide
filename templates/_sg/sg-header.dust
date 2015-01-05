@@ -1,8 +1,8 @@
 <header class="sg-header">
     <div class="wrapper">
         <div class="container">
-            <a href="/" id="logo" class="logo-header"><img src="styles/images/logo-white.png" /></a>
-            <h1>Knewton Style Guide / UI Library</h1>
+            <a href="" id="logo" class="logo-header"><img src="styles/images/logo-white.png" /></a>
+            <h1><a href="">Knewton Style Guide / UI Library</a></h1>
         </div>
     </div>
 </header>
