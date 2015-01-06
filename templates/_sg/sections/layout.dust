@@ -1,38 +1,6 @@
 <section id="layout" title="Layout" class="sg-section">
 
-    <section id="grids" title="Grids" class="sg-section">
-
-        <h1>Layout and grids and stuff</h1>
-
-        We're using a 24 column grid system to define the layout on each page. 
-
-        <section id="grid-sample" class="sg-component">
-            <h4>Main column system</h4>
-            <div class="columns1of4"></div>
-            <div class="columns3of4"></div>
-        </section>
-
-        <section id="grid-sample" class="sg-component">
-            <h4>Vertical spacing</h4>
-            <div class="columns4of4"></div>
-            <div class="columns4of4"></div>
-        </section>
-
-        <section id="padding-sample" class="sg-component">
-            <h4>Wrapper and components padding</h4>
-            <div class="column-wrapper">
-                <div class="column-within">
-                    {>"_sg/components/button" label="yo guys" class="short" /}
-                </div>
-            </div>
-        </section>
-
-        <section id="responsiveness" title="Responsiveness" class="sg-component">
-            <h4>Responsiveness</h4>
-            Here some notes about using media-queries and adjust to different 
-        </section>
-
-    </section>
+    {>"_sg/sections/layout/grids" /}
 
     <section id="tables" title="Tables" class="sg-section">
         <h1>Tables</h1>

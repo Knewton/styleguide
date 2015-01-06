@@ -1,13 +1,5 @@
 $museo-sans-font-stack: "museo-sans", sans-serif;
 
-$grey-bababa: #bababa;
-$grey-999:    #999;
-$grey-757575: #757575;
-$grey-454545: #454545;
-
-$aqua-00acb7: #00acb7;
-$orange-f05400: #f05400;
-
 @mixin standard-body-font {
     // ./partials/_global.scss
 
@@ -49,7 +41,7 @@ $orange-f05400: #f05400;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: $grey-bababa;
+    color: $ashen-grey;
 }
 
 @mixin header-tab-font {
@@ -63,7 +55,7 @@ $orange-f05400: #f05400;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: $grey-bababa;
+    color: $ashen-grey;
 }
 
 @mixin tab-font {
@@ -78,7 +70,7 @@ $orange-f05400: #f05400;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: $grey-bababa;
+    color: $ashen-grey;
 }
 
 @mixin pending-request-font {
@@ -89,7 +81,7 @@ $orange-f05400: #f05400;
         weight: 500;
     }
     letter-spacing: 0.025em;
-    color: $orange-f05400;
+    color: $sweet-orange;
 }
 
 @mixin link-font {
@@ -100,7 +92,7 @@ $orange-f05400: #f05400;
         weight: 300;
     }
     line-height: 18px;
-    color: $aqua-00acb7;
+    color: $turquoise;
 }
 
 @mixin std-link {
@@ -181,7 +173,18 @@ $orange-f05400: #f05400;
         size: 12px;
         weight: 500;
     }
-    color: $grey-999;
+    color: $ashen-grey;
+}
+
+@mixin input-label-font {
+    // ./partials/_easydropdown.scss
+
+    line-height: 30px;
+    font: {
+        size: 16px;
+        weight: 700;
+    }
+    color: $default;
 }
 
 @mixin table-row-font {

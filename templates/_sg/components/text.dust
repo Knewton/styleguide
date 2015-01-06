@@ -1,8 +1,0 @@
-{!
-    parameters:
-        font: font variable name
-!}
-
-<div class="text">
-    <div class="{?class}{class}{/class}">{?text}{text}{/text}</div>
-</div>

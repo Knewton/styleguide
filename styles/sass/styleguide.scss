@@ -143,8 +143,6 @@ h2 {
 
     h4 {
       margin: 0;
-      font-weight: 300;
-      color: $ashen-grey;
     }
 
     > .sg-section {
@@ -222,6 +220,11 @@ h2 {
     padding: 20px;
     text-align: right;
   }
+}
+
+// Typography samples
+.text-sample {
+  margin: 20px 0;
 }
 
 // Colors

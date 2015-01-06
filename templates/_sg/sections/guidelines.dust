@@ -1,4 +1,4 @@
-<section id="guidelines" title="Guidelines" class="sg-section">
+<section id="guidelines" title="Developer guidelines" class="sg-section">
 
     Here go a few guidelines on how to use styling rules.
 
@@ -12,5 +12,11 @@
         <h1>How to write Dust</h1>
 
         Here's some stuff.
+    </section>
+
+    <section id="visual-communication" title="" class="sg-section">
+        <h1>General visual communication guidelines</h1>
+
+        Here's some stuff about the use of our logo, our colors and other visual communication devices.
     </section>
 </section>

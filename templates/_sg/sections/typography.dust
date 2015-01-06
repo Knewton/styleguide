@@ -68,6 +68,34 @@
             <i>Some text in italices.</i>
         </section>
 
+        <section id="" class="sg-component">
+            <div class="input-label">Label for the input (this looks wrong)</div>
+            {>"_sg/components/input-text" /}
+        </section>
+
+        
+        {>"_sg/components/text-sample" title="Headline" class="headline-font" text="MuseoSans 2em 200 (?) #555555 ($grey-on-grey)" /}
+        {>"_sg/components/text-sample" title="Subheadline" class="subhead-font" text="MuseoSans 21px 300 #555555 ($grey-on-grey)" /}
+        {>"_sg/components/text-sample" title="Body copy" class="standard-body-font" text="MuseoSans rem(14) 300 #555555 ($grey-on-grey)" /}
+        {>"_sg/components/text-sample" title="Action link" class="action-link-font" text="MuseoSans 12px 700 uppercase 0.05em letter-spacing #b5b5b5 ($ashen-grey)" /}
+        {>"_sg/components/text-sample" title="Header tab (?)" class="header-tab-font" text="MuseoSans 12px 700 uppercase 0.05em letter-spacing #b5b5b5 ($ashen-grey)" /}
+        {>"_sg/components/text-sample" title="Tab font" class="tab-font" text="MuseoSans 12px 700 uppercase 0.05em letter-spacing" /}
+        {>"_sg/components/text-sample" title="Pending request font (?)" class="pending-request-font" text="MuseoSans 12px 500 uppercase 0.025em letter-spacing" /}
+        {>"_sg/components/text-sample" title="Link" class="link-font" text="MuseoSans 12px 300 #1abcc1 ($turquoise)" /}
+        {>"_sg/components/text-sample" title="Standard link" class="std-link" text="MuseoSans 12px 300 #1abcc1 ($turquoise)" /}
+        {>"_sg/components/text-sample" title="Standard body link" class="std-body-link" text="MuseoSans 14px 300 #1abcc1 ($turquoise)" /}
+        {>"_sg/components/text-sample" title="Subtle font" class="subtle-font" text="MuseoSans 12px 500 0.05em letter-spacing #454545 ($black-enough)" /}
+        {>"_sg/components/text-sample" title="Sidebar font" class="sidebar-font" text="MuseoSans 12px 500 0.05em letter-spacing #454545 ($black-enough)" /}
+        {>"_sg/components/text-sample" title="Result paginator" class="result-paginator-font" text="MuseoSans 13px 500 0.015em letter-spacing #757575 ($default)" /}
+        {>"_sg/components/text-sample" title="Counter" class="counter-font" text="MuseoSans 12px 500 #757575 ($default) " /}
+        {>"_sg/components/text-sample" title="Action font" class="action-font" text="MuseoSans 12px 700 0.075em letter-spacing #454545 ($black-enough) " /}
+        {>"_sg/components/text-sample" title="Input" class="input-font" text="MuseoSans 12px 500 #999999 ($?)" /}
+        {>"_sg/components/text-sample" title="Input label" class="input-label-font" text="MuseoSans 16px 700 #757575 ($default)" /}
+        {>"_sg/components/text-sample" title="Table row" class="table-row-font" text="MuseoSans 14px 300 0.015em #454545 ($black-enough)" /}
+        {>"_sg/components/text-sample" title="Content" class="content-font" text="MuseoSans 16px 300 0.015em letter-spacing #454545 ($black-enough)" /}
+        {>"_sg/components/text-sample" title="Action text" class="action-text" text="MuseoSans 12px 500 #757575 ($default)" /}
+
+
     </section>
 
     <section id="links" class="sg-component">

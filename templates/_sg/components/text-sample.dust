@@ -1,0 +1,10 @@
+{!
+    parameters:
+        font: font variable name
+!}
+
+<section class="text-sample sg-component">
+    <h3>{?title}{title}{:else}{class}{/title}</h3>
+    <div class="{?class}{class}{/class}">{?class}{class}{/class}</div>
+    <div class="standard-body-font">{?text}{text}{/text}</div>
+</section>
