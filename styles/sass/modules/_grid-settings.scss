@@ -5,8 +5,8 @@ $visual-grid-color: #afa;
 
 $max-width: rem(1190);
 $grid-columns: 24;
-$column: 40;
-$gutter: 10;
+$column: 40px;
+$gutter: 10px;
 
 $tablet: new-breakpoint(max-width 768px 8);
 $mobile: new-breakpoint(max-width 480px 3);

@@ -188,6 +188,42 @@ h2 {
     }
 }
 
+
+// Grid samples
+
+.columns1of4 {
+  @include span-columns(6);
+  height: 45px;
+  background-color: $background-grey;
+  /* margin-right: $gutter; */
+}
+
+.columns3of4 {
+  @include span-columns(18);
+  height: 45px;
+  background-color: $background-grey;
+}
+
+.columns4of4 {
+  @include span-columns(24);
+  height: 45px;
+  margin-bottom: $gutter;
+  background-color: $background-grey;
+}
+
+.column-wrapper {
+  @include span-columns(24);
+  background-color: $background-grey;
+  padding: 40px;
+
+  .column-within {
+    @include span-columns(24);
+    background-color: $border-grey;
+    padding: 20px;
+    text-align: right;
+  }
+}
+
 // Colors
 .color {
     @include span-columns(6);
@@ -212,6 +248,22 @@ h2 {
     }
 }
 
+// Knewcons sample
+.knewcon {
+  float: left;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+
+  .knewcon-sample {
+    text-align: center;
+  }
+
+  .knewton-name {
+    text-align: center;
+  }
+}
 
 // Code sample
 .snippet,

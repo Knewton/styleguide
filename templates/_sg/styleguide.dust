@@ -16,7 +16,8 @@
         {>"_sg/sections/forms" /}
         {>"_sg/sections/colors" /}
         {>"_sg/sections/ui-components" /}
-        <section id="guidelines" title="Guidelines" class="sg-section"></section>
+        {>"_sg/sections/knewcons" /}
+        {>"_sg/sections/guidelines" /}
     </div>
 </div>
 

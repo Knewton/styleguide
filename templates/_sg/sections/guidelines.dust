@@ -1,1 +1,16 @@
-Here go a few guidelines on how to use styling rules.
+<section id="guidelines" title="Guidelines" class="sg-section">
+
+    Here go a few guidelines on how to use styling rules.
+
+    <section id="sass-guidelines" title="" class="sg-section">
+        <h1>How to write SCSS</h1>
+
+        Here's some stuff.
+    </section>
+
+    <section id="dust-guidelines" title="" class="sg-section">
+        <h1>How to write Dust</h1>
+
+        Here's some stuff.
+    </section>
+</section>

@@ -2,6 +2,7 @@
     <h2>Buttons</h2>
 
     <section id="large-buttons" class="sg-component">
+
         <h4>Large buttons</h4>
         {>"_sg/components/button" label="Four column" class="long"/}
         {>"_sg/components/button" label="Four column" class="long white-button"/}

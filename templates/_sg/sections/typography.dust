@@ -6,36 +6,68 @@
         <h4>Headings</h4>
 
         <section id="h1" class="sg-component">
-            <h1>Page heading</h1>
+            <h1>h1. Page heading</h1>
             <p>MuseoSans 300, 2em, #b5b5b5. Centered.</p>
+
+            We'll use h1 headings for: this, this and this.
         </section>
 
-        <section id="h1" class="sg-component">
-            <h2>A subheading</h2>
+        <section id="h2" class="sg-component">
+            <h2>h2. A subheading</h2>
             <p>MuseoSans 300, 21px, #b5b5b5</p>
+
+            We'll use h2 subheadings for: this, this and this.
         </section>
 
-        <section id="h1" class="sg-component">
-            <h3>Another heading, this time with a thin underline across the page</h3>
+        <section id="h3" class="sg-component">
+            <h3>h3. Another heading, this time with a thin underline across the page</h3>
             <p>MuseoSans 300, 21px, #b5b5b5</p>
+
+            We'll use h3 headings for: this, this and this.
         </section>
 
-        <section id="h1" class="sg-component">
-            <h4>Here's a section heading</h4>
+        <section id="h4" class="sg-component">
+            <h4>h4. Here's a section heading</h4>
             <p>MuseoSans 300, 18px, #b5b5b5</p>
+
+            We'll use h4 headings for: this, this and this.
         </section>
 
-        <section id="h1" class="sg-component">
-            <h5>Here's a small heading</h5>
+        <section id="h5" class="sg-component">
+            <h5>h5. Here's a small heading</h5>
             <p>MuseoSans 300, 16px, #757575</p>
+
+            We'll use h5 headings for: this, this and this.
         </section>
+
+        <pre>
+            <code lang="html">
+                &lt;h1&gtPage heading&lt;/h1&gt
+                &lt;h2&gtPage heading&lt;/h2&gt
+                &lt;h3&gtPage heading&lt;/h3&gt
+                &lt;h4&gtPage heading&lt;/h4&gt
+                &lt;h5&gtPage heading&lt;/h5&gt
+            </code>
+        </pre>
 
     </section>
 
-    <section id="copy" title="Some paragraph" class="sg-component">
-        <h4>Paragraphs</h4>
+    <section id="styles" title="Styles" class="sg-section">
 
-        <p>This is body copy 15/21 px Museo Sans 300 #555555 (#NOT) dolor sit amet, consectetur adipiscing elit. Proin semper consectetur lectus vitae dignissim. Ut tempor placerat lectus, id faucibus sem blandit non. Nullam porttitor risus turpis, quis auctor turpis semper nec. Morbi non justo pellentesque, varius ipsum at, lobortis justo. In tortor nibh, semper ac tempus vitae, porta eget sem. Suspendisse varius, urna eu vestibulum convallis, metus lorem adipiscing ligula, in dignissim augue orci ac lacus. Aliquam vel nisl blandit lectus cursus sollicitudin. Vivamus sed ipsum turpis. Sed non lectus dictum, vehicula eros vel, varius massa.</p>
+        <h4>Text styles</h4>
+
+        <section id="copy" title="Some paragraph" class="sg-component">
+            <p>This is body copy 15/21 px Museo Sans 300 #555555 (#NOT) dolor sit amet, consectetur adipiscing elit. Proin semper consectetur lectus vitae dignissim. Ut tempor placerat lectus, id faucibus sem blandit non. Nullam porttitor risus turpis, quis auctor turpis semper nec. Morbi non justo pellentesque, varius ipsum at, lobortis justo. In tortor nibh, semper ac tempus vitae, porta eget sem. Suspendisse varius, urna eu vestibulum convallis, metus lorem adipiscing ligula, in dignissim augue orci ac lacus. Aliquam vel nisl blandit lectus cursus sollicitudin. Vivamus sed ipsum turpis. Sed non lectus dictum, vehicula eros vel, varius massa.</p>
+        </section>
+
+        <section id="" class="sg-component">
+            <b>Some bold text.</b>
+        </section>
+
+        <section id="" class="sg-component">
+            <i>Some text in italices.</i>
+        </section>
+
     </section>
 
     <section id="links" class="sg-component">
