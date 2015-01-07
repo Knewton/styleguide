@@ -4,46 +4,30 @@
 %button {
     @include action-link-font;
     display: inline-block;
-    border: 3px solid $turquoise;
-    background: $turquoise;    
-    color: #fff;
     cursor: pointer;
-    width: 175px;
     margin: 0 5px;
-    /*padding: 5px 0;*/
-
-    text: {
-        align: center;
-        transform: uppercase;
-        decoration: none;
-    }
-
-    &:hover {
-        text-decoration: none !important;
-    }
+    text-align: center;
+    background: $turquoise;    
+    color: $white;
+    border: 3px solid $turquoise;
 
     &:hover:not(.disabled) {
         @include transition-active(.1s);
-        color: #fff;
+        color: $white;
         background: $dark-turquoise;
         border: 3px solid $dark-turquoise;
     }
 
     &.white-button {
-        border: 3px solid $turquoise;
-        padding: 0;
+        background: $white;
         color: $turquoise;
-        background: #fff;
+        border: 3px solid $turquoise;
 
         &:hover:not(.disabled) {
             @include transition-active(.1s);
-            color: #fff;
             background: $dark-turquoise;
-            border-color: $dark-turquoise;
-        }
-
-        &.short {
-            border: 1px solid $turquoise;
+            color: $white;
+            border: 3px solid $dark-turquoise;
         }
     }
 
@@ -81,6 +65,15 @@
     line-height: 18px;
     letter-spacing: 0.1em;
     padding: .2em 1em;
+
+    &.white-button {
+        border: 1px solid $turquoise;
+
+        &:hover:not(.disabled) {
+            @include transition-active(.1s);
+            border: 1px solid $dark-turquoise;
+        }
+    }    
 }
 
 .mini {
@@ -92,21 +85,21 @@
 button {
     &.group {
         @extend %button;
-        border: 1px solid $turquoise;
-        padding: 0;
-        color: $turquoise;
         background: $white;
+        color: $turquoise;
+        border: 1px solid $turquoise;
+        
+        min-width: 140px;
+        height: 25px;
+        padding: 0;
         margin: 0;
-        font-weight: 700;
+        
         font-size: 9px;
         line-height: 22px;
-        height: 25px;
         letter-spacing: 0.1em;        
 
         &:hover:not(.disabled) {
             @include transition-active(.1s);
-            color: $white;
-            background: $dark-turquoise;
             border: 1px solid $dark-turquoise;
         }
 

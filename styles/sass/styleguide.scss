@@ -7,6 +7,12 @@
 $header-background: $black-enough;
 $header-text: $white;
 
+/*
+*
+* STYLE GUIDE FONTS (WE NEED TYPEKIT)
+*
+*/
+
 @font-face {
   font-family: "museo-sans";
   src: url("../fonts/MuseoSans_300.otf");
@@ -35,6 +41,12 @@ $header-text: $white;
   font-style: normal;
 }
 
+/*
+*
+* STYLE GUIDE STYLE
+*
+*/
+
 html,
 body {
     margin: 0;
@@ -47,14 +59,6 @@ body {
     @include outer-container(1200px);
 
     margin: 2em auto;
-}
-
-h1 {
-  margin: 1rem 0;
-}
-
-h2 {
-  margin: 0;
 }
 
 .sg-header {
@@ -107,17 +111,28 @@ h2 {
 .sg-nav {
     @include span-columns(6);
     @include pad(20px 10px);
+
     background-color: $white;
     height: 100%;
 
     ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0 1rem;
+      list-style-type: none;
+      margin: 0;
+      padding: 0 1rem;
     }
 
     li {
-        line-height: 35px;
+      line-height: 35px;
+
+      ul {
+        display: none;
+      }
+    }
+
+    .active {
+      + ul {
+        display: block;
+      }
     }
 
     a {
@@ -137,12 +152,17 @@ h2 {
 .sg-sections {
     @include span-columns(18);
 
-    h1 {
-      text-align: center;
+    h1,
+    h2 {
+      &.sg {
+        margin: 1rem 0;
+      }
     }
 
     h4 {
-      margin: 0;
+      &.sg {
+        margin: 0;
+      }
     }
 
     > .sg-section {
@@ -187,7 +207,11 @@ h2 {
 }
 
 
-// Grid samples
+/* 
+*
+* Grid samples 
+*
+*/
 
 .columns1of4 {
   @include span-columns(6);
@@ -222,36 +246,69 @@ h2 {
   }
 }
 
-// Typography samples
+/* 
+*
+* Typography samples 
+*
+*/
+
 .text-sample {
   margin: 20px 0;
 }
 
-// Colors
-.color {
-    @include span-columns(6);
+.standard-body-font { @include standard-body-font; }
+.headline-font { @include headline-font; }
+.subhead-font { @include subhead-font; }
+.head4-font { @include head4-font; }
+.action-link-font { @include action-link-font; }
+.std-link-font { @include std-link-font; }
+.tab-font { @include tab-font; }
+.pending-request-font { @include pending-request-font; }
+.sidebar-font { @include sidebar-font; }
+.result-paginator-font { @include result-paginator-font; }
+.input-font { @include input-font; }
+.input-label-font { @include input-label-font; }
+.table-row-font { @include table-row-font; }
 
-    text-align: center;
+/*
+*
+* Colors 
+*
+*/
 
-    .color-sample {
-        $color-sample-height: 48px;
-        height: $color-sample-height;
-        line-height: $color-sample-height;
-        font-size: 1.5em;
-
-        &.light {
-            color: $white;
-        }
-    }
-
-    .color-name {
-        $color-name-height: 48px;
-        height: $color-name-height;
-        line-height: $color-name-height;
-    }
+.color-row {
+  @include span-columns(24);
 }
 
-// Knewcons sample
+.color {
+  @include span-columns(6);
+
+  text-align: center;
+
+  .color-sample {
+      $color-sample-height: 48px;
+      height: $color-sample-height;
+      line-height: $color-sample-height;
+      font-size: 1.5em;
+
+      &.light {
+          color: $white;
+      }
+  }
+
+  .color-name {
+      $color-name-height: 48px;
+      height: $color-name-height;
+      line-height: $color-name-height;
+  }
+}
+
+/*
+*
+* Knewcons
+*
+*/
+
 .knewcon {
   float: left;
   margin: 10px;
@@ -268,7 +325,12 @@ h2 {
   }
 }
 
-// Code sample
+/*
+*
+* Code samples
+*
+*/
+
 .snippet,
 .sample {
   background: $background-grey;
@@ -288,8 +350,6 @@ h2 {
     padding: 0;  
   }
 }
-
-
 
 // Code snippets
 /*

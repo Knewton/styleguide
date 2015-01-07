@@ -11,6 +11,9 @@ $gutter: 10px;
 $tablet: new-breakpoint(max-width 768px 8);
 $mobile: new-breakpoint(max-width 480px 3);
 
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
 //$widescreen-w: 1200px;
 //$still-pretty-wide-w: 1100px;
 //$wide-ish-w: 1066px;

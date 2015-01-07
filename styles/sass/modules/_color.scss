@@ -1,37 +1,52 @@
-$black-enough: #454545;
-$ashen-grey: #b5b5b5;
-$border-grey: #ccc;
-$grey-on-grey: #555;
-$light-grey: #ededed;
-$very-light-grey: #f9fafc;
-$white: #fff;
-$default: #757575;
+/* White - grey - black */
 
-$background-grey: #f1f1f1;
+$black-enough:      #454545;
+$grey-on-grey:      #555;
+$default:           #757575;
+$ashen-grey:        #b5b5b5;
+$border-grey:       #ccc;
+$light-grey:        #ededed;
+$very-light-grey:   #f9fafc;
+$background-grey:   #f1f1f1;
+$white:             #fff;
 
-$lime: #7aac60;
-$lime-tint: #f6fdf0;
-$blueberry: #10a1d5;
-$blueberry-tint: #e0f6fe;
-$gerbera: #f05400;
-$gerbera-tint: #ffefe7;
-$sweet-orange: #f15815;
-$navy: #2d4e6a;
-$brick: #db524b;
+/* Secondary colors */
 
-$dark-turquoise: #159fa3;
-$medium-turquoise: #1bacb6;
-$turquoise: #1abcc1;
+$lime:              #7aac60;
+$lime-tint:         #f6fdf0;
 
-$body-text: $black-enough;
-$dimmed-text: $ashen-grey;
+$blueberry:         #10a1d5;
+$blueberry-tint:    #e0f6fe;
 
-$in-progress-text: $blueberry;
-$in-progress-bg: $blueberry-tint;
+$gerbera:           #f05400;
+$gerbera-tint:      #ffefe7;
 
-$submitted-text: $gerbera;
-$submitted-bg: $gerbera-tint;
-$published-text: $lime;
-$published-bg: $lime-tint;
+$sweet-orange:      #f15815;
 
-$error-color: $brick;
+$navy:              #2d4e6a;
+
+$brick:             #db524b;
+
+/* Knewton blues */
+
+$turquoise:         #1abcc1;
+$medium-turquoise:  #1bacb6;
+$dark-turquoise:    #159fa3;
+
+$blue:              #02b4d0;
+$dark-blue:         #234166;
+
+/* Text colors */
+
+$body-text:         $black-enough;
+$dimmed-text:       $ashen-grey;
+
+$in-progress-text:  $blueberry;
+$in-progress-bg:    $blueberry-tint;
+
+$submitted-text:    $gerbera;
+$submitted-bg:      $gerbera-tint;
+$published-text:    $lime;
+$published-bg:      $lime-tint;
+
+$error-color:       $brick;

@@ -4,7 +4,10 @@
 !}
 
 <section class="text-sample sg-component">
-    <h3>{?title}{title}{:else}{class}{/title}</h3>
-    <div class="{?class}{class}{/class}">{?class}{class}{/class}</div>
+    <div class="{?class}{class}{/class}">{?title}{title}{:else}{/title}</div>
+    {?code}<pre><code lang="css">@include {class};</code></pre>{/code}
     <div class="standard-body-font">{?text}{text}{/text}</div>
+    <div class="standard-body-font">Use cases: {?usage}{usage}{/usage}</div>
+
+
 </section>

@@ -11,8 +11,8 @@
     </nav>
 
     <div class="sg-sections">
-        {>"_sg/sections/layout" /}
         {>"_sg/sections/typography" /}
+        {>"_sg/sections/layout" /}
         {>"_sg/sections/forms" /}
         {>"_sg/sections/colors" /}
         {>"_sg/sections/ui-components" /}

@@ -34,22 +34,8 @@ h3 {
 }
 
 h4 {
-    @include content-title-font;
+    @include head4-font;
     line-height: rem(27);
-    color: $default;
-    font-weight: 500;
-}
-
-h5 {
-    @include content-subtitle-font;
-    margin: 0 0 rem(5);
-}
-
-h6 {
-    @include standard-body-font;
-    font-weight: 500;
-    color: $default;
-    margin: 0 0 rem(5);
 }
 
 .link,
@@ -91,24 +77,3 @@ a {
 .input-label {
     @include input-label-font;
 }
-
-
-.standard-body-font { @include standard-body-font; }
-.headline-font { @include headline-font; }
-.subhead-font { @include subhead-font; }
-.action-link-font { @include action-link-font; }
-.header-tab-font { @include header-tab-font; }
-.tab-font { @include tab-font; }
-.pending-request-font { @include pending-request-font; }
-.link-font { @include link-font; }
-.std-link { @include std-link; }
-.std-body-link { @include std-body-link; }
-.subtle-font { @include subtle-font; }
-.sidebar-font { @include sidebar-font; }
-.result-paginator-font { @include result-paginator-font; }
-.counter-font { @include counter-font; }
-.action-font { @include action-font; }
-.input-font { @include input-font; }
-.table-row-font { @include table-row-font; }
-.content-font { @include content-font; }
-.action-text { @include action-text; }

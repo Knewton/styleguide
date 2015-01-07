@@ -1,5 +1,10 @@
 <section id="knewcons" title="Knewton Icons" class="sg-section">
-    <h1>Knewton Icons</h1>
+    <h1 class="sg">Knewton Icons</h1>
+
+    To do:
+    <ul>
+        <li>When and how to use these</li>
+    </ul>
 
     {>"_sg/components/knewcon" knewcon="icon-settings" name="Settings" /}
     {>"_sg/components/knewcon" knewcon="icon-notify" name="Notify" /}

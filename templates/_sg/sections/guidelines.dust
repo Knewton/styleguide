@@ -1,21 +1,24 @@
 <section id="guidelines" title="Developer guidelines" class="sg-section">
+    <h1 class="sg">General development guidelines</h1>
 
     Here go a few guidelines on how to use styling rules.
 
+    To do:
+    
     <section id="sass-guidelines" title="" class="sg-section">
-        <h1>How to write SCSS</h1>
+        <h2 class="sg">How to write SCSS</h2>
 
         Here's some stuff.
     </section>
 
     <section id="dust-guidelines" title="" class="sg-section">
-        <h1>How to write Dust</h1>
+        <h2 class="sg">How to write Dust</h2>
 
         Here's some stuff.
     </section>
 
     <section id="visual-communication" title="" class="sg-section">
-        <h1>General visual communication guidelines</h1>
+        <h2 class="sg">General visual communication guidelines</h2>
 
         Here's some stuff about the use of our logo, our colors and other visual communication devices.
     </section>
