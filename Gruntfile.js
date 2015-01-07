@@ -7,6 +7,23 @@ module.exports = function (grunt) {
 
     // Define the configuration for all the tasks
     grunt.initConfig({
+        express: {
+            all: {
+                options: {
+                    bases: ['dist/'],
+                    port: 8080,
+                    hostname: "0.0.0.0",
+                    livereload: true
+                }
+            }
+        },
+
+        open: {
+            all: {
+                path: 'http://localhost:8080/index.htm'
+            }
+        },
+
         growl : {
             sassCompile : {
                 title : 'SASS COMPILE DONE!',
@@ -169,5 +186,5 @@ module.exports = function (grunt) {
     grunt.registerTask('build', 'Builds.', ['scsslint', 'copy', 'dust', 'compass']);
     grunt.registerTask('run', 'Builds and watches the style guide for changes.', ['build', 'watch']);
     grunt.registerTask('deploy', 'Deploys to github', ['build', 'copy:deploy', 'githubPages:target']);
-
+    grunt.registerTask('server', ['express', 'open', 'watch']);
 };
