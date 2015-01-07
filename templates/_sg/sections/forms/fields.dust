@@ -20,7 +20,7 @@
     <section id="fields-input-text" class="sg-component">
         <h4>Disabled text input</h4>
 
-        {>"_sg/components/input-text" class="disabled" /}
-        {@snippet src="_sg/components/input-text" class="disabled" /}
+        {>"_sg/components/input-text" class="disabled" disabled="true" /}
+        {@snippet src="_sg/components/input-text" class="disabled" disabled="true" /}
     </section>
 </section>

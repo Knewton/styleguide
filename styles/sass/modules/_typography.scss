@@ -49,14 +49,6 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
     line-height: 30px;
 }
 
-@mixin header-tab-font {
-    /* ./partials/_framed-box.scss */
-    /* Same as action-link, diff line-height */
-    @include tab-font;
-
-    line-height: 28px;
-}
-
 @mixin pending-request-font {
     //./partials/_module-comments-table.scss
 

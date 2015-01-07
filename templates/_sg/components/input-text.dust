@@ -1,1 +1,1 @@
-<input type="text" name="field-name" placeholder="Field value" {?class}class="{class}"{/class}/>
+<input type="text" {?disabled}disabled{/disabled} name="field-name" placeholder="Field value" {?class}class="{class}"{/class}/>

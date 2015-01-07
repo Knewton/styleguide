@@ -2,6 +2,7 @@ body {
     @include standard-body-font;
     color: $grey-on-grey;
     background: $background-grey;
+    margin: 0;
 }
 
 h1 {

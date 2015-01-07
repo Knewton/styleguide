@@ -58,14 +58,6 @@
 
     </section>
 
-    <section id="links" class="sg-component">
-        <h4>Links</h4>
-
-        <p><a href="" class="link">Here's a link</a></p>
-        <p><a href="" class="link action">Here's an action link</a></p>
-        <p><a href="" class="link action disabled">Here's a disabled action link</a></p>
-    </section>
-
     <section id="lists" title="Lists" class="sg-component">
 
         <h4>Lists</h4>

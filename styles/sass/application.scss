@@ -1,9 +1,11 @@
 @import "knewcons";
 
 @import "modules/base";
+@import "partials/alert";
 @import "partials/easydropdown";
 @import "partials/forms";
 @import "partials/page-control-pagination";
+@import "partials/spinner";
 @import "partials/standard-button";
 @import "partials/switch-button";
 @import "partials/tables";
@@ -27,8 +29,3 @@
 
 // HIGHLIGHTJS
 @import "highlightjs";
-
-body {
-  @include standard-body-font;
-  margin: 0;
-}

@@ -1,0 +1,41 @@
+/**
+*
+NEEDS REVIEW
+*
+**/
+
+.spinner {
+    overflow: hidden;
+    position: relative;
+
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: block;
+        z-index: 2000;
+    }
+
+    &:after {
+        content: "\e00c";
+        font-family: knewcons;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+        font-size: 19px;
+        position: absolute;
+        top: 50%;
+        margin-top: -7px;
+        left: 50%;
+        margin-left: -7px;
+        color: rgb(27, 172, 182);
+        z-index: 2010;
+    }
+}

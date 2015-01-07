@@ -1,0 +1,29 @@
+%alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 0;
+}
+
+.alert-success {
+    @extend %alert;
+    background-color: $green-tint;
+    color: $green;
+}
+
+.alert-info {
+    @extend %alert;
+    background-color: $turquoise-tint;
+    color: $turquoise;
+}
+
+.alert-warning {
+    @extend %alert;
+    background-color: $gold-tint;
+    color: $gold;
+}
+
+.alert-danger {
+    @extend %alert;
+    background-color: $gerbera-tint;
+    color: $gerbera;
+}
