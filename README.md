@@ -20,6 +20,9 @@ To run:
     grunt run
     open dist/index.htm
 
+Or to run with live automatic browser reloading:
+  
+    grunt server
 
 To configure your sublime text to use only 2 spaces per tab for scss, install the scss plugin,
 open a .scss file, and open preferences > settings - more > syntax specific, and paste:

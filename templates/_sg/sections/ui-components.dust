@@ -14,10 +14,17 @@
     <section id="" title="" class="sg-component">
         <h2>Alerts</h2>
         Here are some alerts notes and stuff.
-        {>"_sg/components/alert" class="alert-info" text="Here's an informational alert." /}
-        {>"_sg/components/alert" class="alert-success" text="Here's an alert about success."/}
-        {>"_sg/components/alert" class="alert-warning" text="Here's a warning alert."/}
-        {>"_sg/components/alert" class="alert-danger" text="Here's an alert about danger."/}
+        {>"_sg/components/alert" class="alert-info" text="An informational alert." /}
+        {@snippet src="_sg/components/alert" class="alert-info" text="An informational alert." /}
+
+        {>"_sg/components/alert" class="alert-success" text="An alert about success."/}
+        {@snippet src="_sg/components/alert" class="alert-success" text="An alert about success." /}
+
+        {>"_sg/components/alert" class="alert-warning" text="A warning alert."/}
+        {@snippet src="_sg/components/alert" class="alert-warning" text="A warning alert."/}
+
+        {>"_sg/components/alert" class="alert-danger" text="An alert with danger."/}
+        {@snippet src="_sg/components/alert" class="alert-danger" text="An alert with danger."/}
     </section>
 
     <section id="" title="" class="sg-component">

@@ -1,5 +1,5 @@
 <section id="fields" title="Fields" class="sg-section">
-    <h2>Fields</h2>
+    <h3>Fields</h3>
 
     <section id="fields-input-text" class="sg-component">
         <h4>Text input</h4>

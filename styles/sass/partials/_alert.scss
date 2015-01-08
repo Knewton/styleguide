@@ -2,6 +2,7 @@
     padding: 15px;
     margin-bottom: 20px;
     border: 0;
+    text-align: center;
 }
 
 .alert-success {
@@ -24,6 +25,6 @@
 
 .alert-danger {
     @extend %alert;
-    background-color: $gerbera-tint;
-    color: $gerbera;
+    background-color: $orange-tint;
+    color: $orange;
 }

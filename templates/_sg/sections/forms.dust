@@ -13,7 +13,7 @@
 
     <section id="other" title="Other inputs" class="sg-section">
 
-        <h2>Other inputs</h2>
+        <h3>Other inputs</h3>
 
         <section id="dropdown-buttons" class="sg-component">
             <h4>Dropdown</h4>
@@ -34,7 +34,7 @@
         </section>
 
         <section id="radio-button" class="sg-component">
-            <h2>Radio buttons</h2>
+            <h4>Radio buttons</h4>
             {>"_sg/components/radio-button" label="pick a date!" /}
 
             <div class="sample">
@@ -43,12 +43,12 @@
         </section>
 
         <section id="checkbox" class="sg-component">
-            <h2>Checkboxes</h2>
+            <h4>Checkboxes</h4>
             {>"_sg/components/checkbox" label="pick a date!" /}
         </section>
 
         <section id="switch-buttons" class="sg-component">
-            <h2>Toggle</h2>
+            <h4>Toggle</h4>
             {>"_sg/components/switch-button" class="switch-on" label="toggle" /}
             {>"_sg/components/switch-button" class="switch-off"  label="Toggle"/}
 

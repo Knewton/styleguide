@@ -15,6 +15,13 @@ $header-text: $white;
 
 @font-face {
   font-family: "museo-sans";
+  src: url("../fonts/MuseoSans_100.otf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "museo-sans";
   src: url("../fonts/MuseoSans_300.otf");
   font-weight: 300;
   font-style: normal;
@@ -97,7 +104,7 @@ body {
 
         a {
           text-decoration: none;
-          color: $very-light-grey;
+          color: $background-grey;
         }
 
     }
@@ -297,9 +304,7 @@ body {
   }
 
   .color-name {
-      $color-name-height: 48px;
-      height: $color-name-height;
-      line-height: $color-name-height;
+    margin: .5rem 0;
   }
 }
 
@@ -313,7 +318,7 @@ body {
   float: left;
   margin: 10px;
   padding: 20px;
-  border: 1px solid $light-grey;
+  border: 1px solid $border-grey;
   border-radius: 5px;
 
   .knewcon-sample {

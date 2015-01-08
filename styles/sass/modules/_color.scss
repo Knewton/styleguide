@@ -1,62 +1,64 @@
-/* White - grey - black */
+/* 
+*
+* White - greyscale - blacks
+*
+*/
 
-$black-enough:      #454545;
-$grey-on-grey:      #555;
-$default:           #757575;
-$ashen-grey:        #b5b5b5;
-$border-grey:       #ccc;
-$light-grey:        #ededed;
-$very-light-grey:   #f9fafc;
-$background-grey:   #f1f1f1;
-$white:             #fff;
+$black-enough:      #454545;    /* Name in palette (NP): Header / default state */
+$grey-on-grey:      #545454;    /* NP: text */
+$default:           #757575;    /* NP: - */
 
-/* Secondary colors */
+$ashen-grey:        #b5b5b5;    /* NP: - */
+$border-grey:       #ccc;       /* NP: Border / rules */
 
-$gold:              #f4b600;
-$gold-tint:         #fef2d8;
+$background-grey:   #f1f1f1;    /* NP: Form / disabled */
+$white:             #fff;       /* NP: White */
 
-$green:             #b6cd1b;
-$green-tint:        #f3fceb;
+/* 
+    Secondary colors 
+*/
 
-$red:               #ef5610;
-$red-tint:          #e4f7fb;
+$gold:              #f3b528;    /* NP: Yellow */
+$gold-tint:         #fef2d8;    /* NP: - */
 
-$blueberry:         #10a1d5;
-$blueberry-tint:    #e0f6fe;
+$orange:            #ee5723;    /* NP: Orange */
+$orange-tint:       #ffefe7;    /* NP: - */
 
-$lime:              #7aac60;
-$lime-tint:         #f6fdf0;
+$red:               #cf2e33;    /* NP: Red */
+$red-tint:          #cf2e33;    /* NP: - */
 
-$gerbera:           #f05400;
-$gerbera-tint:      #ffefe7;
+$pink:              #ee5ca0;    /* NP: Pink */
+$pink-tint:         #fefef7;    /* NP: - */
 
-$sweet-orange:      #f15815;
+$green:             #b7cb34;    /* NP: Green / Yellow */
+$green-tint:        #f3fceb;    /* NP: - */
 
-$navy:              #2d4e6a;
+$dark-blue:         #234166;    /* NP: Dark blue */
+$blue:              #02b4d0;    /* NP: Light blue */
+$blue-tint:         #edf8f9;    /* NP: Light teal */
 
-$brick:             #db524b;
 
-/* Knewton blues */
+/* 
+    Knewton blues 
+*/
 
-$turquoise:         #1abcc1;
-$medium-turquoise:  #1bacb6;
-$dark-turquoise:    #159fa3;
-$turquoise-tint:    #eff9fa;
+$turquoise:         #1abcc1;    /* NP: Clickable */
+$dark-turquoise:    #159fa3;    /* NP: Hover */
+$turquoise-tint:    #cceef1;    /* NP: Clickable light */
 
-$blue:              #02b4d0;
-$dark-blue:         #234166;
-
-/* Text colors */
+/* 
+    Text colors alias
+*/
 
 $body-text:         $black-enough;
 $dimmed-text:       $ashen-grey;
 
-$in-progress-text:  $blueberry;
-$in-progress-bg:    $blueberry-tint;
+$in-progress-text:  $blue;
+$in-progress-bg:    $blue-tint;
 
-$submitted-text:    $gerbera;
-$submitted-bg:      $gerbera-tint;
-$published-text:    $lime;
-$published-bg:      $lime-tint;
+$submitted-text:    $orange;
+$submitted-bg:      $orange-tint;
+$published-text:    $green;
+$published-bg:      $green-tint;
 
-$error-color:       $brick;
+$error-color:       $red;
