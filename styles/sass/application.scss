@@ -1,17 +1,5 @@
 @import "knewcons";
 
-@import "modules/base";
-@import "partials/alert";
-@import "partials/easydropdown";
-@import "partials/forms";
-@import "partials/page-control-pagination";
-@import "partials/spinner";
-@import "partials/standard-button";
-@import "partials/switch-button";
-@import "partials/tables";
-@import "partials/tabs";
-@import "partials/typography";
-
 // FORM STYLING
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
@@ -26,6 +14,19 @@
 // ACCORDION
 @import "bootstrap/panels";
 @import "bootstrap/component-animations";
+
+@import "modules/base";
+@import "partials/alert";
+@import "partials/easydropdown";
+@import "partials/forms";
+@import "partials/modals";
+@import "partials/page-control-pagination";
+@import "partials/spinner";
+@import "partials/standard-button";
+@import "partials/switch-button";
+@import "partials/tables";
+@import "partials/tabs";
+@import "partials/typography";
 
 // HIGHLIGHTJS
 @import "highlightjs";

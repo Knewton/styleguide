@@ -1,0 +1,53 @@
+.modal {
+    .modal-header {
+        border: 0;
+    }
+
+    .close {
+        float: right;
+        background: none;
+        border: 0;
+        color: $border-grey;
+        font-size: 28px;
+
+        &:hover,
+        &:focus {
+            @include transition-color(.2s);
+            color: $grey-on-grey;
+            text-decoration: none;
+            cursor: pointer;
+            outline: 0;
+        }        
+    }
+
+    .modal-content {
+        border-radius: 0;
+        box-shadow: none;
+
+        .modal-body {
+            padding: 40px;
+        }
+    }
+
+    .modal-footer {
+        border: 0;
+    }    
+
+    .cancel {
+        @include action-link-font;
+        display: inline-block;
+        margin: 0 5px;
+        text-align: center;
+        padding: 6px 12px;
+        background: none;
+        border: 0;
+        cursor: pointer;
+        outline: 0;
+    }
+}
+
+.modal-backdrop {
+    &.fade.in {
+        opacity: 0.5;
+    }
+}

@@ -68,7 +68,7 @@
     background-repeat: no-repeat;
     //background-image: inline-image('../styles/images/dropdown-arrow.png');
     //background-image: url('../images/dropdown-arrow.png');
-    background-image: url('../images/dropdown-arrow-active.png');
+    background-image: url('../images/dropdown-arrow.png');
 }
 
 .dropdown:not(.disabled):hover .carat {
@@ -207,22 +207,25 @@
 .dropdown {
     position: relative;
     display: table;
-    border-collapse: separate;    
-    padding-right: 0;
-    padding-left: 30px;
-    border: 1px solid #ccc;
+    border-collapse: separate;  
+    padding-right: 30px;
+    padding-left: 0;
+    border: 1px solid $border-grey;
 
     .selected {
         border: 0;
-        color: $black-enough;
-        font-weight: 700;
-        letter-spacing: 0.05em;
+        text-transform: none;
     }
 
     .carat {
-        left: 0;
+        right: 0;
         border: 0;
-    }    
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
 }
 
 .alt-dropdown .dropdown {
@@ -235,19 +238,19 @@
     .carat,
     .selected,
     li {
-        border-color: #ccc;
+        border-color: $border-grey;
         text-align: left;
     }
 
     .selected {
-        color: #fff;
-        background-color: #ccc;
+        color: $white;
+        background-color: $border-grey;
         border-right: 0;
     }
 
     .carat {
-        background-color: #ccc;
-        background-image: url('../images/dropdown-arrow-alt.png');
+        background-color: $border-grey;
+        background-image: url('../images/dropdown-arrow.png');
         border-left: 0;
     }
 }

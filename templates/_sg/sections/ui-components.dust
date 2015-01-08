@@ -29,7 +29,9 @@
 
     <section id="" title="" class="sg-component">
         <h2>Modal</h2>
-        Here are some modal notes and stuff.
+        <p>Here are some modal notes and stuff.</p>
+
+        {>"_sg/components/modal" /}
     </section>
 
     <section id="" title="" class="sg-component">

@@ -11,6 +11,10 @@
     color: $white;
     border: 3px solid $turquoise;
 
+    &:focus {
+        outline: 0;
+    }
+
     &:hover:not(.disabled) {
         @include transition-active(.1s);
         color: $white;

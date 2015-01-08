@@ -314,6 +314,10 @@ body {
 *
 */
 
+.knewcons-display {
+  @include span-columns(24);
+}
+
 .knewcon {
   float: left;
   margin: 10px;
@@ -355,6 +359,17 @@ body {
     padding: 0;  
   }
 }
+
+/*
+*
+* UI Components
+*
+*/
+
+.modal-body {
+    padding: 80px 40px;
+}
+
 
 // Code snippets
 /*

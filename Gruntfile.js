@@ -141,6 +141,7 @@ module.exports = function (grunt) {
                     src: ['bower_components/jquery/dist/jquery.min.js',
                           'bower_components/highlightjs/highlight.pack.js',
                           'bower_components/easydropdown/jquery.easydropdown.min.js',
+                          'bower_components/bootstrap/js/modal.js',
                           'bower_components/dustjs-linkedin/dist/dust-core.js',
                           'bower_components/dustjs-linkedin-helpers/dist/dust-helpers.js'],
                     dest: 'dist/js/',

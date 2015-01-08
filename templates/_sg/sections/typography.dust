@@ -13,18 +13,18 @@
 
         <h3>Headings</h3>
         
-        {>"_sg/components/text-sample" title="Headline. h1" class="headline-font" text="MuseoSans 48pt 300 #555555 ($grey-on-grey)" code="1" usage="..." /}
+        {>"_sg/components/text-sample" title="Headline. h1" class="headline-font" text="MuseoSans 48pt 300 #545454 ($grey-on-grey)" code="1" usage="..." /}
 
-        {>"_sg/components/text-sample" title="Subheadline. h2, h3 (?)." class="subhead-font" text="MuseoSans 28px 900 #555555 ($grey-on-grey)" code="1" usage="..."/}
+        {>"_sg/components/text-sample" title="Subheadline. h2, h3 (?)." class="subhead-font" text="MuseoSans 28px 900 #545454 ($grey-on-grey)" code="1" usage="..."/}
 
-        {>"_sg/components/text-sample" title="Section headline. h4" class="head4-font" text="MuseoSans 18px 900 #555555 ($grey-on-grey)" code="1" usage="..."/}
+        {>"_sg/components/text-sample" title="Section headline. h4" class="head4-font" text="MuseoSans 18px 900 #545454 ($grey-on-grey)" code="1" usage="..."/}
         
 
         <h3>Body text</h3>
-        {>"_sg/components/text-sample" title="Body copy" class="standard-body-font" text="MuseoSans 16px 300 #555555 ($grey-on-grey)" code="1" /}
+        {>"_sg/components/text-sample" title="Body copy" class="standard-body-font" text="MuseoSans 16px 300 #545454 ($grey-on-grey)" code="1" /}
         
         <h3>Link fonts</h3>
-        {>"_sg/components/text-sample" title="Action link" class="action-link-font" text="MuseoSans 12px 700 uppercase 0.05em letter-spacing #555555 ($grey-on-grey)" code="1" /}
+        {>"_sg/components/text-sample" title="Action link" class="action-link-font" text="MuseoSans 12px 700 uppercase 0.05em letter-spacing #545454 ($grey-on-grey)" code="1" /}
 
         <section class="text-sample sg-component">
             <div class="link action">Action link active</div>
@@ -38,19 +38,19 @@
 
         {>"_sg/components/text-sample" title="Input" class="input-font" text="MuseoSans 14px 500 #b5b5b5 ($ashen-grey)" /}
         
-        {>"_sg/components/text-sample" title="Input label" class="input-label-font" text="MuseoSans 16px 700 #555555 ($grey-on-grey)" /}
+        {>"_sg/components/text-sample" title="Input label" class="input-label-font" text="MuseoSans 16px 700 #545454 ($grey-on-grey)" /}
 
         
         <h3>Table fonts</h3>
-        {>"_sg/components/text-sample" title="Table row" class="table-row-font" text="MuseoSans 16px 300 0.015em #555555 ($grey-on-grey)" /}
+        {>"_sg/components/text-sample" title="Table row" class="table-row-font" text="MuseoSans 16px 300 0.015em #545454 ($grey-on-grey)" /}
 
         <h3>Navigation fonts</h3>
         
-        {>"_sg/components/text-sample" title="Tab font" class="tab-font" text="MuseoSans 12px 700 uppercase 0.05em letter-spacing #555555 ($grey-on-grey)" code="1" /}
+        {>"_sg/components/text-sample" title="Tab font" class="tab-font" text="MuseoSans 12px 700 uppercase 0.05em letter-spacing #545454 ($grey-on-grey)" code="1" /}
 
-        {>"_sg/components/text-sample" title="Sidebar font" class="sidebar-font" text="MuseoSans 14px 500 0.05em letter-spacing #555555 ($grey-on-grey)" /}
+        {>"_sg/components/text-sample" title="Sidebar font" class="sidebar-font" text="MuseoSans 14px 500 0.05em letter-spacing #545454 ($grey-on-grey)" /}
         
-        {>"_sg/components/text-sample" title="Result paginator" class="result-paginator-font" text="MuseoSans 14px 500 0.015em letter-spacing #555555 ($grey-on-grey)" /}
+        {>"_sg/components/text-sample" title="Result paginator" class="result-paginator-font" text="MuseoSans 14px 500 0.015em letter-spacing #545454 ($grey-on-grey)" /}
 
         <h3>Other stuff</h3>
         {>"_sg/components/text-sample" title="Pending request font (?)" class="pending-request-font" text="MuseoSans 12px 500 uppercase 0.025em letter-spacing" /}
