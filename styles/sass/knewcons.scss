@@ -12,9 +12,8 @@
 
 }
 
-[data-icon]:before {
+%knewcon {
   font-family: "knewcons" !important;
-  content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -25,17 +24,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+[data-icon]:before {
+  @extend %knewcon;
+  content: attr(data-icon);
+}
+
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "knewcons" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @extend %knewcon;
 }
 
 .icon-settings:before {
@@ -128,4 +124,28 @@
 
 .icon-right-open-big:before {
   content: "\e016";
+}
+
+.icon-letter-mail:before {
+  content: "\e017";
+}
+
+.icon-help:before {
+  content: "\e018";
+}
+
+.icon-primitive-dot:before {
+  content: "\e019";
+}
+
+.icon-design-graphic-tablet-streamline-tablet:before {
+  content: "\e01a";
+}
+
+.icon-graduation-cap:before {
+  content: "\e01b";
+}
+
+.icon-left-open-big:before {
+  content: "\e01c";
 }

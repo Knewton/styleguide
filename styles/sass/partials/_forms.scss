@@ -1,46 +1,103 @@
 // FROM SCRATCH
 
-input,
+[type=text],
+[type=email],
 .input-text,
 .thick-input {
     @include fill-parent;
-    @include input-font;
 
+    transition: border-color .5s;
+
+    background: #fff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    height: 2rem;
     padding: 0 .5rem;
-    border: 1px solid $border-grey;
+    border: 1px solid #d0d0d0;
 
-    &.disabled {
-        color: $border-grey;
-        background: $background-grey;
-        border: 0;
-        cursor: not-allowed;
-        box-shadow: none;
+    &.error {
+        border-color: #f00;
+        color: #f00;
+
+        &:focus {
+            border-color: #f00;
+        }
+    }
+
+    &.success {
+        border-color: #86d886;
+        color: #008000;
+
+        &:focus {
+            border-color: #86d886;
+        }
     }
 
     &:focus {
         outline: none;
         border: 1px solid $turquoise;
-        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     }
 }
 
 .input-text {
     position: relative;
 
-    // Pencil icon
-    &:not(:focus):after {
-        content: "\e012";
+    @mixin icon {
         position: absolute;
         font-family: knewcons;
-        color: $ashen-grey;
+        top: 0;
         right: 0;
         padding: 0 .5rem;
+    }
+
+    &.success:after,
+    &.success:not(:focus):after {
+        @include icon;
+        content: "\e006";
+        color: #86d886;
+    }
+
+    &.error:after,
+    &.error:not(:focus):after {
+        @include icon;
+        content: "\e005";
+        color: #f00;
+    }
+
+    &.loading:after,
+    &.loading:not(:focus):after {
+        @include icon;
+        content: "loading";
+        color: #a9a9a9;
+    }
+
+    // Pencil icon
+    &:not(:focus):after {
+        @include icon;
+        content: "\e012";
+        color: #a9a9a9;
     }
 
     // Placeholder
     &:empty:not(:focus):before {
         content: attr(data-placeholder);
-        color: $ashen-grey;
+        color: #a9a9a9;
+    }
+}
+
+.di-menu {
+    button {
+        height: 2rem;
+        width: 2rem;
+        border: 0;
+        font-size: .9rem;
+        padding: 0;
+        margin: 0;
+
+        &.button + .button {
+            margin-left: 0;
+        }
     }
 }
 
@@ -50,7 +107,7 @@ input,
     }
 
     &.date {
-        @include input-font;        
+        @include input-font;
         position: relative;
         display: table;
         border-collapse: separate;
@@ -61,16 +118,16 @@ input,
         background-color: $white;
         background-image: none;
         color: $grey-on-grey;
-        
+
         border: 1px solid $border-grey;
         border-right: 0;
         border-radius: 0;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-        
+
         width: 100%;
         height: 34px;
-        
+
         margin-bottom: 0;
         padding: 6px 12px;
 
@@ -82,7 +139,7 @@ input,
     }
 
     .input-group-addon {
-        @include input-font;        
+        @include input-font;
         text-align: center;
         width: 1%;
         white-space: nowrap;

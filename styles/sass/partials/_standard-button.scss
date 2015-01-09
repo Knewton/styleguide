@@ -1,15 +1,21 @@
 @import "modules/transition-effects";
 @import "modules/base";
 
-%button {
+%button,
+.button,
+[type=submit] {
     @include action-link-font;
     display: inline-block;
     cursor: pointer;
     margin: 0 5px;
+    height: 2rem;
+    line-height: 1.5rem;
     text-align: center;
-    background: $turquoise;    
+    background: $turquoise;
     color: $white;
-    border: 3px solid $turquoise;
+    border-style: solid;
+    border-color: $turquoise;
+    border-width: 3px;
 
     &:focus {
         outline: 0;
@@ -19,19 +25,18 @@
         @include transition-active(.1s);
         color: $white;
         background: $dark-turquoise;
-        border: 3px solid $dark-turquoise;
+        border-color: $dark-turquoise;
     }
 
     &.white-button {
         background: $white;
         color: $turquoise;
-        border: 3px solid $turquoise;
 
         &:hover:not(.disabled) {
             @include transition-active(.1s);
             background: $dark-turquoise;
             color: $white;
-            border: 3px solid $dark-turquoise;
+            border-color: $dark-turquoise;
         }
     }
 
@@ -43,7 +48,7 @@
     &:disabled {
         color: $border-grey;
         background: $background-grey;
-        border: 3px solid $background-grey;
+        border-color: $background-grey;
         cursor: not-allowed;
     }
 }
@@ -52,22 +57,22 @@
 .long {
     @extend %button;
     width: 190px;
-    height: 35px;
+    height: 2rem;
 }
 
 .medium {
     @extend %button;
     width: 140px;
-    height: 35px;
+    height: 2rem;
 }
 
 .short {
     @extend %button;
     width: 90px;
-    height: 25px;   
+    height: 1.5rem;
     font-size: 9px;
-    line-height: 18px;
     letter-spacing: 0.1em;
+    line-height: initial;
     padding: .2em 1em;
 
     &.white-button {
@@ -75,9 +80,9 @@
 
         &:hover:not(.disabled) {
             @include transition-active(.1s);
-            border: 1px solid $dark-turquoise;
+            border-color: $dark-turquoise;
         }
-    }    
+    }
 }
 
 .mini {
@@ -92,19 +97,19 @@ button {
         background: $white;
         color: $turquoise;
         border: 1px solid $turquoise;
-        
+
         min-width: 140px;
         height: 25px;
         padding: 0;
         margin: 0;
-        
+
         font-size: 9px;
         line-height: 22px;
-        letter-spacing: 0.1em;        
+        letter-spacing: 0.1em;
 
         &:hover:not(.disabled) {
             @include transition-active(.1s);
-            border: 1px solid $dark-turquoise;
+            border-color: $dark-turquoise;
         }
 
         + button {
