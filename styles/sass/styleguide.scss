@@ -7,6 +7,16 @@
 $header-background: $black-enough;
 $header-text: $white;
 
+@mixin breakpoint($point) {
+  @if $point == mobile {
+    @media screen and (max-width: 320px) { @content; }
+  } @else if $point == tablet {
+    @media screen and (max-width: 767px) and (min-width: 321px) { @content; }
+  } @else if $point == desktop {
+    @media screen and (min-width: 768px) { @content; } 
+  }
+}
+
 /*
 *
 * STYLE GUIDE FONTS (WE NEED TYPEKIT)
@@ -60,6 +70,10 @@ body {
     padding: 0;
 
     background-color: $background-grey;
+
+    h1 {
+        @include breakpoint(mobile) { font-size: 28pt; }      
+    }
 }
 
 @mixin main {
@@ -86,13 +100,16 @@ body {
     }
 
     .logo-header {
-        @include span-columns(6);
         margin-top: 10px;
+        float: left;
+
+        @include breakpoint(tablet) { display: none; }
+        @include breakpoint(mobile) { display: none; }
+        @include breakpoint(desktop) { @include span-columns(6); }
     }
 
     h1 {
         @include main;
-        @include span-columns(18);
 
         font-weight: lighter;
         font-size: 1rem;
@@ -101,6 +118,14 @@ body {
         margin-bottom: 0;
         line-height: 60px;
         vertical-align: middle;
+
+        @include breakpoint(tablet) { @include span-columns(24); }
+        @include breakpoint(mobile) { @include span-columns(24); }
+        @include breakpoint(desktop) { 
+          @include span-columns(18);
+
+          margin: auto;
+        }
 
         a {
           text-decoration: none;
@@ -116,11 +141,15 @@ body {
 }
 
 .sg-nav {
-    @include span-columns(6);
     @include pad(20px 10px);
 
     background-color: $white;
     height: 100%;
+    margin-bottom: 1em;    
+
+    @include breakpoint(desktop) { @include span-columns(6); }
+    @include breakpoint(mobile) { @include span-columns(24); }
+    @include breakpoint(tablet) { @include span-columns(24); }
 
     ul {
       list-style-type: none;
@@ -130,6 +159,9 @@ body {
 
     li {
       line-height: 35px;
+      @media screen and (max-width: 767px) {
+        text-align: center;
+      }
 
       ul {
         display: none;
@@ -157,7 +189,8 @@ body {
 
 
 .sg-sections {
-    @include span-columns(18);
+    @include breakpoint(mobile) { @include span-columns(24); }
+    @include breakpoint(desktop) { @include span-columns(18); }
 
     h1,
     h2 {
@@ -288,9 +321,11 @@ body {
 }
 
 .color {
-  @include span-columns(6);
-
   text-align: center;
+
+  @include breakpoint(mobile) { @include span-columns(24); }
+  @include breakpoint(tablet) { @include span-columns(12); }
+  @include breakpoint(desktop) { @include span-columns(6); }
 
   .color-sample {
       $color-sample-height: 48px;
