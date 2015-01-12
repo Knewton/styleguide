@@ -44,12 +44,13 @@
 
         <section id="checkbox" class="sg-component">
             <h4>Checkboxes</h4>
-            {>"_sg/components/checkbox" label="pick a date!" /}
+            {>"_sg/components/checkbox" text="Yo guys" /}
+            {@snippet src="_sg/components/checkbox" /}
         </section>
 
         <section id="switch-buttons" class="sg-component">
             <h4>Toggle</h4>
-            {>"_sg/components/switch-button" class="switch-on" label="toggle" /}
+            {>"_sg/components/switch-button" class="switch-on" label="toggle" /} 
             {>"_sg/components/switch-button" class="switch-off"  label="Toggle"/}
 
             <div class="sample">

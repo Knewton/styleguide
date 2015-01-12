@@ -86,7 +86,7 @@ module.exports = function (grunt) {
                 javascriptsDir: 'scripts',
                 importPath: ['bower_components',
                              'bower_components/bootstrap-sass-twbs/assets/stylesheets',
-                             'bower_components/bourbon/dist',
+                             'bower_components/bourbon/app/assets/stylesheets',
                              'bower_components/neat/app/assets/stylesheets'],
                 relativeAssets: false,
                 assetCacheBuster: false,

@@ -1,1 +1,4 @@
-<input type="checkbox" id="{?idp}{idp}{/idp}" checked />Hello, I'm a checkbox.
+<div class="checkbox">
+    <input type="checkbox" value="None" id="checkbox0" name="check" />
+    <label for="checkbox0"></label>
+</div>
