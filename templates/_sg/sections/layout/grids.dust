@@ -6,14 +6,6 @@
 
     <pre><code>$grid-columns: 12; $gutter: 10px;</code></pre>
 
-    To do:
-    <ul>
-        <li>How to use bourbon columns?</li>
-        <li>What's the general column usage?</li>
-        <li>Screen-size related changes?</li>
-        <li>Gutter?</li>
-    </ul>
-
     <section id="grid-sample" class="sg-component">
         <h4>Main column system</h4>
         <div class="columns1of4"></div>

@@ -176,13 +176,7 @@
     overflow-y: auto;
 }
 
-/* DROP DOWN LIST ITEMS 
-
-.dropdown li {
-    list-style: none;
-}
-*/
-/* .focus class is also added on hover */
+/* DROP DOWN LIST ITEMS */
 
 .dropdown li {
     &.focus {

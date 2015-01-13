@@ -12,8 +12,6 @@ table {
     }
 
     tr:first-child {
-        font-size: 45px;
-
         td {
             border-top: 0;
         }
@@ -25,8 +23,6 @@ table {
         padding: 15px 50px 15px 0;
         border-top: 1px solid $border-grey;
         color: $default;
-        font-size: 15px;
-        line-height: 15px;
 
         a {
             text-decoration: none;

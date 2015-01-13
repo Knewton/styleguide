@@ -90,7 +90,7 @@
 .datepicker td {
     &.old,
     &.new {
-      color: #999;
+      color: $grey-on-grey;
     }
 }
 
@@ -99,7 +99,7 @@
     &.active:hover {
       color: $white;
       background-color: $turquoise-tint;
-      border-color: #04c #04c #002a80;
+      border: 0;
       text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     }
     
@@ -125,7 +125,7 @@
     &.active[disabled],
     &.active:hover[disabled] {
       color: $white;
-      background-color: #04c;
+      background-color: $turquoise-tint;
     }
 }
 
@@ -144,13 +144,13 @@
 
 .datepicker td span {
     &:hover {
-        background: #eee;
+        background: $border-grey;
     }
 
     &.active {
       color: $white;
-      background-color: #006dcc;
-      border-color: #04c #04c #002a80;
+      background-color: $dark-turquoise;
+      border: 0;
       text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     }
 }
@@ -162,16 +162,11 @@
 .datepicker td .active.disabled,
 .datepicker td .active[disabled] {
   color: $white;
-  background-color: #04c;
-}
-
-.datepicker td .active:active,
-.datepicker td .active.active {
   background-color: $dark-turquoise;
 }
 
 .datepicker td .old {
-  color: #999;
+  color: $grey-on-grey;
 }
 
 .datepicker th {

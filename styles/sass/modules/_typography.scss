@@ -17,7 +17,7 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
     // ./partials/_global.scss
 
     font: {
-        size: rem(48);
+        size: 28px;
         weight: 300;
     }
     line-height: 1.4em;
@@ -26,7 +26,7 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
 
 @mixin subhead-font {
     font: {
-        size: 28px;
+        size: 21px;
         weight: 300;
     }
     color: $grey-on-grey;

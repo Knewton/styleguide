@@ -1,13 +1,6 @@
 <section id="forms" title="Forms" class="sg-section">
     <h1 class="sg">Form elements</h1>
 
-    To do:
-    <ul>
-        <li>General form guidelines</li>
-        <li>Form validation</li>
-        <li>Checkboxes and radiobuttons</li>
-    </ul>
-
     {>"_sg/sections/forms/fields" /}
     {>"_sg/sections/forms/buttons" /}
 

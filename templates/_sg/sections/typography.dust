@@ -2,20 +2,13 @@
 
     <h1 class="sg">Typopgraphy</h1>
 
-    To do:
-    <ul>
-        <li>Set a typography standard across all designs</li>
-        <li>Use cases for both headings and font mixins</li>
-        <li>Standarize
-    </ul>
-
     <section id="styles" title="Styles" class="sg-section">
 
         <h3>Headings</h3>
         
-        {>"_sg/components/text-sample" title="Headline. h1" class="headline-font" text="MuseoSans 48pt 300 #545454 ($grey-on-grey)" code="1" usage="..." /}
+        {>"_sg/components/text-sample" title="Headline. h1" class="headline-font" text="MuseoSans 28px 300 #545454 ($grey-on-grey)" code="1" usage="..." /}
 
-        {>"_sg/components/text-sample" title="Subheadline. h2, h3 (?)." class="subhead-font" text="MuseoSans 28px 900 #545454 ($grey-on-grey)" code="1" usage="..."/}
+        {>"_sg/components/text-sample" title="Subheadline. h2, h3 (?)." class="subhead-font" text="MuseoSans 21px 900 #545454 ($grey-on-grey)" code="1" usage="..."/}
 
         {>"_sg/components/text-sample" title="Section headline. h4" class="head4-font" text="MuseoSans 18px 900 #545454 ($grey-on-grey)" code="1" usage="..."/}
         
