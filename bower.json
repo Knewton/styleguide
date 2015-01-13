@@ -24,6 +24,7 @@
     "dustjs-linkedin-helpers": "~1.5.0",
     "highlightjs": "~8.4.0",
     "easydropdown": "~2.1.4",
-    "bourbon": "~4.1.0"
+    "bourbon": "~4.1.0",
+    "bootstrap-datepicker": "~1.3.1"
   }
 }

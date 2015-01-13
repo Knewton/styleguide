@@ -1,3 +1,7 @@
-<div class="input-group date date-field">
+<div class="input-group date date-field" id="dp1">
     <input type="text" name="endsAt" {#endsAt}value="{@formatDate date="{.}" format="MM/DD/YYYY" /}"{/endsAt} placeholder="mm/dd/yyyy" class="form-control"><span class="input-group-addon"><span class="icon icon-calendar"></span></span>
 </div>
+
+<script>
+    $("#dp1").datepicker();
+</script>

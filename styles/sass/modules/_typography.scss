@@ -130,6 +130,17 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
     color: $ashen-grey;
 }
 
+@mixin dropdown-font {
+    @include standard-body-font;
+    
+    line-height: 30px;
+    font: {
+        size: 14px;
+        weight: 300;
+    }
+    color: $grey-on-grey;
+}
+
 @mixin input-label-font {
     // ./partials/_easydropdown.scss
 
