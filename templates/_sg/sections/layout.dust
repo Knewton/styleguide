@@ -2,12 +2,6 @@
 
     {>"_sg/sections/layout/grids" /}
 
-    To do:
-    <ul>
-        <li>Use cases</li>
-        <li>Is pagination correct?</li>
-    </ul>
-
     <section id="tables" title="Tables" class="sg-section">
         <h2 class="sg">Tables</h2>
         {>"_sg/components/table" /}

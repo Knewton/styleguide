@@ -17,7 +17,7 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
     // ./partials/_global.scss
 
     font: {
-        size: rem(48);
+        size: 28px;
         weight: 300;
     }
     line-height: 1.4em;
@@ -26,7 +26,7 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
 
 @mixin subhead-font {
     font: {
-        size: 28px;
+        size: 21px;
         weight: 300;
     }
     color: $grey-on-grey;
@@ -128,6 +128,17 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
         weight: 500;
     }
     color: $ashen-grey;
+}
+
+@mixin dropdown-font {
+    @include standard-body-font;
+    
+    line-height: 30px;
+    font: {
+        size: 14px;
+        weight: 300;
+    }
+    color: $grey-on-grey;
 }
 
 @mixin input-label-font {

@@ -1,5 +1,3 @@
-// FROM SCRATCH
-
 [type=text],
 [type=email],
 .input-text,
@@ -8,30 +6,36 @@
 
     transition: border-color .5s;
 
-    background: #fff;
+    background: $white;
     margin-bottom: 1rem;
     font-size: 1rem;
     line-height: 2rem;
     height: 2rem;
     padding: 0 .5rem;
-    border: 1px solid #d0d0d0;
+    border: 1px solid $border-grey;
 
     &.error {
-        border-color: #f00;
-        color: #f00;
+        border-color: $red;
+        color: $red;
 
         &:focus {
-            border-color: #f00;
+            border-color: $red;
         }
     }
 
     &.success {
-        border-color: #86d886;
-        color: #008000;
+        border-color: $green-success;
+        color: $green-success;
 
         &:focus {
-            border-color: #86d886;
+            border-color: $green-success;
         }
+    }
+
+    &.disabled {
+        background: $background-grey;
+        border-color: $background-grey;
+        color: $ashen-grey;
     }
 
     &:focus {
@@ -55,34 +59,34 @@
     &.success:not(:focus):after {
         @include icon;
         content: "\e006";
-        color: #86d886;
+        color: $green-success;
     }
 
     &.error:after,
     &.error:not(:focus):after {
         @include icon;
         content: "\e005";
-        color: #f00;
+        color: $red;
     }
 
     &.loading:after,
     &.loading:not(:focus):after {
         @include icon;
         content: "loading";
-        color: #a9a9a9;
+        color: $ashen-grey;
     }
 
     // Pencil icon
     &:not(:focus):after {
         @include icon;
         content: "\e012";
-        color: #a9a9a9;
+        color: $ashen-grey;
     }
 
     // Placeholder
     &:empty:not(:focus):before {
         content: attr(data-placeholder);
-        color: #a9a9a9;
+        color: $ashen-grey;
     }
 }
 

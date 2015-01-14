@@ -1,8 +1,6 @@
 @import "modules/transition-effects";
 @import "modules/base";
 
-/* NEEDS REVISION A SACO */
-
 /* --- EASYDROPDOWN METRO THEME --- */
 
 /* PREFIXED CSS */
@@ -32,7 +30,7 @@
 .dropdown {
     position: relative;
     cursor: pointer;
-    background: #fff;
+    background: $white;
     float: left;
     padding-right: 30px;
 
@@ -46,11 +44,11 @@
 }
 
 .dropdown:hover {
-    background: #fff;
+    background: $white;
 }
 
 .dropdown.focus:after {
-    background: #0180d1;
+    background: $turquoise;
 }
 
 /* CARAT */
@@ -63,11 +61,10 @@
     z-index: 5;
     right: 0;
     top: 0;
-    border: 1px solid #eaeaea;
+    border: 1px solid $border-grey;
     background-position: center center;
     background-repeat: no-repeat;
     //background-image: inline-image('../styles/images/dropdown-arrow.png');
-    //background-image: url('../images/dropdown-arrow.png');
     background-image: url('../images/dropdown-arrow.png');
 }
 
@@ -107,10 +104,9 @@
 
 .dropdown .selected,
 .dropdown li {
-    @include input-font;
+    @include dropdown-font;
 
-    text-transform: uppercase;
-    border: 1px solid #eaeaea;
+    border: 1px solid $border-grey;
     border-right: 0;
     display: block;
     padding: 0 8px;
@@ -121,9 +117,9 @@
 
 .dropdown.disabled .selected,
 .dropdown.disabled .carat {
-    border-color: #bebebe;
-    background-color: #eaeaea;
-    color: #bebebe;
+    border-color: $ashen-grey;
+    background-color: $border-grey;
+    color: $border-grey;
 }
 
 .dropdown li {
@@ -144,7 +140,7 @@
 /* DROP DOWN WRAPPER */
 
 .dropdown div {
-    border: 1px solid #eaeaea;
+    border: 1px solid $border-grey;
     position: absolute;
     height: 0;
     left: 0;
@@ -152,7 +148,7 @@
     top: 28px;
     overflow: hidden;
     opacity: 0;
-    background: #fff;
+    background: $white;
 }
 
 /* Height is adjusted by JS on open */
@@ -172,7 +168,7 @@
     top: 0;
     height: 100%;
     width: 150px;
-    list-style: none;
+    list-style-type: none;
     overflow: hidden;
 }
 
@@ -183,22 +179,16 @@
 /* DROP DOWN LIST ITEMS */
 
 .dropdown li {
-    list-style: none;
-}
-
-/* .focus class is also added on hover */
-
-.dropdown li {
     &.focus {
-        background-color: #edf9fa;
-        color: #1bacb6;
+        background-color: $turquoise-tint;
+        color: $turquoise;
     }
 }
 
 .dropdown li {
     &.active {
-        background-color: #9da2a6;
-        color: #fff;
+        background-color: $blue;
+        color: $white;
     }
 }
 
@@ -226,32 +216,8 @@
         list-style-type: none;
     }
 
-}
-
-.alt-dropdown .dropdown {
-    width: 105px;
-
-    ul {
-        width: 105px;
-    }
-
-    .carat,
-    .selected,
     li {
-        border-color: $border-grey;
-        text-align: left;
+        list-style-type: none;
     }
 
-    .selected {
-        color: $white;
-        background-color: $border-grey;
-        border-right: 0;
-    }
-
-    .carat {
-        background-color: $border-grey;
-        background-image: url('../images/dropdown-arrow.png');
-        border-left: 0;
-    }
 }
-
