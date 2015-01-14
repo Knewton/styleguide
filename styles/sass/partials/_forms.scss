@@ -2,6 +2,8 @@
 
 [type=text],
 [type=email],
+[type=password],
+[type=date],
 .input-text,
 .thick-input {
     @include fill-parent;
