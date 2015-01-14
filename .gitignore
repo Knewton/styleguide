@@ -3,5 +3,13 @@ node_modules
 bower_components
 dist/styles
 dist/js/templates.js
+dist/js/bootstrap-datepicker.js
+dist/js/dust-core.js
+dist/js/dust-helpers.js
+dist/js/dust-runtime.js
+dist/js/highlight.pack.js
+dist/js/jquery.easydropdown.min.js
+dist/js/jquery.min.js
+dist/js/modal.js
 .DS_Store
 _site
