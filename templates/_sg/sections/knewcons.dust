@@ -1,6 +1,9 @@
 <section id="knewcons" title="Knewton Icons" class="sg-section">
     <h1 class="sg">Knewton Icons</h1>
 
+    <p>Icons are implemented using <a href="http://www.fontastic.me">Fontastic</a>, a service that translates vector icons into a font. This allows to use unicode to put them in place and style them with regular CSS.</p>
+    <p>To use one of these icons, it is enough to set a new div with a class name like the one next each one of the following icons. The icon will be automatically appended to the div content.<p>
+        <pre><code>&lt;div class="icon-settings"&gt;&lt;/div&gt;</code></pre>
 
     <div class="knewcons-display">
         {>"_sg/components/knewcon" knewcon="icon-settings" name="Settings" /}
@@ -27,12 +30,4 @@
         {>"_sg/components/knewcon" knewcon="icon-angle-right" name="Angle right" /}
         {>"_sg/components/knewcon" knewcon="icon-right-open-big" name="Angle big" /}
     </div>
-
-    <section id="knewcon-example" title="Knewton Icon" class="sg-component">
-
-        <h4>Usage</h4>
-
-        {@snippet src="_sg/components/knewcon" knewcon="icon-user" name="Icon user" /}
-    </section>
-
 </section>
