@@ -5,6 +5,9 @@
 @import "bootstrap/mixins";
 @import "bootstrap/forms";
 
+// DATEPICKER
+@import "bootstrap/dropdowns";
+
 // MODAL
 @import "bootstrap/modals";
 @import "bootstrap/close";
@@ -19,13 +22,14 @@
 @import "modules/base";
 @import "partials/alert";
 @import "partials/checkbox";
+@import "partials/datepicker";
 @import "partials/easydropdown";
 @import "partials/forms";
 @import "partials/modals";
 @import "partials/page-control-pagination";
+@import "partials/radio";
 @import "partials/spinner";
 @import "partials/standard-button";
-@import "partials/switch-button";
 @import "partials/tables";
 @import "partials/tabs";
 @import "partials/typography";
