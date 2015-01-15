@@ -5,7 +5,6 @@
     <ul>
         <li>General form guidelines</li>
         <li>Form validation</li>
-        <li>Checkboxes and radiobuttons</li>
     </ul>
 
     {>"_sg/sections/forms/fields" /}
@@ -35,29 +34,21 @@
 
         <section id="radio-button" class="sg-component">
             <h4>Radio buttons</h4>
-            {>"_sg/components/radio-button" label="pick a date!" /}
+            {>"_sg/components/radio" label="pick a date!" /}
 
             <div class="sample">
-                {@snippet src="_sg/components/radio-button" /}
+                {@snippet src="_sg/components/radio" /}
             </div>
         </section>
 
         <section id="checkbox" class="sg-component">
             <h4>Checkboxes</h4>
-            {>"_sg/components/checkbox" text="Yo guys" /}
-            {@snippet src="_sg/components/checkbox" /}
+            {>"_sg/components/checkbox" class="checkbox-tick" id="1"/}
+            {@snippet src="_sg/components/checkbox" class="checkbox-tick" /}
+
+            {>"_sg/components/checkbox" class="checkbox-tag" id="t" label="Toggle"/}
+            {@snippet src="_sg/components/checkbox" class="checkbox-tag" label="Toggle" /}
         </section>
-
-        <section id="switch-buttons" class="sg-component">
-            <h4>Toggle</h4>
-            {>"_sg/components/switch-button" class="switch-on" label="toggle" /} 
-            {>"_sg/components/switch-button" class="switch-off"  label="Toggle"/}
-
-            <div class="sample">
-                {@snippet src="_sg/components/switch-button" label="toggle" /}
-            </div>
-        </section>
-
     </section>
 
 </section>

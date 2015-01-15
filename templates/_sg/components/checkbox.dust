@@ -1,4 +1,4 @@
-<div class="checkbox">
-    <input type="checkbox" value="None" id="checkbox0" name="check" />
-    <label for="checkbox0"></label>
+<div class="checkbox {?class}{class}{/class}">
+    <input type="checkbox" value="None" id="{?id}{id}{:else}id{/id}" name="check" />
+    <label for="{?id}{id}{:else}id{/id}">{?label}{label}{/label}</label>
 </div>

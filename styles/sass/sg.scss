@@ -236,15 +236,6 @@ body {
     h4 {
       margin: 10px 0;
     }
-
-    ul {
-    list-style-type: none;
-
-      li:before {
-          content: "·"; 
-          font-size: 12px;
-      }
-    }
 }
 
 
@@ -285,6 +276,16 @@ body {
     padding: 20px;
     text-align: right;
   }
+}
+
+/*
+*
+* Forms, inputs, UI
+*
+*/
+
+.dropdown {
+  margin: 10px auto;
 }
 
 /*
