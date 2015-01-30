@@ -1,5 +1,4 @@
-
 <div class="knewcon">
     <div class="knewcon-sample {?knewcon}{knewcon}{/knewcon}"></div>
-    <div class="knewcon-name">{?name}{name}{/name}</div>
+    <div class="knewcon-name">{?knewcon}{knewcon}{/knewcon}</div>
 </div>
