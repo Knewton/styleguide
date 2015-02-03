@@ -1,5 +1,7 @@
 [type=text],
 [type=email],
+[type=password],
+[type=date],
 .input-text,
 .thick-input {
     @include fill-parent;
@@ -119,7 +121,7 @@
         content: "\e00d";
         right: .5rem;
     }
-    
+
     input {
         border-radius: 0;
         box-shadow: none;
@@ -129,7 +131,7 @@
             box-shadow: none;
             outline: none;
             border: 1px solid $turquoise;
-        }          
+        }
     }
 }
 
