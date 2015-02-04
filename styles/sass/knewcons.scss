@@ -9,6 +9,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 %knewcon {
     font-family: "knewcons" !important;
     font-style: normal !important;
@@ -20,122 +21,162 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 [data-icon]:before {
     @extend %knewcon;
     content: attr(data-icon);
 }
+
+.knewcon,
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
     @extend %knewcon;
 }
+
 .icon-settings:before {
     content: "\e000";
 }
+
 .icon-notify:before {
     content: "\e001";
 }
+
 .icon-user:before {
     content: "\e002";
 }
+
 .icon-search:before {
     content: "\e003";
 }
+
 .icon-caret-right:before {
     content: "\e004";
 }
+
 .icon-cancel:before {
     content: "\e005";
 }
+
 .icon-check:before {
     content: "\e006";
 }
+
 .icon-derived-topic:before {
     content: "\e007";
 }
+
 .icon-target-topic:before {
     content: "\e00a";
 }
+
 .icon-trashcan:before {
     content: "\e009";
 }
+
 .icon-catalog:before {
     content: "\e008";
 }
+
 .icon-share:before {
     content: "\e00b";
 }
+
 .icon-calendar:before {
     content: "\e00d";
 }
+
 .icon-target-hex-solid:before {
     content: "\e00c";
 }
+
 .icon-target-hex-outlined:before {
     content: "\e00e";
 }
+
 .icon-arrow:before {
     content: "\e00f";
 }
+
 .icon-three-bars:before {
     content: "\e010";
 }
+
 .icon-home:before {
     content: "\e011";
 }
+
 .icon-pencil:before {
     content: "\e012";
 }
+
 .icon-users:before {
     content: "\e013";
 }
+
 .icon-user-add:before {
     content: "\e014";
 }
+
 .icon-angle-right:before {
     content: "\e015";
 }
+
 .icon-right-open-big:before {
     content: "\e016";
 }
+
 .icon-letter-mail:before {
     content: "\e017";
 }
+
 .icon-help:before {
     content: "\e018";
 }
+
 .icon-primitive-dot:before {
     content: "\e019";
 }
+
 .icon-design-graphic-tablet-streamline-tablet:before {
     content: "\e01a";
 }
+
 .icon-graduation-cap:before {
     content: "\e01b";
 }
+
 .icon-left-open-big:before {
     content: "\e01c";
 }
+
 .icon-question:before {
     content: "\e01d";
 }
+
 .icon-media-video:before {
     content: "\e01e";
 }
+
 .icon-media-text:before {
     content: "\e01f";
 }
+
 .icon-media-image:before {
     content: "\e020";
 }
+
 .icon-history-sequence:before {
     content: "\e021";
 }
+
 .icon-history-single:before {
     content: "\e022";
 }
+
 .icon-history-current:before {
     content: "\e023";
 }
+
 .icon-plus-circled:before {
     content: "\e024";
 }
