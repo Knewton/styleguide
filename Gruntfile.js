@@ -50,6 +50,7 @@ module.exports = function (grunt) {
                     wrapper: false,
                     runtime: true,
                     relative: true,
+                    whitespace: true,
                     basePath: 'templates/'
                 }
             }

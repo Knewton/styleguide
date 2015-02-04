@@ -68,11 +68,13 @@
         };
 
         function highlightSnippets() {
-            hljs.configure({
-                tabReplace: '   ',
-                useBR: true
+            $('code[lang=html]').each(function() {
+                // remove pre/post space
+                this.innerHTML = this.innerHTML.replace(/^[ \n]+|[ \n]+$/g, '');
+
+                // highlight block
+                hljs.highlightBlock(this);
             });
-            hljs.initHighlightingOnLoad();
         };
 
         dust.render("_sg/styleguide", {}, function(err, out) {
