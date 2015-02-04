@@ -4,19 +4,25 @@ function safe_tags(str) {
 
 dust.helpers.snippet = function(chunk, context, bodies, params) {
     var src = dust.helpers.tap(params.src, chunk, context);
+    if (src) {
+        // render template given in the src parameter
+        var html;
+        dust.render(src, params, function(err, out) {
+            if (err) throw err;
+            html = out;
+        });
 
-    // Make sure the template has been loaded
-    var result;
-    //dust.loadSource(src);
-    dust.render(src, params, function(err, out) {
-        if (err) throw err;
-        //out =DOMformatter(out)
-        out = safe_tags(out);
-        //var s = '<pre class="snippet">'+ out + '</pre>';
-        var s = '<pre class="snippet"><code lang="html">'+ out + '</code></pre>';
-        result = chunk.write(s);
-    });
-    return result;
+        return chunk.write('<pre class="snippet"><code lang="html">')
+            .write(safe_tags(html))
+            .write('</code></pre>');
+    } else {
+        // render the body
+        return chunk.capture(bodies.block, context, function(html, chunk) {
+            chunk.write('<pre class="snippet"><code lang="html">')
+                .write(safe_tags(html))
+                .end('</code></pre>');
+        });
+    }
 }
 
 function indentor(multiplier)
@@ -44,7 +50,7 @@ function recursiveWalker(element, indent)
         var elementEndTag = elements[elements.length-1]; //get the last tag.
 
         //write the opening tag with proper indenting to the console. end with new line \n
-        documentDOMConsole.innerHTML += indenting + elementTag + "\n"; 
+        documentDOMConsole.innerHTML += indenting + elementTag + "\n";
 
         //get the innerText of the top element, not the childs using the function getElementText
         var elementText = getElementText(element.children[i]);
