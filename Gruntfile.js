@@ -84,6 +84,8 @@ module.exports = function (grunt) {
                 cssDir: 'dist/styles/css',
                 generatedImagesDir: 'dist/styles/css/images/generated',
                 javascriptsDir: 'scripts',
+                httpFontsPath: '../fonts/',
+                httpImagesPath: '../images/',
                 importPath: ['bower_components',
                              'bower_components/bootstrap-sass-twbs/assets/stylesheets',
                              'bower_components/bootstrap-datepicker/css',
