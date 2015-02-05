@@ -33,21 +33,61 @@
         </section>
 
         <section id="radio-button" class="sg-component">
-            <h4>Radio buttons</h4>
-            {>"_sg/components/radio" label="pick a date!" /}
+            <h4>Radio buttons (block)</h4>
+            <form>
+                {>"_sg/components/radio" label="Option 1" checked="checked" /}
+                {>"_sg/components/radio" label="Option 2" /}
+                {>"_sg/components/radio" label="Option 3 (disabled)" disabled="disabled" /}
+            </form>
 
-            <div class="sample">
-                {@snippet src="_sg/components/radio" /}
-            </div>
+            {@snippet}
+{>"_sg/components/radio" label="Option 1" checked="checked" /}
+{>"_sg/components/radio" label="Option 2" /}
+{>"_sg/components/radio" label="Option 3" disabled="disabled" /}
+            {/snippet}
+
+            <br />
+            <h4>Radio buttons (inline)</h4>
+            <form>
+                {>"_sg/components/radio" label="Option 1" checked="checked" inline="true" /}
+                {>"_sg/components/radio" label="Option 2" inline="true" /}
+                {>"_sg/components/radio" label="Option 3 (disabled)" disabled="disabled" inline="true" /}
+            </form>
+
+            {@snippet}
+{>"_sg/components/radio" label="Option 1" checked="checked" inline="true" /}
+{>"_sg/components/radio" label="Option 2" inline="true" /}
+{>"_sg/components/radio" label="Option 3" disabled="disabled" inline="true" /}
+            {/snippet}
         </section>
 
         <section id="checkbox" class="sg-component">
-            <h4>Checkboxes</h4>
-            {>"_sg/components/checkbox" class="checkbox-tick" id="1"/}
-            {@snippet src="_sg/components/checkbox" class="checkbox-tick" /}
+            <h4>Checkboxes (tick style)</h4>
+            <form>
+                {>"_sg/components/checkbox" class="checkbox-tick" id="1" label="Option 1" checked="checked" /}
+                {>"_sg/components/checkbox" class="checkbox-tick" id="2" label="Option 2" /}
+                {>"_sg/components/checkbox" class="checkbox-tick" id="3" label="Option 3 (disabled)" disabled="disabled" /}
+            </form>
 
-            {>"_sg/components/checkbox" class="checkbox-tag" id="t" label="Toggle"/}
-            {@snippet src="_sg/components/checkbox" class="checkbox-tag" label="Toggle" /}
+            {@snippet}
+{>"_sg/components/checkbox" class="checkbox-tick" id="1" label="Option 1" checked="checked" /}
+{>"_sg/components/checkbox" class="checkbox-tick" id="2" label="Option 2" /}
+{>"_sg/components/checkbox" class="checkbox-tick" id="3" label="Option 3 (disabled)" disabled="disabled" /}
+            {/snippet}
+
+            <br />
+            <h4>Checkboxes (tag style)</h4>
+            <form>
+                {>"_sg/components/checkbox" class="checkbox-tag" id="1" label="Option 1" checked="checked" /}
+                {>"_sg/components/checkbox" class="checkbox-tag" id="2" label="Option 2" /}
+                {>"_sg/components/checkbox" class="checkbox-tag" id="3" label="Option 3 (disabled)" disabled="disabled" /}
+            </form>
+
+            {@snippet}
+{>"_sg/components/checkbox" class="checkbox-tag" id="1" label="Option 1" checked="checked" /}
+{>"_sg/components/checkbox" class="checkbox-tag" id="2" label="Option 2" /}
+{>"_sg/components/checkbox" class="checkbox-tag" id="3" label="Option 3 (disabled)" disabled="disabled" /}
+            {/snippet}
         </section>
     </section>
 
