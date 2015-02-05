@@ -57,8 +57,14 @@
 
     <section class="sg-component">
         <h2>Spinner</h2>
-        Here are some spinner notes and stuff.
+        <p>
+            The spinner is part setup as an :after element. It rotates using css animations.
+            Just add the class "spinner" to any element to make it a spinner.
+        </p>
         {>"_sg/components/spinner" /}
+        {@snippet}
+            {>"_sg/components/spinner" /}
+        {/snippet}
     </section>
 
 </section>
