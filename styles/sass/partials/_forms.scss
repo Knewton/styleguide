@@ -147,3 +147,9 @@
     }
 }
 
+// Validation errors
+label.error {
+    font-size: .8rem;
+    color: $error-color;
+}
+
