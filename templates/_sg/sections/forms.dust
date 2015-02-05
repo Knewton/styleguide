@@ -42,15 +42,17 @@
                 By default radio buttons are displayed as blocks.
             </p>
             <form>
-                {>"_sg/components/radio" label="Option 1" checked="checked" /}
-                {>"_sg/components/radio" label="Option 2" /}
-                {>"_sg/components/radio" label="Option 3 (disabled)" disabled="disabled" /}
+                {>"_sg/components/radio" label="Option 1" checked="checked" name="name1" /}
+                {>"_sg/components/radio" label="Option 2" name="name1" /}
+                {>"_sg/components/radio" label="Option 3 (disabled)" disabled="disabled" name="name2" /}
+                {>"_sg/components/radio" label="Option 4 (disabled + selected)" disabled="disabled" checked="checked" name="name2" /}
             </form>
 
             {@snippet}
 {>"_sg/components/radio" label="Option 1" checked="checked" /}
 {>"_sg/components/radio" label="Option 2" /}
 {>"_sg/components/radio" label="Option 3" disabled="disabled" /}
+{>"_sg/components/radio" label="Option 4 (disabled + checked)" disabled="disabled" checked="checked" /}
             {/snippet}
 
             <br />
@@ -60,15 +62,17 @@
                 "inline" to the class of the label.
             </p>
             <form>
-                {>"_sg/components/radio" label="Option 1" checked="checked" inline="true" /}
-                {>"_sg/components/radio" label="Option 2" inline="true" /}
-                {>"_sg/components/radio" label="Option 3 (disabled)" disabled="disabled" inline="true" /}
+                {>"_sg/components/radio" label="Option 1" checked="checked" inline="true" name="name1" /}
+                {>"_sg/components/radio" label="Option 2" inline="true" name="name1" /}
+                {>"_sg/components/radio" label="Option 3 (disabled)" disabled="disabled" inline="true" name="name2" /}
+                {>"_sg/components/radio" label="Option 4 (disabled + checked)" disabled="disabled" inline="true" checked="checked" name="name2" /}
             </form>
 
             {@snippet}
 {>"_sg/components/radio" label="Option 1" checked="checked" inline="true" /}
 {>"_sg/components/radio" label="Option 2" inline="true" /}
 {>"_sg/components/radio" label="Option 3" disabled="disabled" inline="true" /}
+{>"_sg/components/radio" label="Option 4 (disabled + selected)" disabled="disabled" inline="true" checked="checked" /}
             {/snippet}
         </section>
 
