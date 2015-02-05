@@ -1,4 +1,4 @@
-<div class="checkbox {?class}{class}{/class}">
-    <input type="checkbox" value="None" id="{?id}{id}{:else}id{/id}" name="check"{?checked} checked{/checked}{?disabled} disabled{/disabled} />
-    <label for="{?id}{id}{:else}id{/id}">{label}</label>
-</div>
+<label class="checkbox{?class} {class}{/class}{?inline} inline{/inline}">
+    <input type="checkbox" value="value" id="{?id}{id}{:else}id{/id}" name="{?name}{name}{:else}name{/name}"{?checked} checked{/checked}{?disabled} disabled{/disabled} />
+    <span>{label}</span>
+</label>
