@@ -1,0 +1,35 @@
+
+.container-wrapper {
+    .container-header {
+        padding: rem(12) rem(20);
+    }
+
+    .container-content {
+        padding: rem(20);
+    }
+
+    .container-header {
+        font-weight: bold;
+        color: $white;
+    }
+
+    &.green {
+        .container-header {
+            background-color: $green;
+        }
+
+        .container-content {
+            background-color: $green-tint;
+        }
+    }
+
+    &.orange {
+        .container-header {
+            background-color: $orange;
+        }
+
+        .container-content {
+            background-color: $orange-tint;
+        }
+    }
+}

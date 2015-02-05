@@ -6,12 +6,12 @@
         <li>Like, all of it. </li>
     </ul>
 
-    <section id="" title="" class="sg-component">
+    <section class="sg-component">
         <h2>Progress bars</h2>
         Here are some progress bar notes and stuff.
     </section>
 
-    <section id="" title="" class="sg-component">
+    <section class="sg-component">
         <h2>Alerts</h2>
         Here are some alerts notes and stuff.
         {>"_sg/components/alert" class="alert-info" text="An informational alert." /}
@@ -27,19 +27,35 @@
         {@snippet src="_sg/components/alert" class="alert-danger" text="An alert with danger."/}
     </section>
 
-    <section id="" title="" class="sg-component">
+    <section class="sg-component">
         <h2>Modal</h2>
         <p>Here are some modal notes and stuff.</p>
 
         {>"_sg/components/modal" /}
     </section>
 
-    <section id="" title="" class="sg-component">
+    <section class="sg-component">
         <h2>Carousel</h2>
-        Here are some carousel notes and stuff.
+        <p>
+            Here are some carousel notes and stuff.
+        </p>
     </section>
 
-    <section id="" title="" class="sg-component">
+    <section class="sg-component">
+        <h2>Container</h2>
+        <p>
+            A generic container with a title and a content.<br />
+            The following colors are supported: orange, green. Just add those to the element
+            with the class "container-wrapper" to switch type.
+        </p>
+        {>"_sg/components/container" color="green" /}
+
+        {@snippet}
+            {>"_sg/components/container" color="green" /}
+        {/snippet}
+    </section>
+
+    <section class="sg-component">
         <h2>Spinner</h2>
         Here are some spinner notes and stuff.
         {>"_sg/components/spinner" /}
