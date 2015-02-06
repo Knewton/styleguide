@@ -148,8 +148,9 @@
 }
 
 // Validation errors
+// scss-lint:disable QualifyingElement
 label.error {
     font-size: .8rem;
     color: $error-color;
 }
-
+// scss-lint:enable QualifyingElement
