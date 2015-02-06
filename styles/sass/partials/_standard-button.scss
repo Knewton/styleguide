@@ -23,7 +23,7 @@ button,
         outline: 0;
     }
 
-    &:hover:not(:disabled) {
+    &:hover:not(:disabled):not(.disabled) {
         @include transition-active(.1s);
         color: $white;
         background: $dark-turquoise;
@@ -34,7 +34,7 @@ button,
         background: $white;
         color: $turquoise;
 
-        &:hover:not(:disabled) {
+        &:hover:not(:disabled):not(.disabled) {
             @include transition-active(.1s);
             background: $dark-turquoise;
             color: $white;
@@ -46,7 +46,7 @@ button,
         margin-left: 10px;
     }
 
-    &:disabled {
+    &:disabled, &.disabled {
         color: $border-grey;
         background: $background-grey;
         border-color: $background-grey;
@@ -81,7 +81,7 @@ button,
     &.white-button {
         border: 1px solid $turquoise;
 
-        &:hover:not(:disabled) {
+        &:hover:not(:disabled):not(.disabled) {
             @include transition-active(.1s);
             border-color: $dark-turquoise;
         }
@@ -111,7 +111,7 @@ button {
         line-height: 22px;
         letter-spacing: 0.1em;
 
-        &:hover:not(:disabled) {
+        &:hover:not(:disabled):not(.disabled) {
             @include transition-active(.1s);
             border-color: $dark-turquoise;
         }
