@@ -1,6 +1,7 @@
 @import "modules/transition-effects";
 @import "modules/base";
 
+button,
 %button,
 .button,
 [type=submit] {
@@ -16,12 +17,13 @@
     border-style: solid;
     border-color: $turquoise;
     border-width: 3px;
+    padding: 0 rem(12);
 
     &:focus {
         outline: 0;
     }
 
-    &:hover:not(.disabled) {
+    &:hover:not(:disabled) {
         @include transition-active(.1s);
         color: $white;
         background: $dark-turquoise;
@@ -32,7 +34,7 @@
         background: $white;
         color: $turquoise;
 
-        &:hover:not(.disabled) {
+        &:hover:not(:disabled) {
             @include transition-active(.1s);
             background: $dark-turquoise;
             color: $white;
@@ -44,12 +46,11 @@
         margin-left: 10px;
     }
 
-    &.disabled,
     &:disabled {
         color: $border-grey;
         background: $background-grey;
         border-color: $background-grey;
-        cursor: not-allowed;
+        cursor: default;
     }
 }
 
@@ -58,12 +59,14 @@
     @extend %button;
     width: 190px;
     height: 2rem;
+    padding: 0;
 }
 
 .medium {
     @extend %button;
     width: 140px;
     height: 2rem;
+    padding: 0;
 }
 
 .short {
@@ -78,7 +81,7 @@
     &.white-button {
         border: 1px solid $turquoise;
 
-        &:hover:not(.disabled) {
+        &:hover:not(:disabled) {
             @include transition-active(.1s);
             border-color: $dark-turquoise;
         }
@@ -89,6 +92,7 @@
     @extend %button;
     width: 35px;
     height: 35px;
+    padding: 0;
 }
 
 button {
@@ -107,7 +111,7 @@ button {
         line-height: 22px;
         letter-spacing: 0.1em;
 
-        &:hover:not(.disabled) {
+        &:hover:not(:disabled) {
             @include transition-active(.1s);
             border-color: $dark-turquoise;
         }

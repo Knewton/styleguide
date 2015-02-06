@@ -32,22 +32,110 @@
             </div>
         </section>
 
+        <h3>Radio buttons</h3>
         <section id="radio-button" class="sg-component">
-            <h4>Radio buttons</h4>
-            {>"_sg/components/radio" label="pick a date!" /}
+            <h4>Radio buttons (block)</h4>
+            <p>
+                To render this radio button you just need to define a label with the class "radio".
+                This label element should contain an radio input (will be hidden) and span
+                containing the text to show next to the button.<br />
+                By default radio buttons are displayed as blocks.
+            </p>
+            <form>
+                {>"_sg/components/radio" label="Option 1" checked="checked" name="name1" /}
+                {>"_sg/components/radio" label="Option 2" name="name1" /}
+                {>"_sg/components/radio" label="Option 3 (disabled)" disabled="disabled" name="name2" /}
+                {>"_sg/components/radio" label="Option 4 (disabled + selected)" disabled="disabled" checked="checked" name="name2" /}
+            </form>
 
-            <div class="sample">
-                {@snippet src="_sg/components/radio" /}
-            </div>
+            {@snippet}
+{>"_sg/components/radio" label="Option 1" checked="checked" /}
+{>"_sg/components/radio" label="Option 2" /}
+{>"_sg/components/radio" label="Option 3" disabled="disabled" /}
+{>"_sg/components/radio" label="Option 4 (disabled + checked)" disabled="disabled" checked="checked" /}
+            {/snippet}
+
+            <br />
+            <h4>Radio buttons (inline)</h4>
+            <p>
+                In addition to "block" style, radio buttons can be rendered "inline". Just add
+                "inline" to the class of the label.
+            </p>
+            <form>
+                {>"_sg/components/radio" label="Option 1" checked="checked" inline="true" name="name1" /}
+                {>"_sg/components/radio" label="Option 2" inline="true" name="name1" /}
+                {>"_sg/components/radio" label="Option 3 (disabled)" disabled="disabled" inline="true" name="name2" /}
+                {>"_sg/components/radio" label="Option 4 (disabled + checked)" disabled="disabled" inline="true" checked="checked" name="name2" /}
+            </form>
+
+            {@snippet}
+{>"_sg/components/radio" label="Option 1" checked="checked" inline="true" /}
+{>"_sg/components/radio" label="Option 2" inline="true" /}
+{>"_sg/components/radio" label="Option 3" disabled="disabled" inline="true" /}
+{>"_sg/components/radio" label="Option 4 (disabled + selected)" disabled="disabled" inline="true" checked="checked" /}
+            {/snippet}
         </section>
 
+        <h3>Checkboxes</h3>
         <section id="checkbox" class="sg-component">
-            <h4>Checkboxes</h4>
-            {>"_sg/components/checkbox" class="checkbox-tick" id="1"/}
-            {@snippet src="_sg/components/checkbox" class="checkbox-tick" /}
+            <h4>Checkboxes (normal style + block)</h4>
+            <p>
+                Checkboxes can be rendered with a tick icon icon.
+                To do that, simply add the class "checkbox-normal".
+            </p>
+            <form>
+                {>"_sg/components/checkbox" class="checkbox-normal" label="Option 1" checked="checked" name="name1" /}
+                {>"_sg/components/checkbox" class="checkbox-normal" label="Option 2" name="name1" /}
+                {>"_sg/components/checkbox" class="checkbox-normal" label="Option 3 (disabled)" disabled="disabled" name="name2" /}
+                {>"_sg/components/checkbox" class="checkbox-normal" label="Option 4 (disabled + checked)" disabled="disabled" checked="checked" name="name2" /}
+            </form>
 
-            {>"_sg/components/checkbox" class="checkbox-tag" id="t" label="Toggle"/}
-            {@snippet src="_sg/components/checkbox" class="checkbox-tag" label="Toggle" /}
+            {@snippet}
+{>"_sg/components/checkbox" class="checkbox-normal" label="Option 1" checked="checked" /}
+{>"_sg/components/checkbox" class="checkbox-normal" label="Option 2" /}
+{>"_sg/components/checkbox" class="checkbox-normal" label="Option 3 (disabled)" disabled="disabled" /}
+{>"_sg/components/checkbox" class="checkbox-normal" label="Option 4 (disabled + checked)" disabled="disabled" checked="checked" /}
+            {/snippet}
+
+            <br />
+            <h4>Checkboxes (normal style + inline)</h4>
+            <p>
+                Checkboxes can be rendered with a tick icon icon.
+                To do that, simply add the class "checkbox-normal".
+            </p>
+            <form>
+                {>"_sg/components/checkbox" class="checkbox-normal" label="Option 1" checked="checked" name="name1" inline="true" /}
+                {>"_sg/components/checkbox" class="checkbox-normal" label="Option 2" name="name1" inline="true" /}
+                {>"_sg/components/checkbox" class="checkbox-normal" label="Option 3 (disabled)" disabled="disabled" name="name2" inline="true" /}
+                {>"_sg/components/checkbox" class="checkbox-normal" label="Option 4 (disabled + checked)" disabled="disabled" checked="checked" name="name2" inline="true" /}
+            </form>
+
+            {@snippet}
+{>"_sg/components/checkbox" class="checkbox-normal" label="Option 1" checked="checked" inline="true" /}
+{>"_sg/components/checkbox" class="checkbox-normal" label="Option 2" inline="true" /}
+{>"_sg/components/checkbox" class="checkbox-normal" label="Option 3 (disabled)" disabled="disabled" inline="true" /}
+{>"_sg/components/checkbox" class="checkbox-normal" label="Option 4 (disabled + checked)" disabled="disabled" checked="checked" inline="true" /}
+            {/snippet}
+
+            <br />
+            <h4>Checkboxes (tag style)</h4>
+            <p>
+                Checkboxes can also be rendered as buttons.
+                To do that, simply add the class "checkbox-tag".
+            </p>
+            <form>
+                {>"_sg/components/checkbox" class="checkbox-tag" label="Option 1" checked="checked" name="name1" /}
+                {>"_sg/components/checkbox" class="checkbox-tag" label="Option 2" name="name1" /}
+                {>"_sg/components/checkbox" class="checkbox-tag" label="Option 3 (disabled)" disabled="disabled" name="name2" /}
+                {>"_sg/components/checkbox" class="checkbox-tag" label="Option 4 (disabled + checked)" disabled="disabled" checked="checked" name="name2" /}
+            </form>
+
+            {@snippet}
+{>"_sg/components/checkbox" class="checkbox-tag" label="Option 1" checked="checked" /}
+{>"_sg/components/checkbox" class="checkbox-tag" label="Option 2" /}
+{>"_sg/components/checkbox" class="checkbox-tag" label="Option 3 (disabled)" disabled="disabled" /}
+{>"_sg/components/checkbox" class="checkbox-tag" label="Option 4 (disabled + checked)" disabled="disabled" checked="checked" /}
+            {/snippet}
         </section>
     </section>
 

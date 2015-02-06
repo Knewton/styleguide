@@ -1,9 +1,9 @@
 @import "modules/transition-effects";
 
-.inline {
+.radio.inline {
   display: inline-block;
 
-  + .inline {
+  + .radio.inline {
     margin-left: 10px;
   }
 }
@@ -12,17 +12,21 @@
   color: $border-grey;
   position: relative;
 
-  span {
+  + .radio:not(.inline) {
+    margin-top: 10px;
+  }
+
+  > span {
     @include standard-body-font;
     position: relative;
     padding-left: 35px;
     padding-top: 4px;
-      
-    &:after {
+
+    &:before {
       content: '';
       width: 24px;
       height: 24px;
-      border: 3px solid $border-grey;
+      border: 3px solid $ashen-grey;
       position: absolute;
       left: 0;
       top: 1px;
@@ -37,24 +41,23 @@
       -ms-box-sizing: border-box;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
+      cursor: pointer;
+    }
+
+    &:after {
+      cursor: pointer;
     }
   }
-  
+
   [type="radio"] {
-    cursor: pointer; 
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    
-    &:checked + span:after {
-      @include transition-active(.1s);
-      color: $green-success;
-      border-color: $green-success;
-    }  
-  
+    display: none;
+
     &:checked + span:before {
+      @include transition-active(.1s);
+      border-color: $green-success;
+    }
+
+    &:checked + span:after {
       @include transition-active(.1s);
       content: '';
       width: 14px;
@@ -67,6 +70,21 @@
       -ms-border-radius: 100%;
       -moz-border-radius: 100%;
       -webkit-border-radius: 100%;
+    }
+
+    &:disabled + span:before {
+      background: $background-grey;
+      border-color: $ashen-grey;
+      cursor: default;
+    }
+
+    &:disabled + span:after {
+      background: $ashen-grey;
+      cursor: default;
+    }
+
+    &:disabled + span {
+      color: $ashen-grey;
     }
   }
 }

@@ -56,23 +56,29 @@
                 var $el = $(this),
                     id = $el.attr('href');
 
-                $('.sg-nav li a').removeClass('active');
-                $el.addClass('active');
-
-                // Find the parent sg-section if any
-                var $toShow = $(id).closest('.sg-sections > .sg-section');
-
-                $('.sg-section').removeClass('active');
-                $toShow.addClass('active');
+                showPage(id);
             });
         };
 
+        function showPage(id) {
+            $('.sg-nav li a').removeClass('active');
+            $('.sg-nav li a[href="'+id+'"]').addClass('active');
+
+            // Find the parent sg-section if any
+            var $toShow = $(id).closest('.sg-sections > .sg-section');
+
+            $('.sg-section').removeClass('active');
+            $toShow.addClass('active');
+        };
+
         function highlightSnippets() {
-            hljs.configure({
-                tabReplace: '   ',
-                useBR: true
+            $('code[lang=html]').each(function() {
+                // remove pre/post space
+                this.innerHTML = this.innerHTML.replace(/^[ \n]+|[ \n]+$/g, '');
+
+                // highlight block
+                hljs.highlightBlock(this);
             });
-            hljs.initHighlightingOnLoad();
         };
 
         dust.render("_sg/styleguide", {}, function(err, out) {
@@ -89,6 +95,10 @@
                 $('.sg-sections > .sg-section').first().addClass('active');
             }
         });
+
+        if (window.location.hash) {
+            showPage(window.location.hash);
+        }
     </script>
 </body>
 

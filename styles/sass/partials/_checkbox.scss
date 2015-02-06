@@ -1,136 +1,128 @@
 @import "modules/transition-effects";
 
-.checkbox input {
-    &[type=checkbox] {
-        position: relative;
-        margin: 0;
-    }
-}
-
-
-.checkbox-tick,
-.checkbox-tag {
-    [type=checkbox] {
-        visibility: hidden;
-    }
-}
-
-.checkbox-tick {
-    background: $white;
-    position: relative;
-    width: 24px;
-    height: 24px;
-    margin: 0;
-
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    border: 3px solid $ashen-grey;
+.checkbox.inline {
     display: inline-block;
+
+    + .checkbox.inline {
+        margin-left: 20px;
+    }
 }
 
-.checkbox-tick label {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 4px;
-    top: 4px;
-    padding-left: 35px;
+.checkbox {
+    position: relative;
 
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
+    + .checkbox:not(.inline) {
+        margin-top: 10px;
+    }
 
-    cursor: pointer;
+    [type=checkbox] {
+        display: none;
+    }
 }
 
-/* Here's the tick when invisible, hovering and checked */
+.checkbox-normal [type="checkbox"] {
+    + span {
+        position: relative;
+        padding-left: 30px;
+        padding-top: 4px;
+        display: inline-block;
+    }
 
-.checkbox-tick label:before {
-    opacity: 0;
-    content: '';
-    position: absolute;
-    background: transparent;
-}
-
-.checkbox-tick label:after {
-    position: absolute;
-    background: none;
-    width: 11px;
-    height: 8px;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    content: '';
-    border: 0;
-
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-.checkbox-tick label:hover::after {
-    background: none;
-    border: 3px solid $ashen-grey;
-    border-top: 0;
-    border-right: 0;    
-    opacity: 0.3;
-}
-
-.checkbox-tick [type=checkbox]:checked {
-    opacity: 0;
-    outline: 0;
-
-    + label:before {
-        @include transition-active(.1s);
-
-        background: $green-success;
+    + span:before {
+        position: absolute;
         width: 24px;
         height: 24px;
-        opacity: 1;
-        top: -7px;
-        left: -7px;
-
+        top: 0;
+        left: 0;
+        background: $white;
+        cursor: pointer;
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         border-radius: 50px;
-        border: 3px solid $green-success;
+        border: 3px solid $ashen-grey;
+        content: '';
     }
 
+    + span:after {
+        color: $white;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        font-family: knewcons;
+        content: '\e006';
+        cursor: pointer;
+        text-align: center;
+        line-height: 24px;
+    }
 
-    + label:after {
-        @include transition-active(.1s);
-
-        border: 3px solid $white;
-        border-top: 0;
-        border-right: 0;
+    &:not(:disabled) + span:hover:after {
+        color: $background-grey;
         opacity: 1;
+    }
+
+    &:checked {
+        + span:before {
+            @include transition-active(.1s);
+            background: $green-success;
+            border: 3px solid $green-success;
+        }
+
+
+        + span:after {
+            @include transition-active(.1s);
+            opacity: 1;
+        }
+    }
+
+    &:disabled {
+        + span:before {
+            background: $background-grey;
+            border: 3px solid $ashen-grey;
+            cursor: default;
+        }
+
+        + span:after {
+            color: $ashen-grey;
+            cursor: default;
+        }
     }
 }
 
 .checkbox-tag {
-    height: 34px;
+    display: inline-block;
 
-    label {
+    + .checkbox-tag {
+        margin-left: 10px;
+    }
+
+    > span {
         @include action-link-font;
-
+        color: $black-enough;
+        opacity: 1;
         height: 34px;
         background: $background-grey;
-        position: absolute;
-        left: 0;
+        display: inline-block;
         line-height: 34px;
         padding: 0 20px;
+        cursor: default;
         text: {
             align: center;
             transform: none;
             decoration: none;
         }
-        
-        &:hover {
-                background: $black-enough;
-                color: $white;
+    }
+
+    [type=checkbox]:enabled {
+        + span {
+            cursor: pointer;
+        }
+
+        + span:hover {
+            background: $black-enough;
+            color: $white;
         }
     }
 
@@ -138,12 +130,16 @@
         opacity: 0;
         outline: 0;
 
-        + label {
+        + span {
             @include transition-active(.1s);
 
             background: $default;
             color: $white;
             opacity: 1;
         }
+    }
+
+    [type=checkbox]:disabled + span {
+        color: $ashen-grey;
     }
 }
