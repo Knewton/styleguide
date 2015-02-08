@@ -1,23 +1,26 @@
 .modal {
     .modal-header {
         border: 0;
+        padding: rem(50) rem(50) rem(20);
     }
 
     .close {
-        float: right;
-        background: none;
-        border: 0;
-        color: $border-grey;
-        font-size: 28px;
+        position: absolute;
+        right: rem(20);
+        top: rem(20);
+        color: $ashen-grey;
+        font-size: rem(22);
+        opacity: 1;
+        text-shadow: none;
 
         &:hover,
         &:focus {
-            @include transition-color(.2s);
+            @include transition-color(.1s);
             color: $grey-on-grey;
             text-decoration: none;
             cursor: pointer;
             outline: 0;
-        }        
+        }
     }
 
     .modal-content {
@@ -25,20 +28,21 @@
         box-shadow: none;
 
         .modal-body {
-            padding: 40px;
+            padding: 0 rem(50);
         }
     }
 
     .modal-footer {
         border: 0;
-    }    
+        padding: rem(20) rem(50) rem(50);
+    }
 
-    .cancel {
+    .gray-link {
         @include action-link-font;
         display: inline-block;
-        margin: 0 5px;
+        margin: 0 rem(5);
         text-align: center;
-        padding: 6px 12px;
+        padding: rem(6) rem(12);
         background: none;
         border: 0;
         cursor: pointer;

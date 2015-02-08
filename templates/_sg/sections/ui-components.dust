@@ -29,9 +29,14 @@
 
     <section class="sg-component">
         <h2>Modal</h2>
-        <p>Here are some modal notes and stuff.</p>
-
+        <p>
+            We use Boostrap for creating modals with our custom skin.<br />
+            More info can be found on <a href="http://getbootstrap.com/javascript/#modals">http://getbootstrap.com/javascript/#modals</a>.
+        </p>
         {>"_sg/components/modal" /}
+        {@snippet}
+            {>"_sg/components/modal" /}
+        {/snippet}
     </section>
 
     <section class="sg-component">
