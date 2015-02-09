@@ -6,6 +6,10 @@
   + .radio.inline {
     margin-left: 10px;
   }
+
+  > span {
+    display: inline-block;
+  }
 }
 
 .radio {
@@ -21,6 +25,7 @@
     position: relative;
     padding-left: 35px;
     padding-top: 4px;
+    display: block;
 
     &:before {
       content: '';

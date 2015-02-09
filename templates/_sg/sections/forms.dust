@@ -43,14 +43,14 @@
             </p>
             <form>
                 {>"_sg/components/radio" label="Option 1" checked="checked" name="name1" /}
-                {>"_sg/components/radio" label="Option 2" name="name1" /}
+                {>"_sg/components/radio" label="<div>Option 2</div><div>Multi Line</div>" name="name1" /}
                 {>"_sg/components/radio" label="Option 3 (disabled)" disabled="disabled" name="name2" /}
                 {>"_sg/components/radio" label="Option 4 (disabled + selected)" disabled="disabled" checked="checked" name="name2" /}
             </form>
 
             {@snippet}
 {>"_sg/components/radio" label="Option 1" checked="checked" /}
-{>"_sg/components/radio" label="Option 2" /}
+{>"_sg/components/radio" label="<div>Option 2</div><div>Multi Line</div>" /}
 {>"_sg/components/radio" label="Option 3" disabled="disabled" /}
 {>"_sg/components/radio" label="Option 4 (disabled + checked)" disabled="disabled" checked="checked" /}
             {/snippet}
@@ -85,14 +85,14 @@
             </p>
             <form>
                 {>"_sg/components/checkbox" class="checkbox-normal" label="Option 1" checked="checked" name="name1" /}
-                {>"_sg/components/checkbox" class="checkbox-normal" label="Option 2" name="name1" /}
+                {>"_sg/components/checkbox" class="checkbox-normal" label="<div>Option 2</div><div>Multi Line</div>" name="name1" /}
                 {>"_sg/components/checkbox" class="checkbox-normal" label="Option 3 (disabled)" disabled="disabled" name="name2" /}
                 {>"_sg/components/checkbox" class="checkbox-normal" label="Option 4 (disabled + checked)" disabled="disabled" checked="checked" name="name2" /}
             </form>
 
             {@snippet}
 {>"_sg/components/checkbox" class="checkbox-normal" label="Option 1" checked="checked" /}
-{>"_sg/components/checkbox" class="checkbox-normal" label="Option 2" /}
+{>"_sg/components/checkbox" class="checkbox-normal" label="<div>Option 2</div><div>Multi Line</div>" /}
 {>"_sg/components/checkbox" class="checkbox-normal" label="Option 3 (disabled)" disabled="disabled" /}
 {>"_sg/components/checkbox" class="checkbox-normal" label="Option 4 (disabled + checked)" disabled="disabled" checked="checked" /}
             {/snippet}
