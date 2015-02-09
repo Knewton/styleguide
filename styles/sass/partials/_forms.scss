@@ -153,4 +153,40 @@ label.error {
     font-size: .8rem;
     color: $error-color;
 }
+
+// Add this on the form if you want errors to show in a tooltip
+.error-tooltip {
+    position: relative;
+
+    label.error {
+        $height: 5px;
+        $width: 10px;
+
+        position: absolute;
+        z-index: 2000;
+        height: 1.2rem;
+        background: $error-color;
+        padding: .2rem;
+        color: $white;
+        margin-bottom: -1.1rem;
+        left: 0.3rem;
+        box-shadow: rgba(0, 0, 0, 0.38) 0 2px 0;
+
+        &:before {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 $width/2 $height;
+            border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $error-color;
+            content: "";
+            position: absolute;
+            top: 0;
+            margin-top: -$height;
+            left: 12px;
+        }
+    }
+}
+
 // scss-lint:enable QualifyingElement
+
+
