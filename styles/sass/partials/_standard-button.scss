@@ -46,7 +46,8 @@ button,
         margin-left: 10px;
     }
 
-    &:disabled, &.disabled {
+    &:disabled,
+    &.disabled {
         color: $border-grey;
         background: $background-grey;
         border-color: $background-grey;

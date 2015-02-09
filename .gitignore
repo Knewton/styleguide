@@ -2,6 +2,7 @@ node_modules
 .sass-cache
 bower_components
 dist/styles
+dist/js/tooltip.js
 dist/js/templates.js
 dist/js/bootstrap-datepicker.js
 dist/js/dust-core.js
