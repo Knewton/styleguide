@@ -146,6 +146,7 @@ module.exports = function (grunt) {
                           'bower_components/highlightjs/highlight.pack.js',
                           'bower_components/easydropdown/jquery.easydropdown.min.js',
                           'bower_components/bootstrap/js/modal.js',
+                          'bower_components/bootstrap/js/tooltip.js',
                           'bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js',
                           'bower_components/dustjs-linkedin/dist/dust-core.js',
                           'bower_components/dustjs-linkedin-helpers/dist/dust-helpers.js'],
