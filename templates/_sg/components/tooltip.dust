@@ -1,0 +1,15 @@
+Hover <b data-toggle="tooltip" data-placement="top" title="Tooltip!">on this text</b>
+or <b id="custom-tooltip">this one</b>
+to see a tooltip.
+
+<script type="text/javascript">
+    // tooltips are opt-in and needs to be setup, you could just add the following line.
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // custom tooltip setup
+    $('#custom-tooltip').tooltip({
+        title: 'a <b>custom</b> tooltip!<br/>With a second line.',
+        html: true,
+        placement: 'top'
+    });
+</script>
