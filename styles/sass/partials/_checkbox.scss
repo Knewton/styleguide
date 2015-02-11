@@ -85,8 +85,14 @@
         }
 
         + span:after {
-            color: $ashen-grey;
+            color: $white;
             cursor: default;
+        }
+    }
+
+    &:disabled:checked {
+        + span:before {
+            background: $ashen-grey;
         }
     }
 }
