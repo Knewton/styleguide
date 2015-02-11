@@ -75,6 +75,18 @@
     </section>
 
     <section class="sg-component">
+        <h2>Helper Icons</h2>
+        <p>
+            Helper icons are little icons that can be used to explain things to the user.
+        </p>
+        {>"_sg/components/helpers" /}
+
+        {@snippet}
+            {>"_sg/components/helpers" /}
+        {/snippet}
+    </section>
+
+    <section class="sg-component">
         <h2>Spinner</h2>
         <p>
             The spinner is part setup as an :after element. It rotates using css animations.
