@@ -77,9 +77,8 @@ function recursiveWalker(element, indent)
     return(documentDOMConsole.innerHTML);
 }
 
-function getElementText(el)
-{
-        child = el.firstChild,
+function getElementText(el) {
+    var child = el.firstChild,
         texts = [];
 
     while (child) {
