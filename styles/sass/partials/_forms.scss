@@ -71,8 +71,8 @@
         color: $red;
     }
 
-    &.loading:after,
-    &.loading:not(:focus):after {
+    &.di-loading:after,
+    &.di-loading:not(:focus):after {
         @include icon;
         content: "loading";
         color: $ashen-grey;
