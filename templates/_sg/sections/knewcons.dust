@@ -6,28 +6,42 @@
         <pre><code>&lt;div class="icon-settings"&gt;&lt;/div&gt;</code></pre>
 
     <div class="knewcons-display">
-        {>"_sg/components/knewcon" knewcon="icon-settings" name="Settings" /}
-        {>"_sg/components/knewcon" knewcon="icon-notify" name="Notify" /}
-        {>"_sg/components/knewcon" knewcon="icon-user" name="User" /}
-        {>"_sg/components/knewcon" knewcon="icon-search" name="Search" /}
-        {>"_sg/components/knewcon" knewcon="icon-caret-right" name="Caret right" /}
-        {>"_sg/components/knewcon" knewcon="icon-cancel" name="Cancel" /}
-        {>"_sg/components/knewcon" knewcon="icon-check" name="Check" /}
-        {>"_sg/components/knewcon" knewcon="icon-derived-topic" name="Derived topic" /}
-        {>"_sg/components/knewcon" knewcon="icon-target-topic" name="Target topic" /}
-        {>"_sg/components/knewcon" knewcon="icon-trashcan" name="Trashcan" /}
-        {>"_sg/components/knewcon" knewcon="icon-catalog" name="Catalog" /}
-        {>"_sg/components/knewcon" knewcon="icon-share" name="Share" /}
-        {>"_sg/components/knewcon" knewcon="icon-calendar" name="Calendar" /}
-        {>"_sg/components/knewcon" knewcon="icon-target-hex-solid" name="Target" /}
-        {>"_sg/components/knewcon" knewcon="icon-target-hex-outlined" name="Target outlined" /}
-        {>"_sg/components/knewcon" knewcon="icon-arrow" name="Arrow" /}
-        {>"_sg/components/knewcon" knewcon="icon-three-bars" name="Three bars" /}
-        {>"_sg/components/knewcon" knewcon="icon-home" name="Home" /}
-        {>"_sg/components/knewcon" knewcon="icon-pencil" name="Pencil" /}
-        {>"_sg/components/knewcon" knewcon="icon-users" name="Users" /}
-        {>"_sg/components/knewcon" knewcon="icon-user-add" name="Add user" /}
-        {>"_sg/components/knewcon" knewcon="icon-angle-right" name="Angle right" /}
-        {>"_sg/components/knewcon" knewcon="icon-right-open-big" name="Angle big" /}
+        {>"_sg/components/knewcon" knewcon="icon-settings" code="U+E000" name="Settings" /}
+        {>"_sg/components/knewcon" knewcon="icon-notify" code="U+E001" name="Notify" /}
+        {>"_sg/components/knewcon" knewcon="icon-user" code="U+E002" name="User" /}
+        {>"_sg/components/knewcon" knewcon="icon-search" code="U+E003" name="Search" /}
+        {>"_sg/components/knewcon" knewcon="icon-caret-right" code="U+E004" name="Caret right" /}
+        {>"_sg/components/knewcon" knewcon="icon-cancel" code="U+E005" name="Cancel" /}
+        {>"_sg/components/knewcon" knewcon="icon-check" code="U+E006" name="Check" /}
+        {>"_sg/components/knewcon" knewcon="icon-derived-topic" code="U+E007" name="Derived topic" /}
+        {>"_sg/components/knewcon" knewcon="icon-target-topic" code="U+E00A" name="Target topic" /}
+        {>"_sg/components/knewcon" knewcon="icon-trashcan" code="U+E009" name="Trashcan" /}
+        {>"_sg/components/knewcon" knewcon="icon-catalog" code="U+E008" name="Catalog" /}
+        {>"_sg/components/knewcon" knewcon="icon-share" code="U+E00B" name="Share" /}
+        {>"_sg/components/knewcon" knewcon="icon-calendar" code="U+E00D" name="Calendar" /}
+        {>"_sg/components/knewcon" knewcon="icon-target-hex-solid" code="U+E00C" name="Target" /}
+        {>"_sg/components/knewcon" knewcon="icon-target-hex-outlined" code="U+E00E" name="Target outlined" /}
+        {>"_sg/components/knewcon" knewcon="icon-arrow" code="U+E00F" name="Arrow" /}
+        {>"_sg/components/knewcon" knewcon="icon-three-bars" code="U+E010" name="Three bars" /}
+        {>"_sg/components/knewcon" knewcon="icon-home" code="U+E011" name="Home" /}
+        {>"_sg/components/knewcon" knewcon="icon-pencil" code="U+E012" name="Pencil" /}
+        {>"_sg/components/knewcon" knewcon="icon-users" code="U+E013" name="Users" /}
+        {>"_sg/components/knewcon" knewcon="icon-user-add" code="U+E014" name="Add user" /}
+        {>"_sg/components/knewcon" knewcon="icon-angle-right" code="U+E015" name="Right Angle right" /}
+        {>"_sg/components/knewcon" knewcon="icon-right-open-big" code="U+E016" name="Right Angle big" /}
+        {>"_sg/components/knewcon" knewcon="icon-letter-mail" code="U+E017" name="Mail" /}
+        {>"_sg/components/knewcon" knewcon="icon-help" code="U+E018" name="Help" /}
+        {>"_sg/components/knewcon" knewcon="icon-primitive-dot" code="U+E019" name="Point" /}
+        {>"_sg/components/knewcon" knewcon="icon-design-graphic-tablet-streamline-tablet" code="U+E01A" name="Tablet" /}
+        {>"_sg/components/knewcon" knewcon="icon-graduation-cap" code="U+E01B" name="Graduation Cap" /}
+        {>"_sg/components/knewcon" knewcon="icon-left-open-big" code="U+E01C" name="Left Angle Big" /}
+        {>"_sg/components/knewcon" knewcon="icon-question" code="U+E01D" name="Question" /}
+        {>"_sg/components/knewcon" knewcon="icon-media-video" code="U+E01E" name="Media Video" /}
+        {>"_sg/components/knewcon" knewcon="icon-media-text" code="U+E01F" name="Media Text" /}
+        {>"_sg/components/knewcon" knewcon="icon-media-image" code="U+E020" name="Media Image" /}
+        {>"_sg/components/knewcon" knewcon="icon-history-sequence" code="U+E021" name="History Sequence" /}
+        {>"_sg/components/knewcon" knewcon="icon-history-single" code="U+E022" name="History Single" /}
+        {>"_sg/components/knewcon" knewcon="icon-history-current" code="U+E023" name="History Current" /}
+        {>"_sg/components/knewcon" knewcon="icon-plus-circled" code="U+E024" name="Plus Circled" /}
     </div>
 </section>
