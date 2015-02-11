@@ -1,0 +1,21 @@
+
+.helper-icon-gray {
+    &:after {
+        display: inline-block;
+        background: $ashen-grey;
+        width: rem(14);
+        height: rem(14);
+        color: $white;
+        font-size: rem(10);
+        line-height: rem(16);
+        text-align: center;
+        vertical-align: middle;
+        content: '?';
+        font-weight: bold;
+        margin-left: rem(4);
+    }
+
+    &:not(a):after {
+        cursor: default;
+    }
+}
