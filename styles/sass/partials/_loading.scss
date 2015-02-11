@@ -1,9 +1,5 @@
-/**
-*
-NEEDS REVIEW
-*
-**/
 
+%spinner,
 .spinner {
     overflow: hidden;
     position: relative;
@@ -20,6 +16,8 @@ NEEDS REVIEW
         text-align: center;
         margin: 0;
         padding: 0;
+        top: 0;
+        left: 0;
         display: block;
         z-index: 2000;
     }
@@ -27,8 +25,8 @@ NEEDS REVIEW
     &:after {
         content: "\e00c";
         font-family: knewcons;
-        -webkit-animation: spin 2s linear infinite;
-        animation: spin 2s linear infinite;
+        -webkit-animation: spin 4s linear infinite;
+        animation: spin 4s linear infinite;
         font-size: 19px;
         position: absolute;
         top: 50%;
@@ -37,5 +35,13 @@ NEEDS REVIEW
         margin-left: -7px;
         color: rgb(27, 172, 182);
         z-index: 2010;
+    }
+}
+
+.loading:not(button) {
+    @extend %spinner;
+
+    &:before {
+        background-color: rgba(255, 255, 255, 0.80);
     }
 }

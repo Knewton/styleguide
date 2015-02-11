@@ -1,0 +1,10 @@
+// To enable
+$(element).loading();
+
+// Buttons can have a custom text
+$(element).loading({
+    'text': 'Creating...'
+});
+
+// Turn it off
+$(element).loading('off');

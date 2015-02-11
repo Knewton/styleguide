@@ -421,9 +421,38 @@ body {
 */
 
 .modal-body {
-    padding: 80px 40px;
+  padding: 80px 40px;
 }
 
+.loading-demo-menu {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.loading-demo-block {
+  @include span-columns(1 of 4);
+  @include shift(1);
+
+  height: 160px;
+  background-color: $orange;
+  text-align: center;
+  padding-top: 70px;
+  color: $white;
+}
+
+.loading-demo-button-container {
+  @include span-columns(1 of 4);
+
+  button {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.loading-demo {
+  @include clearfix();
+  margin-bottom: 1rem;
+}
 
 // Code snippets
 /*

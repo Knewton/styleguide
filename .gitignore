@@ -14,3 +14,4 @@ dist/js/jquery.min.js
 dist/js/modal.js
 .DS_Store
 _site
+dist/js/jquery.loading.js

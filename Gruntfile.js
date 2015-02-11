@@ -149,7 +149,8 @@ module.exports = function (grunt) {
                           'bower_components/bootstrap/js/tooltip.js',
                           'bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js',
                           'bower_components/dustjs-linkedin/dist/dust-core.js',
-                          'bower_components/dustjs-linkedin-helpers/dist/dust-helpers.js'],
+                          'bower_components/dustjs-linkedin-helpers/dist/dust-helpers.js',
+                          'lib/**'],
                     dest: 'dist/js/',
                     flatten: true
                 }]

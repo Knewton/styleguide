@@ -1,16 +1,6 @@
 <section id="ui_components" title="Other UI components" class="sg-section">
     <h1 class="sg">UI components</h1>
 
-    To do:
-    <ul>
-        <li>Like, all of it. </li>
-    </ul>
-
-    <section class="sg-component">
-        <h2>Progress bars</h2>
-        Here are some progress bar notes and stuff.
-    </section>
-
     <section class="sg-component">
         <h2>Alerts</h2>
         Here are some alerts notes and stuff.
@@ -87,14 +77,40 @@
     </section>
 
     <section class="sg-component">
-        <h2>Spinner</h2>
+        <h2>Loading</h2>
         <p>
-            The spinner is part setup as an :after element. It rotates using css animations.
-            Just add the class "spinner" to any element to make it a spinner.
+            To give feedback to the user that something is happening, you can use the loading plugin on either a block or a button element.
         </p>
-        {>"_sg/components/spinner" /}
+
+        <div class="loading-demo">
+            <div class="loading-demo-menu"><button id="loading-on" class="button short">On</button> <button id="loading-off" class="button short">Off</button></div>
+            <div class="loading-demo-block">Block element</div>
+            <div class="loading-demo-button-container">
+                <input type="text" id="loading-demo-text" placeholder="Custom text"></input>
+                <button class="loading-demo-button" type="button">Submit</button>
+            </div>
+
+        </div>
+        <script>
+            function startLoading() {
+                $('.loading-demo-block').loading();
+                var opts = {};
+                if ($('#loading-demo-text').val()) {
+                    opts.text = $('#loading-demo-text').val();
+                }
+                $('.loading-demo-button').loading(opts);
+            }
+
+            $('#loading-on, .loading-demo-button').on('click', startLoading);
+
+            $('#loading-off').on('click', function(e) {
+                $('.loading-demo-block').loading('off');
+                $('.loading-demo-button').loading('off');
+            });
+        </script>
+
         {@snippet}
-            {>"_sg/components/spinner" /}
+            {>"_sg/components/loading" /}
         {/snippet}
     </section>
 
