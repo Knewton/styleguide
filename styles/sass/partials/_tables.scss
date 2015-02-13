@@ -1,14 +1,14 @@
 @import "modules/transition-effects";
 @import "modules/base";
 
-table {
+.kn-table {
     @include clearfix;
     @include fill-parent;
 
     border-collapse: collapse;
 
     tr {
-        height: 45px;
+        height: rem(45);
     }
 
     tr:first-child {
@@ -20,8 +20,8 @@ table {
     td {
         @include table-row-font;
 
-        padding: 15px 50px 15px 0;
-        border-top: 1px solid $border-grey;
+        padding: rem(15) rem(50) rem(15) 0;
+        border-top: rem(1) solid $border-grey;
         color: $default;
 
         a {
@@ -31,7 +31,36 @@ table {
         &.title {
             color: $black-enough;
             font-weight: 500;
-        }        
+        }
+    }
+}
+
+.kn-stripe-table {
+    @include fill-parent;
+    border-collapse: collapse;
+
+    th,
+    td {
+        @include table-row-font;
+        height: rem(45);
+        color: $black-enough;
+        text-align: center;
+        padding: 0 rem(15);
+
+        &:first-child {
+            text-align: left;
+        }
     }
 
+    th {
+        font-weight: 700;
+    }
+
+    td {
+        border-top: 1px solid $ashen-grey;
+    }
+
+    tr:nth-child(even) {
+        background-color: $blue-tint;
+    }
 }
