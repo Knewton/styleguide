@@ -1,21 +1,29 @@
+// scss-lint:disable QualifyingElement
 
 .helper-icon-gray {
-    &:after {
-        display: inline-block;
-        background: $ashen-grey;
-        width: rem(14);
-        height: rem(14);
-        color: $white;
-        font-size: rem(10);
-        line-height: rem(16);
-        text-align: center;
-        vertical-align: middle;
-        content: '?';
-        font-weight: bold;
-        margin-left: rem(4);
-    }
+    display: inline-block;
+    background: $ashen-grey;
+    width: rem(14);
+    height: rem(14);
+    color: $white;
+    font-size: rem(10);
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    margin-left: rem(4);
+    cursor: default;
 
-    &:not(a):after {
-        cursor: default;
+    &:after {
+        content: '?';
+        line-height: rem(16);
+    }
+}
+
+.helper-icon-gray.clickable,
+a.helper-icon-gray {
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
     }
 }
