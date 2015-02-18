@@ -12,10 +12,10 @@
     font-weight: bold;
     margin-left: rem(4);
     cursor: default;
+    line-height: rem(16);
 
     &:after {
         content: '?';
-        line-height: rem(16);
     }
 }
 

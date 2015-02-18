@@ -8,7 +8,6 @@ button,
     @include action-link-font;
     display: inline-block;
     cursor: pointer;
-    margin: 0 5px;
     height: 2rem;
     line-height: 1.5rem;
     text-align: center;
@@ -42,6 +41,7 @@ button,
         }
     }
 
+    + button,
     + .button {
         margin-left: 10px;
     }
@@ -52,6 +52,21 @@ button,
         background: $background-grey;
         border-color: $background-grey;
         cursor: default;
+    }
+
+    &.text-button-gray {
+        background: transparent;
+        border: 0;
+        color: $ashen-grey;
+
+        &:disabled {
+            color: $background-grey;
+        }
+
+        &:hover:not(:disabled):not(.disabled) {
+            background: transparent;
+            color: $default;
+        }
     }
 }
 

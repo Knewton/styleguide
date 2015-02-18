@@ -10,12 +10,17 @@
 
     <section id="tables" title="Tables" class="sg-section">
         <h2 class="sg">Tables</h2>
+
+        <h4>Default Table</h4>
         {>"_sg/components/table" /}
         {@snippet src="_sg/components/table" /}
+
+        <h4>Stripe Table</h4>
+        {>"_sg/components/stripe_table" /}
+        {@snippet src="_sg/components/stripe_table" /}
     </section>
 
     <section id="navigation" title="Navigation" class="sg-section">
-
         <h2 class="sg">Navigation stuff</h2>
 
         <section id="tabs" title="Tabs" class="sg-component">
