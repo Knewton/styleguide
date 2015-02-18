@@ -64,6 +64,17 @@
         </div>
     </section>
 
+    <section id="text-buttons" class="sg-component">
+        <h4>Text buttons</h4>
+        {>"_sg/components/button" label="Button 1" class="text-button-gray" /}
+        {>"_sg/components/button" label="Button 2 (disabled)" disabled="disabled" class="text-button-gray" /}
+
+        <div class="sample">
+            {@snippet src="_sg/components/button" label="Button 1" class="text-button-gray" /}
+            {@snippet src="_sg/components/button" label="Button 2 (disabled)" disabled="disabled" class="text-button-gray" /}
+        </div>
+    </section>
+
     <section id="input-submit" class="sg-component">
         <h4>Input Submit</h4>
         {>"_sg/components/input-submit" label="Input 1" /}
