@@ -43,5 +43,10 @@
         {>"_sg/components/knewcon" knewcon="icon-history-single" code="U+E022" name="History Single" /}
         {>"_sg/components/knewcon" knewcon="icon-history-current" code="U+E023" name="History Current" /}
         {>"_sg/components/knewcon" knewcon="icon-plus-circled" code="U+E024" name="Plus Circled" /}
+        {>"_sg/components/knewcon" knewcon="icon-playback-play" code="U+E025" name="Playback Play" /}
+        {>"_sg/components/knewcon" knewcon="icon-playback-pause" code="U+E026" name="Playback Pause" /}
+        {>"_sg/components/knewcon" knewcon="icon-unmute" code="U+E027" name="Icon Unmute" /}
+        {>"_sg/components/knewcon" knewcon="icon-mute" code="U+E028" name="Icon Mute" /}
+        {>"_sg/components/knewcon" knewcon="icon-expand" code="U+E029" name="Icon Expand" /}
     </div>
 </section>
