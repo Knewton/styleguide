@@ -115,13 +115,6 @@
     line-height: 2rem;
     height: 2rem;
 
-    &:not(:focus):before {
-        position: absolute;
-        font-family: "knewcons";
-        content: "\e00d";
-        right: .5rem;
-    }
-
     input {
         border-radius: 0;
         box-shadow: none;
@@ -132,6 +125,12 @@
             outline: none;
             border: 1px solid $turquoise;
         }
+    }
+
+    span {
+        position: absolute;
+        right: 0.25em;
+        top: 0.15em;
     }
 }
 
@@ -187,5 +186,3 @@ label.error {
 }
 
 // scss-lint:enable QualifyingElement
-
-
