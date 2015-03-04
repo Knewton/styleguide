@@ -92,7 +92,7 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
 
     &:hover {
         text-decoration: underline;
-    }    
+    }
 }
 
 @mixin sidebar-font {
@@ -132,7 +132,7 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
 
 @mixin dropdown-font {
     @include standard-body-font;
-    
+
     line-height: 30px;
     font: {
         size: 14px;
