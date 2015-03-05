@@ -1,10 +1,14 @@
-$museo-sans-font-stack: "museo-sans", sans-serif;
+$roboto-font-stack: Roboto, sans-serif;
+$font-weight-thin: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-weight-black: 700;
 
 @mixin standard-body-font {
     // ./partials/_global.scss
 
     font: {
-        family: $museo-sans-font-stack;
+        family: $roboto-font-stack;
         size: rem(16);
         weight: 300;
     }
@@ -26,8 +30,8 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
 
 @mixin subhead-font {
     font: {
-        size: rem(21);
-        weight: 300;
+        size: rem(32);
+        weight: 500;
     }
     color: $grey-on-grey;
 }
@@ -92,7 +96,7 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
 
     &:hover {
         text-decoration: underline;
-    }    
+    }
 }
 
 @mixin sidebar-font {
@@ -132,7 +136,7 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
 
 @mixin dropdown-font {
     @include standard-body-font;
-    
+
     line-height: 30px;
     font: {
         size: 14px;
