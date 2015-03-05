@@ -68,6 +68,7 @@ $font-weight-black: 700;
 @mixin action-link-font {
 
     font: {
+        family: $roboto-font-stack;
         size: 12px;
         weight: 700;
     }
