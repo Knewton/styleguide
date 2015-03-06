@@ -8,15 +8,17 @@ button,
     @include action-link-font;
     display: inline-block;
     cursor: pointer;
-    height: 2rem;
-    line-height: 1.5rem;
-    text-align: center;
-    background: $turquoise;
+    font-weight: normal;
+    line-height: normal;
     color: $white;
+    text-decoration: none;
+    text-align: center;
+    padding: rem(10) rem(15);
+    background-color: $blue;
     border-style: solid;
-    border-color: $turquoise;
     border-width: 3px;
-    padding: 0 rem(12);
+    border-color: $blue;
+    border-radius: $radius;
 
     &:focus {
         outline: 0;
@@ -25,19 +27,31 @@ button,
     &:hover:not(:disabled):not(.disabled) {
         @include transition-active(.1s);
         color: $white;
-        background: $dark-turquoise;
-        border-color: $dark-turquoise;
+        background: hover-state($blue);
+        border-color: hover-state($blue);
+    }
+
+    &:active:not(:disabled):not(.disabled) {
+        color: $white;
+        background: darken($blue, 5%);
+        border-color: darken($blue, 5%);
     }
 
     &.white-button {
         background: $white;
-        color: $turquoise;
+        color: $blue;
 
         &:hover:not(:disabled):not(.disabled) {
             @include transition-active(.1s);
-            background: $dark-turquoise;
             color: $white;
-            border-color: $dark-turquoise;
+            background: hover-state($blue);
+            border-color: hover-state($blue);
+        }
+
+        &:active:not(:disabled):not(.disabled) {
+            color: $white;
+            background: darken($blue, 5%);
+            border-color: darken($blue, 5%);
         }
     }
 
@@ -68,38 +82,32 @@ button,
             color: $default;
         }
     }
-}
 
+}
 
 .long {
     @extend %button;
     width: 190px;
-    height: 2rem;
-    padding: 0;
 }
 
 .medium {
     @extend %button;
     width: 140px;
-    height: 2rem;
-    padding: 0;
 }
 
 .short {
     @extend %button;
     width: 90px;
-    height: 1.5rem;
     font-size: 9px;
     letter-spacing: 0.1em;
-    line-height: initial;
-    padding: .2em 1em;
+    padding: rem(5) rem(7);
 
     &.white-button {
-        border: 1px solid $turquoise;
+        border: 1px solid $blue;
 
         &:hover:not(:disabled):not(.disabled) {
             @include transition-active(.1s);
-            border-color: $dark-turquoise;
+            border-color: hover-state($blue);
         }
     }
 }
@@ -115,8 +123,8 @@ button {
     &.group {
         @extend %button;
         background: $white;
-        color: $turquoise;
-        border: 1px solid $turquoise;
+        color: $blue;
+        border: 1px solid $blue;
 
         min-width: 140px;
         height: 25px;
@@ -129,11 +137,11 @@ button {
 
         &:hover:not(:disabled):not(.disabled) {
             @include transition-active(.1s);
-            border-color: $dark-turquoise;
+            border-color: hover-state($blue);
         }
 
         + button {
-            border-left: 1px solid $turquoise;
+            border-left: 1px solid $blue;
             margin-left: -1px;
         }
     }
