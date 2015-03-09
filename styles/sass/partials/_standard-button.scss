@@ -13,12 +13,9 @@ button,
     color: $white;
     text-decoration: none;
     text-align: center;
-    padding: rem(10) rem(15);
+    padding: rem(8) rem(15);
     background-color: $blue;
-    border-style: solid;
-    border-width: 3px;
-    border-color: $blue;
-    border-radius: $radius;
+    border-width: 0;
 
     &:focus {
         outline: 0;
@@ -28,13 +25,11 @@ button,
         @include transition-active(.1s);
         color: $white;
         background: hover-state($blue);
-        border-color: hover-state($blue);
     }
 
     &:active:not(:disabled):not(.disabled) {
         color: $white;
         background: darken($blue, 5%);
-        border-color: darken($blue, 5%);
     }
 
     &.white-button {
@@ -45,13 +40,29 @@ button,
             @include transition-active(.1s);
             color: $white;
             background: hover-state($blue);
-            border-color: hover-state($blue);
         }
 
         &:active:not(:disabled):not(.disabled) {
             color: $white;
             background: darken($blue, 5%);
-            border-color: darken($blue, 5%);
+        }
+    }
+
+    &.rainy-button {
+        background: $rainy2;
+
+        &:hover:not(:disabled):not(.disabled) {
+            @include transition-active(.1s);
+            background: hover-state($rainy2);
+        }
+    }
+
+    &.orange-button {
+        background: $orange;
+
+        &:hover:not(:disabled):not(.disabled) {
+            @include transition-active(.1s);
+            background: hover-state($orange);
         }
     }
 
@@ -83,7 +94,16 @@ button,
         }
     }
 
+    &.large {
+        font-size: $large;
+        padding-top: rem(11);
+        padding-bottom: rem(11);
+    }
 }
+
+/**
+ * TODO (3/9/2015): Deprecate long, medium and short
+ */
 
 .long {
     @extend %button;
