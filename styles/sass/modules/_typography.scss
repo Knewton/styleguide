@@ -13,7 +13,7 @@ $font-weight-black: 700;
         weight: 300;
     }
     line-height: 1.3;
-    color: $grey-on-grey;
+    color: $rainy2;
 }
 
 @mixin headline-font {
@@ -25,15 +25,15 @@ $font-weight-black: 700;
         weight: 300;
     }
     line-height: 1.4em;
-    color: $grey-on-grey;
+    color: $rainy2;
 }
 
 @mixin subhead-font {
     font: {
-        size: rem(32);
+        size: rem(24);
         weight: 500;
     }
-    color: $grey-on-grey;
+    color: $rainy2;
 }
 
 @mixin head4-font {
@@ -42,7 +42,7 @@ $font-weight-black: 700;
         weight: 900;
     }
     line-height: 1.3em;
-    color: $grey-on-grey;
+    color: $rainy2;
 }
 
 @mixin tab-font {
@@ -108,7 +108,7 @@ $font-weight-black: 700;
         weight: 500;
     }
     letter-spacing: 0.05em;
-    color: $grey-on-grey;
+    color: $rainy2;
 
     line-height: 21px;
 }
@@ -121,7 +121,7 @@ $font-weight-black: 700;
         weight: 500;
     }
     letter-spacing: 0.015em;
-    color: $grey-on-grey;
+    color: $rainy2;
 }
 
 @mixin input-font {
@@ -143,7 +143,7 @@ $font-weight-black: 700;
         size: 14px;
         weight: 300;
     }
-    color: $grey-on-grey;
+    color: $rainy2;
 }
 
 @mixin input-label-font {
@@ -154,7 +154,7 @@ $font-weight-black: 700;
         size: 16px;
         weight: 700;
     }
-    color: $grey-on-grey;
+    color: $rainy2;
 }
 
 @mixin table-row-font {
@@ -166,5 +166,5 @@ $font-weight-black: 700;
     }
     letter-spacing: 0.015em;
     line-height: 19px;
-    color: $grey-on-grey;
+    color: $rainy2;
 }
