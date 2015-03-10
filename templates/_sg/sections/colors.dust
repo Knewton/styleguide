@@ -17,58 +17,42 @@
         </div>
     </section>
 
-    <section id="background-color-samples" class="sg-component">
-        <h4>Background colors</h4>
-        <p>Used for backgrounds.</p>
+
+    <section id="primary-color-samples" class="sg-component">
+        <h4>Primary Colors</h4>
+        <p>Used for buttons, callouts, text links, general decoration.</p>
         <div class="color-row">
-            {>"_sg/components/color" hex="#545454" name="$grey-on-grey" light="1" /}
-            {>"_sg/components/color" hex="#F1F1F1" name="$background-grey" /}
-            {>"_sg/components/color" hex="#FFFFFF" name="$white" /}
+            {>"_sg/components/color" hex="#00B0C7" name="$blue" light="1" /}
+            {>"_sg/components/color" hex="#FF8D07" name="$orange" light="1" /}
         </div>
     </section>
 
-    <section id="text-color-samples" class="sg-component">
-        <h4>Text colors</h4>
-        <p>Colors for headings, copy and labels.</p>
+    <section id="monochromatic-samples" class="sg-component">
+        <h4>Shades of Grey</h4>
+        <p>Used for backgrounds, buttons, and text.</p>
         <div class="color-row">
-            {>"_sg/components/color" hex="#454545" name="$body-text, $black-enough" light="1" /}
-            {>"_sg/components/color" hex="#757575" name="$default" light="1" /}
-            {>"_sg/components/color" hex="#B5B5B5" name="$dimmed-text, $ashen-grey" light="1" /}
+            {>"_sg/components/color" hex="#EEE" name="$cloudy1" /}
+            {>"_sg/components/color" hex="#CCC" name="$cloudy2" /}
+            {>"_sg/components/color" hex="#999" name="$rainy1" light="1" /}
+            {>"_sg/components/color" hex="#666" name="$rainy2" light="1" /}
+            {>"_sg/components/color" hex="#444" name="$stormy1" light="1" /}
+            {>"_sg/components/color" hex="#111" name="$stormy2" light="1"/}
         </div>
     </section>
 
     <section id="secondary-color-samples" class="sg-component">
-        <h4>Secondary colors</h4>
+        <h4>Messaging colors</h4>
         <div class="color-row">
-            <p>Used for ?</p> 
-            {>"_sg/components/color" hex="#f3b528" name="$gold" light="1" /}
-            {>"_sg/components/color" hex="#fef2d8" name="$gold-tint" /}
+            <p>Used for Success</p>
+            {>"_sg/components/color" hex="#129F4E" name="$green" light="1" /}
         </div>
         <div class="color-row">
-            <p>Used for ?</p>
-            {>"_sg/components/color" hex="#ee5723" name="$orange" light="1" /}
-            {>"_sg/components/color" hex="#ffefe7" name="$orange-tint" /}
+            <p>Used for Error</p>
+            {>"_sg/components/color" hex="#E9552E" name="$red" light="1" /}
         </div>
         <div class="color-row">
-            <p>Used for ?</p> 
-            {>"_sg/components/color" hex="#cf2e33" name="$red" light="1" /}
-            {>"_sg/components/color" hex="#cf2e33" name="$red-tint" light="1" /}
-        </div>
-        <div class="color-row">            
-            <p>Used for ?</p>
-            {>"_sg/components/color" hex="#ee5ca0" name="$pink" light="1" /}
-            {>"_sg/components/color" hex="#feeef7" name="$pink-tint" /}
-        </div>
-        <div class="color-row">
-            <p>Used for ?</p>
-            {>"_sg/components/color" hex="#b7cb34" name="$green" light="1" /}
-            {>"_sg/components/color" hex="#f3fceb" name="$green-tint" /}
-        </div>        
-        <div class="color-row">
-            <p>Used for ?</p>
-            {>"_sg/components/color" hex="#234166" name="$dark-blue" light="1" /}
-            {>"_sg/components/color" hex="#02B4D0" name="$blue" light="1" /}
-            {>"_sg/components/color" hex="#edf8f9" name="$blue-tint" /}
+            <p>Used for Warning</p>
+            {>"_sg/components/color" hex="#FFE02E" name="$yellow" /}
         </div>
     </section>
 
