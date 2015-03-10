@@ -64,3 +64,44 @@ $published-text:    $green;
 $published-bg:      $green-tint;
 
 $error-color:       $red;
+
+/**
+ * New Colors - Deprecate above old colors
+ * after they are all replaced)
+ */
+
+/**
+ * Helpers
+ */
+@function hover-state($color) {
+	@return lighten($color, 3%);
+}
+
+/**
+ * Primary
+ */
+
+$blue: #00b0c7;
+$orange: #ff8d07;
+$blue-hover: hover-state($blue);
+$orange-hover: hover-state($orange);
+
+/**
+ * Messaging
+ */
+$green: #129f4e;
+$red: #e9552e;
+$yellow: #ffe02e;
+$green-hover: hover-state($green);
+$red-hover: hover-state($red);
+$yellow-hover: hover-state($yellow);
+
+/**
+ * Shades of Grey
+ */
+$cloudy1: #eee;
+$cloudy2: #ccc;
+$rainy1: #999;
+$rainy2: #666;
+$stormy1: #444;
+$stormy2: #111;
