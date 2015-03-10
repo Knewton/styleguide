@@ -22,44 +22,11 @@ $header-text: $white;
 
 /*
 *
-* STYLE GUIDE FONTS (WE NEED TYPEKIT)
+* STYLE GUIDE FONTS
 *
 */
 
-@font-face {
-  font-family: "museo-sans";
-  src: font-url("MuseoSans_100.otf");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "museo-sans";
-  src: font-url("MuseoSans_300.otf");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "museo-sans";
-  src: font-url("MuseoSans_500.otf");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "museo-sans";
-  src: font-url("MuseoSans_700.otf");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "museo-sans";
-  src: font-url("MuseoSans_900.otf");
-  font-weight: 900;
-  font-style: normal;
-}
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,500italic);
 
 /*
 *
