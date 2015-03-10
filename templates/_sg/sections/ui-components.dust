@@ -65,6 +65,23 @@
     </section>
 
     <section class="sg-component">
+        <h2>Flags and notifications</h2>
+        <p>
+            Some simple information will be displayed in a colored label.
+        </p>
+        {>"_sg/components/digit-flag" /}
+
+        {@snippet}
+            {>"_sg/components/digit-flag" /}
+        {/snippet}
+
+        {>"_sg/components/label" /}
+        {@snippet}
+            {>"_sg/components/label" /}
+        {/snippet}
+    </section>
+
+    <section class="sg-component">
         <h2>Helper Icons</h2>
         <p>
             Helper icons are little icons that can be used to explain things to the user.

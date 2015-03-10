@@ -1,0 +1,12 @@
+.kn-digit-flag {
+    @include pending-request-font;
+
+    background: $orange;
+    color: $white;
+    width: rem(30);
+    height: rem(30);
+    border-radius: rem(15);
+
+    line-height: rem(30);
+    text-align: center;
+}
