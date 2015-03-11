@@ -22,14 +22,6 @@ $header-text: $white;
 
 /*
 *
-* STYLE GUIDE FONTS
-*
-*/
-
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,500italic);
-
-/*
-*
 * STYLE GUIDE STYLE
 *
 */
@@ -277,9 +269,6 @@ body {
 }
 
 .standard-body-font { @include standard-body-font; }
-.headline-font { @include headline-font; }
-.subhead-font { @include subhead-font; }
-.head4-font { @include head4-font; }
 .action-link-font { @include action-link-font; }
 .std-link-font { @include std-link-font; }
 .tab-font { @include tab-font; }
