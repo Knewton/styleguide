@@ -1,45 +1,35 @@
 body {
     @include standard-body-font;
-    color: $grey-on-grey;
-    background: $background-grey;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
     margin: 0;
 }
 
 h1 {
-    @include headline-font;
+    // To be designed
 }
 
 h2 {
-    @include subhead-font;
-    margin-top: 0;
-    line-height: 1.3em;
+    font: {
+        size: 32px;
+        weight: 500;
+    }
 }
 
 h3 {
-    @include subhead-font;
-    @include clearfix;
-
-    margin: 0;
-    padding-bottom: rem(10);
-
-    .action {
-        @include action-link-font;
-        float: right;
+    font: {
+        size: 22px;
+        weight: 500;
     }
-
-    &.breathe {
-        padding: rem(20) 0;
-        margin-bottom: rem(20);
-    }
-}
-
-h4 {
-    @include head4-font;
 }
 
 .link,
 a {
-    color: $turquoise;
+    color: $blue;
     text-decoration: none;
 
     &:hover {
@@ -49,11 +39,11 @@ a {
     &.link {
         &.action {
             @include action-link-font;
-            color: $turquoise;
+            color: $blue;
         }
 
         &.disabled {
-            color: $ashen-grey;
+            color: $cloudy1;
         }
 
         &:hover {
@@ -64,7 +54,7 @@ a {
 
 a {
     &.standard {
-        color: $turquoise;
+        color: $blue;
         text-decoration: none;
     }
 
