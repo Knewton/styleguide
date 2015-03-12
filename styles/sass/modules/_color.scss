@@ -77,6 +77,10 @@ $error-color:       $red;
 	@return lighten($color, 3%);
 }
 
+@function hover-state-darken($color) {
+	@return darken($color, 6%);
+}
+
 /**
  * Primary
  */
@@ -89,7 +93,7 @@ $orange-hover: hover-state($orange);
 /**
  * Messaging
  */
-$green: #129f4e;
+$green: #6baf49;
 $red: #e9552e;
 $yellow: #ffe02e;
 $green-hover: hover-state($green);

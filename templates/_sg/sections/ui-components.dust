@@ -2,19 +2,47 @@
     <h1 class="sg">UI components</h1>
 
     <section class="sg-component">
-        <h2>Alerts</h2>
-        Here are some alerts notes and stuff.
-        {>"_sg/components/alert" class="alert-info" text="An informational alert." /}
-        {@snippet src="_sg/components/alert" class="alert-info" text="An informational alert." /}
+        <h2>Global messaging</h2>
 
-        {>"_sg/components/alert" class="alert-success" text="An alert about success."/}
-        {@snippet src="_sg/components/alert" class="alert-success" text="An alert about success." /}
+        <p>We use <a href="http://github.hubspot.com/messenger/">Hubspot's Messenger</a> library for global messaging. Global messaging is displayed below the header, which is fixed at the top.</p>
 
-        {>"_sg/components/alert" class="alert-warning" text="A warning alert."/}
-        {@snippet src="_sg/components/alert" class="alert-warning" text="A warning alert."/}
+        <button type="button" class="alert-info-btn">
+          Info
+        </button>
+        <button type="button" class="alert-succ-btn">
+          Success
+        </button>
+        <button type="button" class="alert-warn-btn">
+          Warning
+        </button>
+        <button type="button" class="alert-error-btn">
+          Error
+        </button>
 
-        {>"_sg/components/alert" class="alert-danger" text="An alert with danger."/}
-        {@snippet src="_sg/components/alert" class="alert-danger" text="An alert with danger."/}
+        <script>
+            function launchAlert(msg_type) {
+                Messenger.options = {
+                    extraClasses: '',
+                    maxMessages: 1
+                }
+
+                Messenger().post({
+                    message: "This is a message",
+                    type: msg_type,
+                    hideAfter: 5,
+                    showCloseButton: true
+                });
+            }
+
+            $('.alert-info-btn').on('click', function () { return launchAlert("info"); });
+            $('.alert-succ-btn').on('click', function () { return launchAlert("success"); });
+            $('.alert-warn-btn').on('click', function () { return launchAlert("warning"); });
+            $('.alert-error-btn').on('click', function () { return launchAlert("error"); });
+        </script>
+
+        {@snippet}
+            {>"_sg/components/alert" /}
+        {/snippet}
     </section>
 
     <section class="sg-component">
