@@ -7,14 +7,17 @@
     @include fill-parent;
 
     transition: border-color .5s;
-
+    font-family: $roboto-font-stack;
+    color: $body-text;
     background: $white;
     margin-bottom: 1rem;
-    font-size: 1rem;
-    line-height: 2rem;
-    height: 2rem;
+    font-size: $large;
+    font-weight: 500;
+    line-height: 50px;
+    height: 50px;
     padding: 0 .5rem;
     border: 1px solid $border-grey;
+    -webkit-font-smoothing: antialiased;
 
     &.error {
         border-color: $red;
@@ -183,6 +186,14 @@ label.error {
             left: 12px;
         }
     }
+}
+
+// Placeholder styles
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:ms-input-placeholder {
+    font-family: $roboto-font-stack;
 }
 
 // scss-lint:enable QualifyingElement

@@ -20,6 +20,7 @@ button,
     background-color: $blue;
     border-width: 0;
     border-radius: $radius;
+    -webkit-font-smoothing: antialiased;
 
     &:focus {
         outline: 0;
