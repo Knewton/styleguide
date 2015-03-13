@@ -34,11 +34,11 @@
 }
 
 .icon-draft:before {
-    content: "\e011";
+    content: "\e001";
 }
 
 .icon-add-content:before {
-    content: "\e00f";
+    content: "\e004";
 }
 
 .icon-settings:before {
@@ -46,125 +46,178 @@
 }
 
 .icon-complete:before {
-    content: "\e00e";
-}
-
-.icon-past-due:before {
-    content: "\e01c";
-}
-
-.icon-content-text:before {
-    content: "\e012";
-}
-
-.icon-help:before {
-    content: "\e001";
-}
-
-.icon-invite:before {
-    content: "\e01b";
-}
-
-.icon-calendar:before {
-    content: "\e002";
-}
-
-.icon-browse:before {
-    content: "\e003";
-}
-
-.icon-check:before {
-    content: "\e004";
-}
-
-.icon-circle-arrow:before {
-    content: "\e005";
-}
-
-.icon-content-image:before {
-    content: "\e006";
-}
-
-.icon-content-movie:before {
-    content: "\e007";
-}
-
-.icon-learner:before {
-    content: "\e009";
-}
-
-.icon-derived-topic:before {
-    content: "\e00a";
-}
-
-.icon-target-hex-solid:before {
-    content: "\e00b";
-}
-
-.icon-target-hex-outlined:before {
-    content: "\e00c";
-}
-
-.icon-search:before {
-    content: "\e00d";
-}
-
-.icon-ruler:before {
-    content: "\e010";
-}
-
-.icon-preview:before {
-    content: "\e013";
-}
-
-.icon-popular:before {
-    content: "\e014";
-}
-
-.icon-warning:before {
-    content: "\e015";
-}
-
-.icon-teach:before {
-    content: "\e016";
-}
-
-.icon-target-topic:before {
-    content: "\e017";
-}
-
-.icon-arrow:before {
-    content: "\e018";
-}
-
-.icon-alert:before {
-    content: "\e019";
-}
-
-.icon-active:before {
-    content: "\e01a";
-}
-
-.icon-playback-pause:before {
     content: "\e008";
 }
 
-.icon-playback-play:before {
-    content: "\e01d";
+.icon-past-due:before {
+    content: "\e010";
 }
 
-.icon-gear:before {
-    content: "\e01e";
+.icon-content-text:before {
+    content: "\e013";
 }
 
-.icon-arrows-expand:before {
-    content: "\e01f";
+.icon-help:before {
+    content: "\e014";
 }
 
-.icon-mute:before {
+.icon-invite:before {
+    content: "\e015";
+}
+
+.icon-calendar:before {
+    content: "\e00d";
+}
+
+.icon-browse:before {
+    content: "\e017";
+}
+
+.icon-check-thin:before {
+    content: "\e00";
+}
+
+.icon-circle-arrow:before {
+    content: "\e018";
+}
+
+.icon-content-image:before {
     content: "\e020";
 }
 
+.icon-content-movie:before {
+    content: "\e01e";
+}
+
+.icon-learner:before {
+    content: "\e019";
+}
+
+.icon-derived-topic:before {
+    content: "\e007";
+}
+
+.icon-target-hex-solid:before {
+    content: "\e00c";
+}
+
+.icon-target-hex-outlined:before {
+    content: "\e00e";
+}
+
+.icon-search:before {
+    content: "\e003";
+}
+
+.icon-ruler:before {
+    content: "\aaa";
+}
+
+.icon-preview:before {
+    content: "\bbb";
+}
+
+.icon-popular:before {
+    content: "\ccc";
+}
+
+.icon-warning:before {
+    content: "\ddd";
+}
+
+.icon-teach:before {
+    content: "\e01b";
+}
+
+.icon-target-topic:before {
+    content: "\e00a";
+}
+
+.icon-arrow:before {
+    content: "\e00f";
+}
+
+.icon-alert:before {
+    content: "\aa";
+}
+
+.icon-active:before {
+    content: "\bb";
+}
+
+.icon-playback-pause:before {
+    content: "\e026";
+}
+
+.icon-playback-play:before {
+    content: "\e025";
+}
+
+.icon-gear:before {
+    content: "\ee";
+}
+
+.icon-mute:before {
+    content: "\e028";
+}
+
 .icon-unmute:before {
+    content: "\e027";
+}
+
+.icon-cancel:before {
+    content: "\e005";
+}
+
+.icon-user:before {
+    content: "\e002";
+}
+
+.icon-export:before {
+    content: "\e00b";
+}
+
+.icon-right-open-big:before {
+    content: "\e016";
+}
+
+.icon-left-open-big:before {
+    content: "\e01c";
+}
+
+.icon-plus-circled:before {
+    content: "\e024";
+}
+
+.icon-home:before {
+    content: "\e011";
+}
+
+.icon-trashcan:before {
+    content: "\e009";
+}
+
+.icon-pencil:before {
+    content: "\e012";
+}
+
+.icon-expand:before {
+    content: "\e029";
+}
+
+.icon-history-current:before {
+    content: "\e023";
+}
+
+.icon-history-sequence:before {
     content: "\e021";
 }
+
+.icon-history-single:before {
+    content: "\e022";
+}
+
+.icon-check-thick:before {
+  content: "\e006";
+}
+
