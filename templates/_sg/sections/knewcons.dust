@@ -7,7 +7,7 @@
 
     <div class="knewcons-display">
         {>"_sg/components/knewcon" knewcon="icon-draft" code="U+e001" name="Draft" /}
-        {>"_sg/components/knewcon" knewcon="icon-add-content" code="U+e004" name="Add content" /}
+        {>"_sg/components/knewcon" knewcon="icon-add-content" code="U+e0a1" name="Add content" /}
         {>"_sg/components/knewcon" knewcon="icon-settings" code="U+e000" name="Settings" /}
         {>"_sg/components/knewcon" knewcon="icon-complete" code="U+e008" name="Complete" /}
         {>"_sg/components/knewcon" knewcon="icon-past-due" code="U+e010" name="Past due" /}
@@ -58,5 +58,6 @@
         {>"_sg/components/knewcon" knewcon="icon-history-sequence" code="U+e021" name="History sequence" /}
         {>"_sg/components/knewcon" knewcon="icon-history-single" code="U+e022" name="History single" /}
         {>"_sg/components/knewcon" knewcon="icon-check-thick" code="U+e006" name="Checkmark thick" /}
+        {>"_sg/components/knewcon" knewcon="icon-caret-right" code="U+e004" name="Caret right" /}
     </div>
 </section>
