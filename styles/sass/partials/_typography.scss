@@ -18,6 +18,14 @@ h2 {
         size: 32px;
         weight: 500;
     }
+    margin-bottom: 20px;
+
+    [class^="icon-"]:before,
+    [class*=" icon-"]:before {
+        position: relative;
+        top: 2px;
+        margin-right: 10px;
+    }
 }
 
 h3 {

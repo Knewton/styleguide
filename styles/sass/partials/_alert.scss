@@ -1,30 +1,67 @@
-%alert {
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 0;
+.global-messaging {
+    display: none;
+    width: 100%;
     text-align: center;
-}
-
-.alert-success {
-    @extend %alert;
+    height: 60px;
+    position: absolute;
+    z-index: 1200;
     background-color: $green-tint;
-    color: $green;
 }
 
-.alert-info {
-    @extend %alert;
-    background-color: $turquoise-tint;
-    color: $turquoise;
-}
+ul.messenger {
+    left: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1200;
+    top: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 
-.alert-warning {
-    @extend %alert;
-    background-color: $gold-tint;
-    color: $gold;
-}
+    .messenger-message-inner {
+        text-align: center;
+        line-height: 60px;
+        height: 60px;
+        color: $white;
+        font: {
+            size: 14px;
+            weight: 500;
+        }
+    }
 
-.alert-danger {
-    @extend %alert;
-    background-color: $orange-tint;
-    color: $orange;
+    button.messenger-close {
+        color: $white;
+        background: none;
+        float: right;
+        height: 60px;
+
+        &:hover {
+            background: none;
+        }
+    }
+
+    .alert-success {
+        background: $green;
+        border-bottom: solid 1px hover-state-darken($green);
+    }
+
+    .alert-error {
+        background: $red;
+        border-bottom: solid 1px hover-state-darken($red);
+    }
+
+    .alert-info {
+        background: $blue;
+        border-bottom: solid 1px hover-state-darken($blue);
+    }
+
+    .alert-warning {
+        background: $orange;
+        border-bottom: solid 1px hover-state-darken($orange);
+    }
+
+    button {
+        &:hover {
+            background: none;
+            color: hover-state-darken($white);
+        }
+    }
 }

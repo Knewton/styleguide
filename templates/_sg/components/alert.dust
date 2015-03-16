@@ -1,3 +1,13 @@
-<div {?class}class="{class}"{/class}>
-    {?text}{text}{:else}Some message.{/text}
-</div>
+// Define options
+Messenger.options = {
+    'extraClasses': '',
+    'maxMessages': 1
+}
+
+// Post a message and a type
+Messenger().post({
+    'message': 'Hey a message',
+    'type': 'info',
+    'hideAfter': 5,
+    'showCloseButton': true
+});
