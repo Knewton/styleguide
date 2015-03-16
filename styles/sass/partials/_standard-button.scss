@@ -123,9 +123,10 @@ button,
 .short {
     @extend %button;
     width: 90px;
-    font-size: 9px;
+    font-size: $small;
+    height: 25px;
+    line-height: 25px;
     letter-spacing: 0.1em;
-    padding: rem(5) rem(7);
 
     &.white-button {
         border: 1px solid $blue;
