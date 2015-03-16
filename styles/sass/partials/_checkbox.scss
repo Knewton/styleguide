@@ -24,30 +24,29 @@
     + span {
         position: relative;
         padding-left: 30px;
-        padding-top: 4px;
+        padding-top: 2px;
         display: inline-block;
     }
 
     + span:before {
         position: absolute;
-        width: 24px;
-        height: 24px;
+        width: 22px;
+        height: 22px;
         top: 0;
         left: 0;
         background: $white;
         cursor: pointer;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        border-radius: 50px;
-        border: 3px solid $ashen-grey;
+        border: 2px solid $cloudy2;
         content: '';
     }
 
     + span:after {
         color: $white;
         position: absolute;
-        width: 24px;
-        height: 24px;
+        font-size: 14px;
+        font-weight: 400;
+        width: 22px;
+        height: 22px;
         top: 0;
         left: 0;
         opacity: 0;
@@ -55,19 +54,19 @@
         content: '\e006';
         cursor: pointer;
         text-align: center;
-        line-height: 24px;
+        line-height: 22px;
     }
 
     &:not(:disabled) + span:hover:after {
-        color: $background-grey;
+        color: $cloudy1;
         opacity: 1;
     }
 
     &:checked {
         + span:before {
             @include transition-active(.1s);
-            background: $green-success;
-            border: 3px solid $green-success;
+            background: $blue;
+            border: 2px solid $blue;
         }
 
 
@@ -80,7 +79,7 @@
     &:disabled {
         + span:before {
             background: $background-grey;
-            border: 3px solid $ashen-grey;
+            border: 2px solid $ashen-grey;
             cursor: default;
         }
 
