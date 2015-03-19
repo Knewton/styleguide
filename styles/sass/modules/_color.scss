@@ -74,7 +74,7 @@ $error-color:       $red;
  * Helpers
  */
 @function hover-state($color) {
-	@return lighten($color, 3%);
+	@return lighten($color, 4%);
 }
 
 @function hover-state-darken($color) {

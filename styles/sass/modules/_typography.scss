@@ -21,13 +21,15 @@ $font-weight-black: 700;
         size: 22px;
         weight: 500;
     }
+    color: $stormy1;
 }
 
 @mixin subtitle-main {
     font: {
-        weight: 500;
+        size: 16px;
+        weight: 400;
     }
-    color: $rainy1;
+    color: $stormy1;
 }
 
 @mixin tab-font {

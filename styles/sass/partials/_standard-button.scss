@@ -20,6 +20,7 @@ button,
     background-color: $blue;
     border-width: 0;
     border-radius: $radius;
+    border-bottom: 3px solid darken($blue, 8%);
     -webkit-font-smoothing: antialiased;
 
     &:focus {
@@ -55,6 +56,7 @@ button,
 
     &.rainy-button {
         background: $rainy2;
+        border-bottom: 3px solid darken($rainy2, 8%);
 
         &:hover:not(:disabled):not(.disabled) {
             @include transition-active(.1s);
@@ -64,6 +66,7 @@ button,
 
     &.orange-button {
         background: $orange;
+        border-bottom: 3px solid darken($orange, 8%);
 
         &:hover:not(:disabled):not(.disabled) {
             @include transition-active(.1s);
@@ -109,6 +112,18 @@ button,
             @include transition-active(.1s);
             background: hover-state($background-foggy);
             color: $rainy2;
+        }
+    }
+
+    &.kill-button {
+        background: $background-foggy;
+        border: solid 1px $red;
+        color: $red;
+
+        &:hover:not(:disabled):not(.disabled) {
+            @include transition-active(.1s);
+            background: $red;
+            color: $white;
         }
     }
 
