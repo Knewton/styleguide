@@ -9,7 +9,7 @@ $font-weight-black: 700;
 
     font: {
         family: $roboto-font-stack;
-        size: rem(16);
+        size: $normal;
         weight: 400;
     }
     line-height: 1.2;
@@ -18,16 +18,18 @@ $font-weight-black: 700;
 
 @mixin title-main {
     font: {
-        size: 22px;
+        size: 20px;
         weight: 500;
     }
+    color: $stormy1;
 }
 
 @mixin subtitle-main {
     font: {
-        weight: 500;
+        size: $normal;
+        weight: 400;
     }
-    color: $rainy1;
+    color: $rainy2;
 }
 
 @mixin tab-font {

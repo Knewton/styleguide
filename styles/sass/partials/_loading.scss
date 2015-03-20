@@ -4,11 +4,7 @@
     overflow: hidden;
     position: relative;
 
-    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
-
-    &:before {
+   &:before {
         content: "";
         position: absolute;
         width: 100%;
@@ -23,16 +19,16 @@
     }
 
     &:after {
-        content: "\e00c";
-        font-family: knewcons;
-        -webkit-animation: spin 4s linear infinite;
-        animation: spin 4s linear infinite;
-        font-size: 19px;
+        content: "";
+        width: 77px;
+        height: 77px;
+        background-image: url("/images/load_animation.gif");
         position: absolute;
-        top: 50%;
-        margin-top: -7px;
-        left: 50%;
-        margin-left: -7px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
         color: rgb(27, 172, 182);
         z-index: 2010;
     }
