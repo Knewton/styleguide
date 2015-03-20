@@ -6,58 +6,58 @@
         <pre><code>&lt;div class="icon-settings"&gt;&lt;/div&gt;</code></pre>
 
     <div class="knewcons-display">
-        {>"_sg/components/knewcon" knewcon="icon-draft" code="U+e001" name="Draft" /}
-        {>"_sg/components/knewcon" knewcon="icon-add-content" code="U+e0a1" name="Add content" /}
-        {>"_sg/components/knewcon" knewcon="icon-settings" code="U+e000" name="Settings" /}
-        {>"_sg/components/knewcon" knewcon="icon-complete" code="U+e008" name="Complete" /}
-        {>"_sg/components/knewcon" knewcon="icon-past-due" code="U+e010" name="Past due" /}
-        {>"_sg/components/knewcon" knewcon="icon-content-text" code="U+e013" name="Text content" /}
-        {>"_sg/components/knewcon" knewcon="icon-help" code="U+e014" name="Help" /}
-
-        {>"_sg/components/knewcon" knewcon="icon-invite" code="U+e015" name="Invite" /}
-        {>"_sg/components/knewcon" knewcon="icon-calendar" code="U+e00d" name="Calendar" /}
-        {>"_sg/components/knewcon" knewcon="icon-browse" code="U+e017" name="Browse" /}
-        {>"_sg/components/knewcon" knewcon="icon-check-thin" code="U+e00" name="Checkmark thin" /}
-        {>"_sg/components/knewcon" knewcon="icon-circle-arrow" code="U+e018" name="Circle arrow" /}
-        {>"_sg/components/knewcon" knewcon="icon-content-image" code="U+e020" name="Image content" /}
-        {>"_sg/components/knewcon" knewcon="icon-content-movie" code="U+e01e" name="Movie content" /}
-        {>"_sg/components/knewcon" knewcon="icon-learner" code="U+e019" name="Learner" /}
-
-        {>"_sg/components/knewcon" knewcon="icon-derived-topic" code="U+e007" name="Derived topic" /}
-        {>"_sg/components/knewcon" knewcon="icon-target-hex-solid" code="U+e00c" name="Target hex solid" /}
-        {>"_sg/components/knewcon" knewcon="icon-target-hex-outlined" code="U+e00e" name="Target hex outlined" /}
-        {>"_sg/components/knewcon" knewcon="icon-search" code="U+e003" name="Search" /}
-        {>"_sg/components/knewcon" knewcon="icon-ruler" code="aaa" name="Ruler" /}
-        {>"_sg/components/knewcon" knewcon="icon-preview" code="bbb" name="Preview" /}
-        {>"_sg/components/knewcon" knewcon="icon-popular" code="ccc" name="Popular" /}
-        {>"_sg/components/knewcon" knewcon="icon-warning" code="ddd" name="Warning" /}
-        {>"_sg/components/knewcon" knewcon="icon-teach" code="U+e01b" name="Teach" /}
-        {>"_sg/components/knewcon" knewcon="icon-target-topic" code="U+e00a" name="Target topic" /}
-        {>"_sg/components/knewcon" knewcon="icon-arrow" code="U+e00f" name="Arrow" /}
-        {>"_sg/components/knewcon" knewcon="icon-alert" code="aa" name="Alert" /}
-        {>"_sg/components/knewcon" knewcon="icon-active" code="bb" name="Active" /}
-
-        {>"_sg/components/knewcon" knewcon="icon-playback-pause" code="U+e026" name="Pause" /}
-        {>"_sg/components/knewcon" knewcon="icon-playback-play" code="U+e025" name="Play" /}
-        {>"_sg/components/knewcon" knewcon="icon-gear" code="ee" name="Gear" /}
-        {>"_sg/components/knewcon" knewcon="icon-expand" code="U+e029" name="Expand" /}
-        {>"_sg/components/knewcon" knewcon="icon-mute" code="U+e028" name="Mute" /}
-        {>"_sg/components/knewcon" knewcon="icon-unmute" code="U+e027" name="Volume" /}
-
-        {>"_sg/components/knewcon" knewcon="icon-cancel" code="U+e026" name="Cancel" /}
-        {>"_sg/components/knewcon" knewcon="icon-user" code="U+e025" name="User" /}
-        {>"_sg/components/knewcon" knewcon="icon-export" code="ee" name="Share" /}
-        {>"_sg/components/knewcon" knewcon="icon-right-open-big" code="U+e016" name="Right open big" /}
-        {>"_sg/components/knewcon" knewcon="icon-left-open-big" code="U+e028" name="Left open big" /}
-        {>"_sg/components/knewcon" knewcon="icon-plus-circled" code="U+e027" name="Plus circled" /}
-
-        {>"_sg/components/knewcon" knewcon="icon-home" code="U+e011" name="Home" /}
-        {>"_sg/components/knewcon" knewcon="icon-trashcan" code="U+e009" name="Delete" /}
-        {>"_sg/components/knewcon" knewcon="icon-pencil" code="U+e012" name="Edit" /}
-        {>"_sg/components/knewcon" knewcon="icon-history-current" code="U+e023" name="History current" /}
-        {>"_sg/components/knewcon" knewcon="icon-history-sequence" code="U+e021" name="History sequence" /}
-        {>"_sg/components/knewcon" knewcon="icon-history-single" code="U+e022" name="History single" /}
-        {>"_sg/components/knewcon" knewcon="icon-check-thick" code="U+e006" name="Checkmark thick" /}
-        {>"_sg/components/knewcon" knewcon="icon-caret-right" code="U+e004" name="Caret right" /}
+        {>"_sg/components/knewcon" knewcon="icon-derived-topic" code="U+e007" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-target-hex-solid" code="U+e00c" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-target-topic" code="U+e00a" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-arrow" code="U+e00f" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-playback-pause" code="U+e026" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-playback-play" code="U+e025" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-mute" code="U+e028" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-unmute" code="U+e027" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-user" code="U+e002" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-export" code="U+e00b" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-right-open-big" code="U+e016" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-left-open-big" code="U+e01c" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-plus-circled" code="U+e024" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-home" code="U+e011" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-pencil" code="U+e012" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-expand" code="U+e029" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-history-current" code="U+e023" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-history-sequence" code="U+e021" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-history-single" code="U+e022" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-check-thick" code="U+e006" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-caret-right" code="U+e004" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-learner" code="U+e019" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-trash" code="U+e009" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-trash-solid" code="U+e0015" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-warning" code="U+e140" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-activity" code="U+e180" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-alert-solid" code="U+e170" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-arrow-circle" code="U+e018" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-browse" code="U+e017" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-calendar" code="U+e00d" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-check" code="U+e00" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-close-large" code="U+e005" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-close-small" code="U+e060" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-complete-solid" code="U+e008" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-ruler" code="U+e100" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-preview-solid" code="U+e120" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-popular-solid" code="U+e0200" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-learn" code="U+e01b" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-invite" code="U+e02b" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-invite-solid" code="U+e015" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-draft" code="U+e001" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-create-content" code="U+e0a1" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-content-video" code="U+e01d" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-search" code="U+e030" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-search-solid" code="U+e003" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-settings-solid" code="U+ee" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-support-solid" code="U+e014" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-popular" code="U+e130" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-content-text" code="U+e013" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-complete" code="U+e000" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-content-image" code="U+e00e" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-cal-large" code="U+e01a" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-cal-alert" code="U+e010" name="" /}
     </div>
 </section>
