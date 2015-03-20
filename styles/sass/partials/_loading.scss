@@ -34,7 +34,7 @@
     }
 }
 
-.loading:not(button) {
+.loading:not(button):not(.button):not(a) {
     @extend %spinner;
 
     &:before {
