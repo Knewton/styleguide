@@ -1,6 +1,13 @@
 @import "modules/transition-effects";
 @import "modules/base";
 
+%button,
+.button,
+[type=submit] {
+    // excluding <button>
+    min-width: 150px;
+}
+
 button,
 %button,
 .button,
@@ -115,8 +122,8 @@ button,
         }
     }
 
-    &.kill-button {
-        background: $background-foggy;
+    &.red-button {
+        background: transparent;
         border: solid 1px $red;
         color: $red;
 
