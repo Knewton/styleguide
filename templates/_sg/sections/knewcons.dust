@@ -59,5 +59,10 @@
         {>"_sg/components/knewcon" knewcon="icon-content-image" code="U+e00e" name="" /}
         {>"_sg/components/knewcon" knewcon="icon-cal-large" code="U+e01a" name="" /}
         {>"_sg/components/knewcon" knewcon="icon-cal-alert" code="U+e010" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-cancel" code="U+e01e" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-cancel-outlines" code="U+e01f" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-active-course" code="U+e020" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-active-goal" code="U+e02a" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-goals-in-course" code="U+e02d" name="" /}
     </div>
 </section>

@@ -123,9 +123,6 @@
 .icon-calendar:before {
   content: "\e00d";
 }
-.icon-check:before {
-  content: "\e00";
-}
 .icon-close-large:before {
   content: "\e005";
 }
@@ -192,9 +189,21 @@
 .icon-cal-alert:before {
   content: "\e010";
 }
+.icon-check:before {
+  content: "\e00";
+}
 .icon-cancel:before {
   content: "\e01e";
 }
-.icon-cancel-outlined:before {
+.icon-cancel-outlines:before {
   content: "\e01f";
+}
+.icon-active-course:before {
+  content: "\e020";
+}
+.icon-active-goal:before {
+  content: "\e02a";
+}
+.icon-goals-in-course:before {
+  content: "\e02d";
 }
