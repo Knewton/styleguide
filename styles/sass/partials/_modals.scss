@@ -65,6 +65,9 @@
 
     &.complex-modal {
         text-align: left;
+        .modal-header .close {
+            margin-top: -9px;
+        }
         .modal-content {
             padding: 0;
         }
