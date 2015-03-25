@@ -32,9 +32,11 @@ ul.messenger {
         background: none;
         float: right;
         height: 60px;
+        border-bottom: 0;
 
         &:hover {
             background: none;
+            border-bottom: 0;
         }
     }
 
