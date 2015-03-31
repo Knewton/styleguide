@@ -1,8 +1,6 @@
-
 {+header}
     {>"_sg/sg-header" /}
 {/header}
-
 
 <div class="main sg">
 
