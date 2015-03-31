@@ -7,14 +7,19 @@
     @include fill-parent;
 
     transition: border-color .5s;
-
+    font-family: $roboto-font-stack;
+    color: $body-text;
     background: $white;
     margin-bottom: 1rem;
-    font-size: 1rem;
-    line-height: 2rem;
-    height: 2rem;
+    font-size: $large;
+    font-weight: 400;
+    line-height: 50px;
+    height: 50px;
     padding: 0 .5rem;
     border: 1px solid $border-grey;
+    border-radius: 3px;
+    box-shadow: none;
+    -webkit-font-smoothing: antialiased;
 
     &.error {
         border-color: $red;
@@ -42,7 +47,7 @@
 
     &:focus {
         outline: none;
-        border: 1px solid $turquoise;
+        border: 1px solid $blue;
     }
 }
 
@@ -111,16 +116,9 @@
     @include input-font;
     position: relative;
     border-collapse: separate;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    height: 2rem;
-
-    &:not(:focus):before {
-        position: absolute;
-        font-family: "knewcons";
-        content: "\e00d";
-        right: .5rem;
-    }
+    font-size: $large;
+    line-height: 50px;
+    height: 50px;
 
     input {
         border-radius: 0;
@@ -132,6 +130,12 @@
             outline: none;
             border: 1px solid $turquoise;
         }
+    }
+
+    span {
+        position: absolute;
+        right: 0.25em;
+        top: 0.15em;
     }
 }
 
@@ -186,6 +190,12 @@ label.error {
     }
 }
 
+// Placeholder styles
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:ms-input-placeholder {
+    font-family: $roboto-font-stack;
+}
+
 // scss-lint:enable QualifyingElement
-
-

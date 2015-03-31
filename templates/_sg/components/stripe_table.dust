@@ -1,8 +1,8 @@
-<table class="kn-table">
+<table class="kn-stripe-table">
     <tr>
-        <td class="title">Name</td>
-        <td class="title">Dahell</td>
-        <td class="title">How much?</td>
+        <th class="title">Name</th>
+        <th class="title">Dahell</th>
+        <th class="title">How much?</th>
     </tr>
     <tr>
         <td>Dahell 1</td>

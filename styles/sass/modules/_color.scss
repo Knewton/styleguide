@@ -64,3 +64,52 @@ $published-text:    $green;
 $published-bg:      $green-tint;
 
 $error-color:       $red;
+
+/**
+ * New Colors - Deprecate above old colors
+ * after they are all replaced)
+ */
+
+/**
+ * Helpers
+ */
+@function hover-state($color) {
+	@return lighten($color, 4%);
+}
+
+@function hover-state-darken($color) {
+	@return darken($color, 6%);
+}
+
+/**
+ * Primary
+ */
+
+$blue: #00b0c7;
+$orange: #ff8d07;
+$blue-hover: hover-state($blue);
+$orange-hover: hover-state($orange);
+
+/**
+ * Messaging
+ */
+$green: #6baf49;
+$red: #e9552e;
+$yellow: #ffe02e;
+$green-hover: hover-state($green);
+$red-hover: hover-state($red);
+$yellow-hover: hover-state($yellow);
+
+$error-color:  $red;
+
+/**
+ * Shades of Grey
+ */
+$cloudy1: #eee;
+$cloudy2: #ccc;
+$rainy1: #999;
+$rainy2: #666;
+$stormy1: #444;
+$stormy2: #111;
+
+$background-foggy: #f7f7f7;

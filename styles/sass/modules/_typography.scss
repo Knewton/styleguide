@@ -1,44 +1,35 @@
-$museo-sans-font-stack: "museo-sans", sans-serif;
+$roboto-font-stack: Roboto, sans-serif;
+$font-weight-thin: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-weight-black: 700;
 
 @mixin standard-body-font {
     // ./partials/_global.scss
 
     font: {
-        family: $museo-sans-font-stack;
-        size: rem(16);
-        weight: 300;
+        family: $roboto-font-stack;
+        size: $normal;
+        weight: 400;
     }
-    line-height: 1.3;
-    color: $grey-on-grey;
+    line-height: 1.2;
+    color: $stormy1;
 }
 
-@mixin headline-font {
-    // ./experience-info.scss
-    // ./partials/_global.scss
-
+@mixin title-main {
     font: {
-        size: rem(28);
-        weight: 300;
+        size: 20px;
+        weight: 500;
     }
-    line-height: 1.4em;
-    color: $grey-on-grey;
+    color: $stormy1;
 }
 
-@mixin subhead-font {
+@mixin subtitle-main {
     font: {
-        size: rem(21);
-        weight: 300;
+        size: $normal;
+        weight: 400;
     }
-    color: $grey-on-grey;
-}
-
-@mixin head4-font {
-    font: {
-        size: 18px;
-        weight: 900;
-    }
-    line-height: 1.3em;
-    color: $grey-on-grey;
+    color: $rainy2;
 }
 
 @mixin tab-font {
@@ -64,11 +55,11 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
 @mixin action-link-font {
 
     font: {
+        family: $roboto-font-stack;
         size: 12px;
         weight: 700;
     }
     text-decoration: none;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
     color: $ashen-grey;
     line-height: 15px;
@@ -92,7 +83,7 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
 
     &:hover {
         text-decoration: underline;
-    }    
+    }
 }
 
 @mixin sidebar-font {
@@ -103,7 +94,7 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
         weight: 500;
     }
     letter-spacing: 0.05em;
-    color: $grey-on-grey;
+    color: $rainy2;
 
     line-height: 21px;
 }
@@ -116,7 +107,7 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
         weight: 500;
     }
     letter-spacing: 0.015em;
-    color: $grey-on-grey;
+    color: $rainy2;
 }
 
 @mixin input-font {
@@ -132,13 +123,13 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
 
 @mixin dropdown-font {
     @include standard-body-font;
-    
+
     line-height: 30px;
     font: {
         size: 14px;
         weight: 300;
     }
-    color: $grey-on-grey;
+    color: $rainy2;
 }
 
 @mixin input-label-font {
@@ -149,7 +140,7 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
         size: 16px;
         weight: 700;
     }
-    color: $grey-on-grey;
+    color: $rainy2;
 }
 
 @mixin table-row-font {
@@ -161,5 +152,5 @@ $museo-sans-font-stack: "museo-sans", sans-serif;
     }
     letter-spacing: 0.015em;
     line-height: 19px;
-    color: $grey-on-grey;
+    color: $rainy2;
 }

@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/css?family=Roboto:300,400,500,400italic,500italic);
 @import "knewcons";
 
 // FORM STYLING
@@ -19,12 +20,17 @@
 @import "bootstrap/panels";
 @import "bootstrap/component-animations";
 
+// MESSENGER
+@import "partials/messenger";
+
 @import "modules/base";
 @import "partials/alert";
 @import "partials/checkbox";
 @import "partials/datepicker";
 @import "partials/easydropdown";
 @import "partials/forms";
+@import "partials/digit-flag";
+@import "partials/label";
 @import "partials/modals";
 @import "partials/tooltip";
 @import "partials/page-control-pagination";

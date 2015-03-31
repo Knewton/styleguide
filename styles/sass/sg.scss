@@ -22,47 +22,6 @@ $header-text: $white;
 
 /*
 *
-* STYLE GUIDE FONTS (WE NEED TYPEKIT)
-*
-*/
-
-@font-face {
-  font-family: "museo-sans";
-  src: font-url("MuseoSans_100.otf");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "museo-sans";
-  src: font-url("MuseoSans_300.otf");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "museo-sans";
-  src: font-url("MuseoSans_500.otf");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "museo-sans";
-  src: font-url("MuseoSans_700.otf");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "museo-sans";
-  src: font-url("MuseoSans_900.otf");
-  font-weight: 900;
-  font-style: normal;
-}
-
-/*
-*
 * STYLE GUIDE STYLE
 *
 */
@@ -83,6 +42,28 @@ body {
     @include outer-container(1200px);
 
     margin: 2em auto;
+}
+
+@mixin rainbow {
+  $rainbow-green:   #46c46b;
+  $rainbow-orange:  #f6b62a;
+  $rainbow-pink:    #ef5ca1;
+  $rainbow-green-2: #68cd35;
+  $rainbow-blue:    #1cc4c9;
+
+  position: relative;
+
+  &:before {
+      @include linear-gradient(50deg, $rainbow-green 0%, $rainbow-orange 25%, $rainbow-pink 50%, $rainbow-green-2 75%, $rainbow-blue 100%);
+
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: rem(3);
+  }
 }
 
 .sg-header {
@@ -310,9 +291,6 @@ body {
 }
 
 .standard-body-font { @include standard-body-font; }
-.headline-font { @include headline-font; }
-.subhead-font { @include subhead-font; }
-.head4-font { @include head4-font; }
 .action-link-font { @include action-link-font; }
 .std-link-font { @include std-link-font; }
 .tab-font { @include tab-font; }

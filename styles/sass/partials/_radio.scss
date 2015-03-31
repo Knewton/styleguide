@@ -13,7 +13,7 @@
 }
 
 .radio {
-  color: $border-grey;
+  color: $cloudy2;
   position: relative;
 
   + .radio:not(.inline) {
@@ -29,12 +29,12 @@
 
     &:before {
       content: '';
-      width: 24px;
-      height: 24px;
-      border: 3px solid $ashen-grey;
+      width: 22px;
+      height: 22px;
+      border: 2px solid $cloudy2;
       position: absolute;
       left: 0;
-      top: 1px;
+      top: 2px;
       padding-top: 0;
 
       border-radius: 100%;
@@ -59,18 +59,17 @@
 
     &:checked + span:before {
       @include transition-active(.1s);
-      border-color: $green-success;
     }
 
     &:checked + span:after {
       @include transition-active(.1s);
       content: '';
-      width: 14px;
-      height: 14px;
+      width: 8px;
+      height: 8px;
       position: absolute;
-      background: $green-success;
-      left: 5px;
-      top: 6px;
+      background: $blue;
+      left: 7px;
+      top: 9px;
       border-radius: 100%;
       -ms-border-radius: 100%;
       -moz-border-radius: 100%;
@@ -79,7 +78,6 @@
 
     &:disabled + span:before {
       background: $background-grey;
-      border-color: $ashen-grey;
       cursor: default;
     }
 
