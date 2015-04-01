@@ -14,11 +14,11 @@
     font-size: $large;
     font-weight: 400;
     height: 50px;
-    line-height: 24px;
     padding: 12px;
     border: 1px solid $border-grey;
     border-radius: 3px;
     box-shadow: none;
+    overflow: auto;
     -webkit-font-smoothing: antialiased;
 
     &.error {
@@ -60,7 +60,7 @@
         font-family: knewcons;
         top: 0;
         right: 0;
-        padding: 0 .5rem;
+        padding: 10px;
     }
 
     &.success:after,
