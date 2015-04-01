@@ -64,5 +64,8 @@
         {>"_sg/components/knewcon" knewcon="icon-active-course" code="U+e020" name="" /}
         {>"_sg/components/knewcon" knewcon="icon-active-goal" code="U+e02a" name="" /}
         {>"_sg/components/knewcon" knewcon="icon-goals-in-course" code="U+e02d" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-small-collapse" code="U+e02c" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-small-expand" code="U+e02e" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-user-crane" code="U+e02f" name="" /}
     </div>
 </section>
