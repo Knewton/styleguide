@@ -61,9 +61,9 @@ module.exports = function (grunt) {
             gruntfile: {
                 files: ['Gruntfile.js']
             },
-            compass: {
+            sass: {
                 files: ['styles/**/*.{scss,sass}'],
-                tasks: ['scsslint', 'compass', 'autoprefixer','growl:sassCompile'],
+                tasks: ['scsslint', 'sass', 'autoprefixer','growl:sassCompile'],
                 options: {
                     livereload: false
                 }
@@ -79,29 +79,27 @@ module.exports = function (grunt) {
         },
 
         // Compiles Sass to CSS and generates necessary files if requested
-        compass: {
+        sass: {
             options: {
-                sassDir: 'styles/sass',
-                cssDir: 'dist/styles/css',
-                generatedImagesDir: 'dist/styles/css/images/generated',
-                javascriptsDir: 'scripts',
-                httpFontsPath: '../fonts/',
-                httpImagesPath: '../images/',
-                importPath: ['bower_components',
-                             'bower_components/bootstrap-sass-twbs/assets/stylesheets',
-                             'bower_components/bootstrap-datepicker/css',
-                             'bower_components/messenger/build/css',
-                             'bower_components/bourbon/app/assets/stylesheets',
-                             'bower_components/neat/app/assets/stylesheets'],
-                relativeAssets: false,
-                assetCacheBuster: false,
-                debugInfo: false,
-                outputStyle: 'compact'
+                outputStyle: 'nested',
+                sourceComments: false,
+                includePaths: [
+                    'bower_components',
+                    'bower_components/compass-mixins/lib/',
+                    'bower_components/bootstrap-sass-twbs/assets/stylesheets',
+                    'bower_components/bootstrap-datepicker/css',
+                    'bower_components/messenger/build/css',
+                    'bower_components/bourbon/app/assets/stylesheets',
+                    'bower_components/neat/app/assets/stylesheets',
+                    'styles/sass'
+                ],
             },
             dist: {
-                options: {
-                    generatedImagesDir: 'dist/styles/css/images/generated'
-                }
+                expand: true,
+                cwd: 'styles/sass',
+                src: ['**/*.scss', '!**/_*.scss'],
+                dest: 'dist/styles/css',
+                ext: '.css'
             }
         },
 
@@ -193,7 +191,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('build', 'Builds.', ['scsslint', 'copy', 'dust', 'compass']);
+    grunt.registerTask('build', 'Builds.', ['scsslint', 'copy', 'dust', 'sass', 'autoprefixer']);
     grunt.registerTask('run', 'Builds and watches the style guide for changes.', ['build', 'watch']);
     grunt.registerTask('deploy', 'Deploys to github', ['build', 'copy:deploy', 'githubPages:target']);
     grunt.registerTask('server', ['express', 'open', 'watch']);

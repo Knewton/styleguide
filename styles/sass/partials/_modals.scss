@@ -39,6 +39,7 @@
         .modal-body {
             padding: 0 rem(50);
             font-size: $large;
+
             > p:first-child {
                 margin-top: 0;
             }
@@ -65,26 +66,31 @@
 
     &.complex-modal {
         text-align: left;
+
         .modal-header .close {
             margin-top: -9px;
             line-height: 45px;
             height: 45px;
             font-size: $large;
             color: $rainy1;
+
             &:before {
                 line-height: 45px;
                 height: 45px;
             }
         }
+
         .modal-content {
             padding: 0;
         }
+
         .modal-body {
             padding: 20px 40px;
         }
+
         .modal-footer {
             text-align: right;
-            padding: 15px 40px 40px 40px;
+            padding: 15px 40px 40px;
         }
 
     }
@@ -93,6 +99,7 @@
 .modal-backdrop {
     background-color: rgba($background-foggy, 0.7);
     background-image: url("/images/diagonalLines.png");
+
     &.in {
         opacity: 1;
     }
