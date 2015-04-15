@@ -1,30 +1,35 @@
 <section id="colors" title="Colors" class="sg-section">
     <h1 class="sg">Colors</h1>
 
-    To do:
-    <ul>
-        <li>When to use these colors</li>
-    </ul>
-
-
-    <section id="knewton-color-samples" class="sg-component">
+    {!<section id="knewton-color-samples" class="sg-component">
         <h4>Knewton Blues</h4>
         <p>Used for branding, buttons, links and notifications.</p>
         <div class="color-row">
-            {>"_sg/components/color" hex="#159FA3" name="$dark-turquoise" light="1" /}
-            {>"_sg/components/color" hex="#1ABCC1" name="$turquoise" light="1" /}
-            {>"_sg/components/color" hex="#CCEEF1" name="$turquoise-tint" /}
+            {>"_sg/components/color" hex="#159FA3" name="darken($blue, 6%);" light="1" /}
+            {>"_sg/components/color" hex="#1ABCC1" name="$blue" light="1" /}
+            {>"_sg/components/color" hex="#CCEEF1" name="$blue-tint" /}
         </div>
-    </section>
-
+    </section>!}
 
     <section id="primary-color-samples" class="sg-component">
         <h4>Primary Colors</h4>
-        <p>Used for buttons, callouts, text links, general decoration.</p>
+        <p>Used for buttons, callouts, text links, information.</p>
         <div class="color-row">
             {>"_sg/components/color" hex="#00B0C7" name="$blue" light="1" /}
-            {>"_sg/components/color" hex="#FF8D07" name="$orange" light="1" /}
         </div>
+        <div class="color-row">
+            <p>Used for Success</p>
+            {>"_sg/components/color" hex="#129F4E" name="$green" light="1" /}
+        </div>
+        <div class="color-row">
+            <p>Used for Error</p>
+            {>"_sg/components/color" hex="#E9552E" name="$red" light="1" /}
+        </div>
+        <div class="color-row">
+            <p>Used for Warning</p>
+            {>"_sg/components/color" hex="#FF8D07" name="$orange" light="1"/}
+        </div>
+
     </section>
 
     <section id="monochromatic-samples" class="sg-component">
@@ -39,21 +44,4 @@
             {>"_sg/components/color" hex="#111" name="$stormy2" light="1"/}
         </div>
     </section>
-
-    <section id="secondary-color-samples" class="sg-component">
-        <h4>Messaging colors</h4>
-        <div class="color-row">
-            <p>Used for Success</p>
-            {>"_sg/components/color" hex="#129F4E" name="$green" light="1" /}
-        </div>
-        <div class="color-row">
-            <p>Used for Error</p>
-            {>"_sg/components/color" hex="#E9552E" name="$red" light="1" /}
-        </div>
-        <div class="color-row">
-            <p>Used for Warning</p>
-            {>"_sg/components/color" hex="#FFE02E" name="$yellow" /}
-        </div>
-    </section>
-
 </section>

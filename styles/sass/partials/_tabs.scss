@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     position: relative;
-    border-bottom: 1px solid $border-grey;
+    border-bottom: 1px solid $cloudy2;
 
     &.unbound {
         border-bottom: 0;
@@ -17,7 +17,7 @@
         margin-bottom: -1px;
         float: left;
         width: 112px;
-        border: 1px solid $border-grey;
+        border: 1px solid $cloudy2;
         text-align: center;
         position: relative;
         z-index: 5;
@@ -28,7 +28,7 @@
 
         a {
             @include tab-font;
-            color: $black-enough;
+            color: $stormy1;
             display: block;
             height: 100%;
             width: 100%;
@@ -37,17 +37,17 @@
         &:hover:not(.active):not(.solicitation-tabs) {
             @include transition-tab(.4s);
             z-index: 10;
-            border-color: $turquoise;
+            border-color: $blue;
         }
 
         &:hover:not(.active):not(.solicitation-tabs) a {
             @include transition-link(.4s);
-            color: $black-enough;
+            color: $stormy1;
         }
 
         &.active {
-            background: $black-enough;
-            border-color: $black-enough;
+            background: $stormy1;
+            border-color: $stormy1;
         }
 
         &.active a {

@@ -1,13 +1,3 @@
-.global-messaging {
-    display: none;
-    width: 100%;
-    text-align: center;
-    height: 60px;
-    position: absolute;
-    z-index: 1200;
-    background-color: $green-tint;
-}
-
 ul.messenger {
     left: 0%;
     width: 100%;
@@ -67,3 +57,13 @@ ul.messenger {
         }
     }
 }
+
+/*.global-messaging {
+    display: none;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    position: absolute;
+    z-index: 1200;
+    background-color: #f3fceb;
+}*/

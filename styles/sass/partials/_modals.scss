@@ -20,8 +20,8 @@
         opacity: 1;
         text-shadow: none;
 
-        &:hover,
-        &:focus {
+        &.close:hover,
+        &.close:focus {
             @include transition-color(.1s);
             color: hover-state-darken($cloudy2);
             background: transparent;
@@ -46,6 +46,10 @@
                 margin-top: 0;
             }
         }
+    }
+
+    .modal-body > p:first-child {
+        margin-top: 0;
     }
 
     .modal-footer {
@@ -105,5 +109,19 @@
 
     &.in {
         opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal .modal-dialog.modal-lg {
+      width: auto;
+      margin: 30px 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal .modal-dialog.modal-lg {
+      width: 900px;
+      margin: 30px auto;
     }
 }

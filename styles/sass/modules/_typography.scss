@@ -1,3 +1,5 @@
+/* THIS IS BARELY USED IN FRACKEND  */
+
 $roboto-font-stack: Roboto, sans-serif;
 $font-weight-thin: 300;
 $font-weight-normal: 400;
@@ -33,19 +35,14 @@ $font-weight-black: 700;
 }
 
 @mixin tab-font {
-    // ./partials/_list-table.scss
-    // ./partials/_tabs.scss
-    /* Same as action-link, header-tab-font, diff line-height */
-
     @include action-link-font;
     line-height: 30px;
 }
 
 @mixin pending-request-font {
-    //./partials/_module-comments-table.scss
 
     font: {
-        size: 12px;
+        size: $extra-small;
         weight: 500;
     }
     letter-spacing: 0.025em;
@@ -56,29 +53,27 @@ $font-weight-black: 700;
 
     font: {
         family: $roboto-font-stack;
-        size: 12px;
+        size: $extra-small;
         weight: 700;
     }
     text-decoration: none;
     letter-spacing: 0.05em;
-    color: $ashen-grey;
+    color: $rainy1;
     line-height: 15px;
 
     &:hover {
-        color: $default;
+        color: $rainy2;
         text-decoration: none;
     }
 }
 
 @mixin std-link-font {
-    // ./partials/_page-control-pagination.scss
-
     font: {
-        size: 16px;
+        size: $normal;
         weight: 300;
     }
     line-height: 18px;
-    color: $turquoise;
+    color: $blue;
     text-decoration: none;
 
     &:hover {
@@ -87,10 +82,8 @@ $font-weight-black: 700;
 }
 
 @mixin sidebar-font {
-    // ./partials/_common.scss
-
     font: {
-        size: 14px;
+        size: $small;
         weight: 500;
     }
     letter-spacing: 0.05em;
@@ -100,10 +93,8 @@ $font-weight-black: 700;
 }
 
 @mixin result-paginator-font {
-    // ./partials/_module-paginator.scss
-
     font: {
-        size: 14px;
+        size: $small;
         weight: 500;
     }
     letter-spacing: 0.015em;
@@ -111,14 +102,12 @@ $font-weight-black: 700;
 }
 
 @mixin input-font {
-    // ./partials/_easydropdown.scss
-
     line-height: 30px;
     font: {
-        size: 16px;
+        size: $normal;
         weight: 500;
     }
-    color: $ashen-grey;
+    color: $rainy1;
 }
 
 @mixin dropdown-font {
@@ -126,28 +115,24 @@ $font-weight-black: 700;
 
     line-height: 30px;
     font: {
-        size: 14px;
+        size: $small;
         weight: 300;
     }
     color: $rainy2;
 }
 
 @mixin input-label-font {
-    // ./partials/_easydropdown.scss
-
     line-height: 30px;
     font: {
-        size: 16px;
+        size: $normal;
         weight: 700;
     }
     color: $rainy2;
 }
 
 @mixin table-row-font {
-    // ./partials/_module-usage-table.scss
-
     font: {
-        size: 16px;
+        size: $normal;
         weight: 300;
     }
     letter-spacing: 0.015em;
