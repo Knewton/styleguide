@@ -1,74 +1,48 @@
-/*
-*
-* White - greyscale - blacks
-*
-*/
-
-$black-enough:      #454545;    /* Name in palette (NP): Header / default state */
-$grey-on-grey:      #545454;    /* NP: text */
-$default:           #757575;    /* NP: - */
-
-$ashen-grey:        #b5b5b5;    /* NP: - */
-$border-grey:       #ccc;       /* NP: Border / rules */
-
-$background-grey:   #f1f1f1;    /* NP: Form / disabled */
-$white:             #fff;       /* NP: White */
-
-/*
-    Secondary colors
-*/
-
-$gold:              #f3b528;    /* NP: Yellow */
-$gold-tint:         #fef2d8;    /* NP: - */
-
-$orange:            #ee5723;    /* NP: Orange */
-$orange-tint:       #ffefe7;    /* NP: - */
-
-$red:               #cf2e33;    /* NP: Red */
-$red-tint:          #cf2e33;    /* NP: - */
-
-$pink:              #ee5ca0;    /* NP: Pink */
-$pink-tint:         #fefef7;    /* NP: - */
-
-$green:             #b7cb34;    /* NP: Green / Yellow */
-$green-tint:        #f3fceb;    /* NP: - */
-
-$green-success:     #4ea565;
-
-$dark-blue:         #234166;    /* NP: Dark blue */
-$blue:              #02b4d0;    /* NP: Light blue */
-$blue-tint:         #edf8f9;    /* NP: Light teal */
-
-
-/*
-    Knewton blues
-*/
-
-$turquoise:         #1abcc1;    /* NP: Clickable */
-$dark-turquoise:    #159fa3;    /* NP: Hover */
-$turquoise-tint:    #cceef1;    /* NP: Clickable light */
-
-/*
-    Text colors alias
-*/
-
-$body-text:         $black-enough;
-$dimmed-text:       $ashen-grey;
-
-$in-progress-text:  $blue;
-$in-progress-bg:    $blue-tint;
-
-$submitted-text:    $orange;
-$submitted-bg:      $orange-tint;
-$published-text:    $green;
-$published-bg:      $green-tint;
-
-$error-color:       $red;
-
 /**
- * New Colors - Deprecate above old colors
+ * New Colors - Deprecate old colors below
  * after they are all replaced)
  */
+
+/**
+ * Primary
+ */
+
+$blue: #00b0c7;
+$blue-tint: #edf8f9;
+$blue-hover: hover-state($blue);
+
+$orange: #ff8d07;
+$orange-tint:       #ffefe7;
+$orange-hover: hover-state($orange);
+
+/**
+ * Messaging
+ */
+$green: #6baf49;
+$green-tint:        #f3fceb;
+
+$red: #e9552e;
+
+$yellow: #ffe02e;
+
+$green-hover: hover-state($green);
+$red-hover: hover-state($red);
+$yellow-hover: hover-state($yellow);
+
+$error-color:  $red;
+
+/**
+ * Shades of Grey
+ */
+$white: #fff;
+$cloudy1: #eee;
+$cloudy2: #ccc;
+$rainy1: #999;
+$rainy2: #666;
+$stormy1: #444;
+$stormy2: #111;
+
+$background-foggy: #f7f7f7;
 
 /**
  * Helpers
@@ -81,35 +55,73 @@ $error-color:       $red;
 	@return darken($color, 6%);
 }
 
-/**
- * Primary
- */
 
-$blue: #00b0c7;
-$orange: #ff8d07;
-$blue-hover: hover-state($blue);
-$orange-hover: hover-state($orange);
+/*
+*
+* White - greyscale - blacks
+*
+*/
 
-/**
- * Messaging
- */
-$green: #6baf49;
-$red: #e9552e;
-$yellow: #ffe02e;
-$green-hover: hover-state($green);
-$red-hover: hover-state($red);
-$yellow-hover: hover-state($yellow);
+/*$black-enough:      #454545;
+$stormy1:      #545454;
+$default:           #757575;
 
-$error-color:  $red;
+$ashen-grey:        #b5b5b5;
+$border-grey:       #ccc;
 
-/**
- * Shades of Grey
- */
-$cloudy1: #eee;
-$cloudy2: #ccc;
-$rainy1: #999;
-$rainy2: #666;
-$stormy1: #444;
-$stormy2: #111;
+$background-grey:   #f1f1f1;
+$white:             #fff;   */
 
-$background-foggy: #f7f7f7;
+/*
+    Secondary colors
+*/
+
+/*
+$gold:              #f3b528;
+$gold-tint:         #fef2d8;
+
+$orange:            #ee5723;
+$orange-tint:       #ffefe7;
+
+$red:               #cf2e33;
+$red-tint:          #cf2e33;
+
+$pink:              #ee5ca0;
+$pink-tint:         #fefef7;
+
+$green:             #b7cb34;
+$green-tint:        #f3fceb;
+
+$green-success:     #4ea565;
+
+
+$dark-blue:         #234166;
+$blue:              #02b4d0;
+$blue-tint:         #edf8f9;
+*/
+
+/*
+    Knewton blues
+*/
+
+/*$blue:         #1abcc1;
+darken($blue, 6%);:    #159fa3;
+$blue-tint:    #cceef1;
+*/
+
+/*
+    Text colors alias
+*/
+
+/*$body-text:         $stormy1;
+$dimmed-text:       $rainy1;
+
+$in-progress-text:  $blue;
+$in-progress-bg:    $blue-tint;
+
+$submitted-text:    $orange;
+$submitted-bg:      $orange-tint;
+$published-text:    $green;
+$published-bg:      $green-tint;
+
+$error-color:       $red;*/

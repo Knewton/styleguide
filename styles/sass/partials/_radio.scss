@@ -77,17 +77,17 @@
     }
 
     &:disabled + span:before {
-      background: $background-grey;
+      background: $background-foggy;
       cursor: default;
     }
 
     &:disabled + span:after {
-      background: $ashen-grey;
+      background: $rainy1;
       cursor: default;
     }
 
     &:disabled + span {
-      color: $ashen-grey;
+      color: $rainy1;
     }
   }
 }

@@ -75,5 +75,10 @@ a {
 }
 
 .input-label {
-    @include input-label-font;
+    line-height: 30px;
+    font: {
+        size: $normal;
+        weight: 700;
+    }
+    color: $rainy2;
 }

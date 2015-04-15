@@ -88,24 +88,24 @@ button,
 
     &:disabled,
     &.disabled {
-        color: $border-grey;
-        background: $background-grey;
-        border-color: $background-grey;
+        color: $cloudy2;
+        background: $background-foggy;
+        border-color: $background-foggy;
         cursor: default;
     }
 
     &.text-button-gray {
         background: transparent;
         border: 0;
-        color: $ashen-grey;
+        color: $rainy1;
 
         &:disabled {
-            color: $background-grey;
+            color: $background-foggy;
         }
 
         &:hover:not(:disabled):not(.disabled) {
             background: transparent;
-            color: $default;
+            color: $rainy2;
         }
     }
 

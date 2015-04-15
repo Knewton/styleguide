@@ -48,7 +48,7 @@
 }
 
 .dropdown.focus:after {
-    background: $turquoise;
+    background: $blue;
 }
 
 /* CARAT */
@@ -61,7 +61,7 @@
     z-index: 5;
     right: 0;
     top: 0;
-    border: 1px solid $border-grey;
+    border: 1px solid $cloudy2;
     background-position: center center;
     background-repeat: no-repeat;
     background-image: image-url('dropdown-arrow.png');
@@ -105,7 +105,7 @@
 .dropdown li {
     @include dropdown-font;
 
-    border: 1px solid $border-grey;
+    border: 1px solid $cloudy2;
     border-right: 0;
     display: block;
     padding: 0 8px;
@@ -116,9 +116,9 @@
 
 .dropdown.disabled .selected,
 .dropdown.disabled .carat {
-    border-color: $ashen-grey;
-    background-color: $border-grey;
-    color: $border-grey;
+    border-color: $rainy1;
+    background-color: $cloudy2;
+    color: $cloudy2;
 }
 
 .dropdown li {
@@ -139,7 +139,7 @@
 /* DROP DOWN WRAPPER */
 
 .dropdown div {
-    border: 1px solid $border-grey;
+    border: 1px solid $cloudy2;
     position: absolute;
     height: 0;
     left: 0;
@@ -179,7 +179,7 @@
 
 .dropdown li {
     &.focus {
-        background-color: $turquoise-tint;
+        background-color: $blue-tint;
     }
 }
 
@@ -198,7 +198,7 @@
     border-collapse: separate;
     padding-right: 30px;
     padding-left: 0;
-    border: 1px solid $border-grey;
+    border: 1px solid $cloudy2;
 
     .selected {
         border: 0;

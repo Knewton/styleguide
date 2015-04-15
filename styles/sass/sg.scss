@@ -5,7 +5,7 @@
 @import "styleguide";
 @import "highlightjs";
 
-$header-background: $black-enough;
+$header-background: $stormy1;
 $header-text: $white;
 
 @mixin breakpoint($point) {
@@ -30,8 +30,9 @@ html,
 body {
     margin: 0;
     padding: 0;
+    margin-top: 40px;
 
-    background-color: $background-grey;
+    background-color: $background-foggy;
 
     h1 {
         @include breakpoint(mobile) { font-size: 28pt; }
@@ -68,11 +69,18 @@ body {
 
 .sg-header {
     @include clearfix;
-    @include rainbow;
 
-    height: 60px;
-    background-color: $black-enough;
-    color: $header-text;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 75px;
+    z-index: 1000;
+    background-color: $white;
+    color: $stormy1;
+    border-bottom: 1px solid $cloudy2;
+    transition: transform 400ms;
+    user-select: none;
 
     .wrapper {
         width: 100%;
@@ -84,13 +92,21 @@ body {
     }
 
     .logo-header {
-        margin-top: 10px;
+        margin-top: 20px;
         float: left;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.2;
+        width: 164px;
+        padding-left: 10px;
 
         @include breakpoint(tablet) { display: none; }
         @include breakpoint(mobile) { display: none; }
-        @include breakpoint(desktop) { @include span-columns(6); }
-        @include breakpoint(desktopXL) { @include span-columns(6); }
+
+        img {
+            max-width: 100%;
+            border: 0 none;
+        }
     }
 
     h1 {
@@ -101,7 +117,7 @@ body {
         text-align: center;
         margin-top: 0;
         margin-bottom: 0;
-        line-height: 60px;
+        line-height: 75px;
         vertical-align: middle;
 
         @include breakpoint(tablet) { @include span-columns(24); }
@@ -120,9 +136,9 @@ body {
 
         a {
           text-decoration: none;
-          color: $background-grey;
+          font-size: $large;
+          color: $stormy1;
         }
-
     }
 }
 
@@ -170,11 +186,11 @@ body {
         @include action-link-font;
 
         &:hover {
-            color: $default;
+            color: $rainy2;
         }
 
         &.active {
-            color: $default;
+            color: $rainy2;
         }
     }
 }
@@ -240,31 +256,31 @@ body {
 .columns1of4 {
   @include span-columns(6);
   height: 45px;
-  background-color: $background-grey;
+  background-color: $background-foggy;
   /* margin-right: $gutter; */
 }
 
 .columns3of4 {
   @include span-columns(18);
   height: 45px;
-  background-color: $background-grey;
+  background-color: $background-foggy;
 }
 
 .columns4of4 {
   @include span-columns(24);
   height: 45px;
   margin-bottom: $gutter;
-  background-color: $background-grey;
+  background-color: $background-foggy;
 }
 
 .column-wrapper {
   @include span-columns(24);
-  background-color: $background-grey;
+  background-color: $background-foggy;
   padding: 40px;
 
   .column-within {
     @include span-columns(24);
-    background-color: $border-grey;
+    background-color: $cloudy2;
     padding: 20px;
     text-align: right;
   }
@@ -347,7 +363,7 @@ body {
   width: rem(150);
   padding: 5px;
   border: 0;
-  color: $black-enough;
+  color: $stormy1;
 
   .knewcon-sample {
     text-align: center;
@@ -374,7 +390,7 @@ body {
 
 .snippet,
 .sample {
-  background: $background-grey;
+  background: $background-foggy;
   margin: 1rem 0;
   padding: .5rem;
   font-family: monospace;
@@ -436,7 +452,7 @@ body {
 /*
 pre {
     margin: 20px 0;
-    background: $black-enough;
+    background: $stormy1;
     color: $white;
     border: 0;//1px solid #ccc;
 

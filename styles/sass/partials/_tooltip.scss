@@ -6,7 +6,7 @@
     }
 
     &.top .tooltip-arrow {
-        border-top-color: $ashen-grey;
+        border-top-color: $rainy1;
 
         &:after {
             content: '';
@@ -27,8 +27,8 @@
         @include standard-body-font;
         background: $white;
         padding: rem(10) rem(15);
-        color: $black-enough;
-        border: rem(1) solid $ashen-grey;
+        color: $stormy1;
+        border: rem(1) solid $rainy1;
         border-radius: rem(2);
         box-shadow: 0 0 rem(6) rem(2) rgba(0, 0, 0, 0.1);
         font-size: rem(14);
