@@ -101,7 +101,7 @@
 
 .modal-backdrop {
     background-color: rgba($background-foggy, 0.7);
-    background-image: url("/images/diagonalLines.png");
+    background-image: url("../images/diagonalLines.png");
 
     &.in {
         opacity: 1;
