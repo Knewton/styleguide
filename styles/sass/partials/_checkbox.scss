@@ -78,8 +78,8 @@
 
     &:disabled {
         + span:before {
-            background: $background-grey;
-            border: 2px solid $ashen-grey;
+            background: $background-foggy;
+            border: 2px solid $rainy1;
             cursor: default;
         }
 
@@ -91,7 +91,7 @@
 
     &:disabled:checked {
         + span:before {
-            background: $ashen-grey;
+            background: $rainy1;
         }
     }
 }
@@ -105,10 +105,10 @@
 
     > span {
         @include action-link-font;
-        color: $black-enough;
+        color: $stormy1;
         opacity: 1;
         height: 34px;
-        background: $background-grey;
+        background: $background-foggy;
         display: inline-block;
         line-height: 34px;
         padding: 0 20px;
@@ -126,7 +126,7 @@
         }
 
         + span:hover {
-            background: $black-enough;
+            background: $stormy1;
             color: $white;
         }
     }
@@ -138,13 +138,13 @@
         + span {
             @include transition-active(.1s);
 
-            background: $default;
+            background: $rainy2;
             color: $white;
             opacity: 1;
         }
     }
 
     [type=checkbox]:disabled + span {
-        color: $ashen-grey;
+        color: $rainy1;
     }
 }

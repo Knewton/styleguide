@@ -1,4 +1,4 @@
-<section id="buttons" title="Buttons" class="sg-section">
+<section id="button" title="Buttons" class="sg-section">
     <h3>Buttons</h3>
 
     <section id="large-buttons" class="sg-component">
@@ -72,5 +72,4 @@
             {@snippet src="_sg/components/input-submit" label="Input 2 (disabled)" disabled="disabled" /}
         </div>
     </section>
-
 </section>

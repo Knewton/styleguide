@@ -21,15 +21,15 @@
         @include table-row-font;
 
         padding: rem(15) rem(50) rem(15) 0;
-        border-top: rem(1) solid $border-grey;
-        color: $default;
+        border-top: rem(1) solid $cloudy2;
+        color: $rainy2;
 
         a {
             text-decoration: none;
         }
 
         &.title {
-            color: $black-enough;
+            color: $stormy1;
             font-weight: 500;
         }
     }
@@ -43,7 +43,7 @@
     td {
         @include table-row-font;
         height: rem(45);
-        color: $black-enough;
+        color: $stormy1;
         text-align: center;
         padding: 0 rem(15);
 
@@ -57,7 +57,7 @@
     }
 
     td {
-        border-top: 1px solid $ashen-grey;
+        border-top: 1px solid $rainy1;
     }
 
     tr:nth-child(even) {

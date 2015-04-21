@@ -8,14 +8,14 @@
 
     transition: border-color .5s;
     font-family: $roboto-font-stack;
-    color: $body-text;
+    color: $stormy1;
     background: $white;
     margin-bottom: 1rem;
     font-size: $large;
     font-weight: 400;
     height: 50px;
     padding: 12px;
-    border: 1px solid $border-grey;
+    border: 1px solid $cloudy2;
     border-radius: 3px;
     box-shadow: none;
     overflow: auto;
@@ -31,19 +31,19 @@
     }
 
     &.success {
-        border-color: $green-success;
-        color: $green-success;
+        border-color: $green;
+        color: $green;
 
         &:focus {
-            border-color: $green-success;
+            border-color: $green;
         }
     }
 
     &:disabled,
     &.disabled {
-        background: $background-grey;
-        border-color: $background-grey;
-        color: $ashen-grey;
+        background: $background-foggy;
+        border-color: $background-foggy;
+        color: $rainy1;
     }
 
     &:focus {
@@ -67,7 +67,7 @@
     &.success:not(:focus):after {
         @include icon;
         content: "\e006";
-        color: $green-success;
+        color: $green;
     }
 
     &.error:after,
@@ -81,20 +81,20 @@
     &.di-loading:not(:focus):after {
         @include icon;
         content: "loading";
-        color: $ashen-grey;
+        color: $rainy1;
     }
 
     // Pencil icon
     &:not(:focus):after {
         @include icon;
         content: "\e012";
-        color: $ashen-grey;
+        color: $rainy1;
     }
 
     // Placeholder
     &:empty:not(:focus):before {
         content: attr(data-placeholder);
-        color: $ashen-grey;
+        color: $rainy1;
     }
 }
 
@@ -129,7 +129,7 @@
             border-radius: 0;
             box-shadow: none;
             outline: none;
-            border: 1px solid $turquoise;
+            border: 1px solid $blue;
         }
     }
 
@@ -156,7 +156,7 @@
 // scss-lint:disable QualifyingElement
 label.error {
     font-size: .8rem;
-    color: $error-color;
+    color: $red;
 }
 
 // Add this on the form if you want errors to show in a tooltip
@@ -170,7 +170,7 @@ label.error {
         position: absolute;
         z-index: 2000;
         height: 1.2rem;
-        background: $error-color;
+        background: $red;
         padding: .2rem;
         color: $white;
         margin-bottom: -1.1rem;
@@ -181,7 +181,7 @@ label.error {
             height: 0;
             border-style: solid;
             border-width: 0 $width/2 $height;
-            border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $error-color;
+            border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $red;
             content: "";
             position: absolute;
             top: 0;

@@ -40,7 +40,7 @@
   display: inline-block;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-bottom: 7px solid $border-grey;
+  border-bottom: 7px solid $cloudy2;
   border-top: 0;
   border-bottom-color: rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -83,7 +83,7 @@
 .datepicker-dropdown.datepicker-orient-bottom:before {
   bottom: -7px;
   border-bottom: 0;
-  border-top: 7px solid $border-grey;
+  border-top: 7px solid $cloudy2;
 }
 
 .datepicker-dropdown.datepicker-orient-bottom:after {
@@ -143,19 +143,19 @@
 .datepicker tr td {
   &.day:hover,
   &.day.focused {
-    background: $background-grey;
+    background: $background-foggy;
     cursor: pointer;
   }
 
   &.old,
   &.new {
-    color: $ashen-grey;
+    color: $rainy1;
   }
 
   &.disabled,
   &.disabled:hover {
     background: none;
-    color: $ashen-grey;
+    color: $rainy1;
     cursor: default;
   }
 
@@ -163,9 +163,9 @@
   &.today:hover,
   &.today.disabled,
   &.today.disabled:hover {
-    background-color: $background-grey;
+    background-color: $background-foggy;
     background-image: none;
-    color: $black-enough;
+    color: $stormy1;
   }
 
   &.today:hover,
@@ -188,7 +188,7 @@
   &.today:hover[disabled],
   &.today.disabled[disabled],
   &.today.disabled:hover[disabled] {
-    background-color: $background-grey;
+    background-color: $background-foggy;
   }
 
   &.today:active,
@@ -199,12 +199,12 @@
   &.today:hover.active,
   &.today.disabled.active,
   &.today.disabled:hover.active {
-    background-color: $background-grey;
+    background-color: $background-foggy;
   }
 
 
   &.today:hover:hover {
-    color: $black-enough;
+    color: $stormy1;
   }
 
   &.today.active:hover {
@@ -215,7 +215,7 @@
   &.range:hover,
   &.range.disabled,
   &.range.disabled:hover {
-    background: $ashen-grey;
+    background: $rainy1;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -225,7 +225,7 @@
   &.range.today:hover,
   &.range.today.disabled,
   &.range.today.disabled:hover {
-    background-color: $turquoise-tint;
+    background-color: $blue-tint;
     background-image: none;
     background-repeat: repeat-x;
     -webkit-border-radius: 0;
@@ -254,7 +254,7 @@
   &.range.today:hover[disabled],
   &.range.today.disabled[disabled],
   &.range.today.disabled:hover[disabled] {
-    background-color: $turquoise-tint;
+    background-color: $blue-tint;
   }
 
 
@@ -266,14 +266,14 @@
   &.range.today:hover.active,
   &.range.today.disabled.active,
   &.range.today.disabled:hover.active {
-    background-color: $turquoise-tint;
+    background-color: $blue-tint;
   }
 
   &.selected,
   &.selected:hover,
   &.selected.disabled,
   &.selected.disabled:hover {
-    background-color: $default;
+    background-color: $rainy2;
     background-image: none;
     color: $white;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -300,7 +300,7 @@
   &.selected:hover[disabled],
   &.selected.disabled[disabled],
   &.selected.disabled:hover[disabled] {
-    background-color: $default;
+    background-color: $rainy2;
   }
 
 
@@ -312,14 +312,14 @@
   &.selected:hover.active,
   &.selected.disabled.active,
   &.selected.disabled:hover.active {
-    background-color: $black-enough;
+    background-color: $stormy1;
   }
 
   &.active,
   &.active:hover,
   &.active.disabled,
   &.active.disabled:hover {
-    background-color: $turquoise;
+    background-color: $blue;
     background-image: none;
     color: $white;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -345,7 +345,7 @@
   &.active:hover[disabled],
   &.active.disabled[disabled],
   &.active.disabled:hover[disabled] {
-    background-color: $dark-turquoise;
+    background-color: darken($blue, 6%);
   }
 
   &.active:active,
@@ -356,7 +356,7 @@
   &.active:hover.active,
   &.active.disabled.active,
   &.active.disabled:hover.active {
-    background-color: $turquoise;
+    background-color: $blue;
   }
 }
 
@@ -373,13 +373,13 @@
   border-radius: 4px;
 
   &:hover {
-    background: $ashen-grey;
+    background: $rainy1;
   }
 
   &.disabled,
   &.disabled:hover {
     background: none;
-    color: $default;
+    color: $rainy2;
     cursor: default;
   }
 
@@ -387,7 +387,7 @@
   &.active:hover,
   &.active.disabled,
   &.active.disabled:hover {
-    background-color: $turquoise;
+    background-color: $blue;
     background-image: none;
     color: $white;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -413,7 +413,7 @@
   &.active:hover[disabled],
   &.active.disabled[disabled],
   &.active.disabled:hover[disabled] {
-    background-color: $dark-turquoise;
+    background-color: darken($blue, 6%);
   }
 
   &.active:active,
@@ -424,12 +424,12 @@
   &.active:hover.active,
   &.active.disabled.active,
   &.active.disabled:hover.active {
-    background-color: $turquoise;
+    background-color: $blue;
   }
 
   &.old,
   &.new {
-    color: $default;
+    color: $rainy2;
   }
 }
 
@@ -443,7 +443,7 @@
   cursor: pointer;
 
   &:hover {
-    background: $background-grey;
+    background: $background-foggy;
   }
 }
 
@@ -452,7 +452,7 @@
   cursor: pointer;
 
   &:hover {
-    background: $background-grey;
+    background: $background-foggy;
   }
 }
 
@@ -504,8 +504,8 @@
   text-align: center;
   text-shadow: 0 1px 0 $white;
   vertical-align: middle;
-  background-color: $background-grey;
-  border: 1px solid $border-grey;
+  background-color: $background-foggy;
+  border: 1px solid $cloudy2;
   margin-left: -5px;
   margin-right: -5px;
 }
@@ -530,7 +530,7 @@
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  color: $black-enough;
+  color: $stormy1;
   font-size: 13px;
   line-height: 20px;
 }
@@ -597,7 +597,7 @@
 .datepicker thead {
     th {
         @include table-row-font;
-        color: $black-enough;
+        color: $stormy1;
         font-size: 14px;
         font-weight: 500;
     }
@@ -617,21 +617,21 @@
 
 .datepicker td {
     &.day:hover {
-      background: $turquoise-tint;
+      background: $blue-tint;
       cursor: pointer;
     }
 }
 
 .datepicker td {
     &.day.disabled {
-      color: $background-grey;
+      color: $background-foggy;
     }
 }
 
 .datepicker td {
     &.old,
     &.new {
-      color: $grey-on-grey;
+      color: $stormy1;
     }
 }
 
@@ -639,7 +639,7 @@
     &.active,
     &.active:hover {
       color: $white;
-      background-color: $turquoise-tint;
+      background-color: $blue-tint;
       border: 0;
       text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     }
@@ -648,7 +648,7 @@
     &.active:hover:active,
     &.active.active,
     &.active:hover.active {
-      background-color: $dark-turquoise;
+      background-color: darken($blue, 6%);
     }
 }
 
@@ -666,7 +666,7 @@
     &.active[disabled],
     &.active:hover[disabled] {
       color: $white;
-      background-color: $turquoise-tint;
+      background-color: $blue-tint;
     }
 }
 
@@ -685,12 +685,12 @@
 
 .datepicker td span {
     &:hover {
-        background: $border-grey;
+        background: $cloudy2;
     }
 
     &.active {
       color: $white;
-      background-color: $dark-turquoise;
+      background-color: darken($blue, 6%);
       border: 0;
       text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     }
@@ -703,11 +703,11 @@
 .datepicker td .active.disabled,
 .datepicker td .active[disabled] {
   color: $white;
-  background-color: $dark-turquoise;
+  background-color: darken($blue, 6%);
 }
 
 .datepicker td .old {
-  color: $grey-on-grey;
+  color: $stormy1;
 }
 
 .datepicker th {
