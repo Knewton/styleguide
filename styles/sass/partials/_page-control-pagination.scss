@@ -2,7 +2,7 @@
 @import "modules/transition-effects";
 
 .page-controls {
-    border: 0 dashed $border-grey;
+    border: 0 dashed $cloudy2;
     border-width: 1px 0;
     text-align: center;
     height: 34px;
@@ -17,18 +17,18 @@
             display: inline-block;
             margin: 8px 1.5px 0;
             text-decoration: none;
-            color: $ashen-grey;
+            color: $rainy1;
         }
 
         &.view-page:hover {
             @include transition-color(.4s);
 
-            color: $turquoise;
+            color: $blue;
         }
 
         &.view-page.active {
             color: $white;
-            background: $black-enough;
+            background: $stormy1;
         }
     }
 
@@ -40,7 +40,7 @@
             font-size: 14px;
             display: block;
             text-decoration: none;
-            color: $turquoise;
+            color: $blue;
         }
 
         &.prev { float: left; }

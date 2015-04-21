@@ -8,6 +8,4 @@
     {?code}<pre><code lang="css">@include {class};</code></pre>{/code}
     <div class="standard-body-font">{?text}{text}{/text}</div>
     <div class="standard-body-font">Use cases: {?usage}{usage}{/usage}</div>
-
-
 </section>

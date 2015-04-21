@@ -57,15 +57,15 @@
         {/snippet}
     </section>
 
-    <section class="sg-component">
+    {!<section class="sg-component">
         <h2>Carousel</h2>
         <p>
             Here are some carousel notes and stuff.
         </p>
-    </section>
+    </section>!}
 
     <section class="sg-component">
-        <h2>Container</h2>
+        <h2>Messaging containers</h2>
         <p>
             A generic container with a title and a content.<br />
             The following colors are supported: orange, green. Just add those to the element
@@ -157,6 +157,18 @@
         {@snippet}
             {>"_sg/components/loading" /}
         {/snippet}
+    </section>
+
+    <section class="sg-component">
+        <h2>Loading animations</h2>
+
+        ...
+    </section>
+
+    <section class="sg-component">
+        <h2>Transitions</h2>
+
+        ...
     </section>
 
 </section>
