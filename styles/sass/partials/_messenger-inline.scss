@@ -1,0 +1,23 @@
+.messenger-inline {
+    font-style: italic;
+    text-align: center;
+    background: rgba($blue, 0.1);
+    border: 1px solid $blue;
+    border-radius: 3px;
+    padding: 20px 40px;
+    color: $blue;
+    font-size: 20px;
+
+    strong {
+    	font-weight: 500;
+    	color: hover-state-darken($blue);
+    }
+
+    [class^="icon"] {
+        position: relative;
+        top: 2px;
+        margin-right: 5px;
+        font-size: 32px;
+        vertical-align: middle;
+    }
+}
