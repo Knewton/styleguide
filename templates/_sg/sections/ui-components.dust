@@ -76,6 +76,13 @@
         {@snippet}
             {>"_sg/components/container" color="green" /}
         {/snippet}
+
+        <p>An alternate design is available in blue:</p>
+        {>"_sg/components/messaging-inline" /}
+
+        {@snippet}
+            {>"_sg/components/messaging-inline" /}
+        {/snippet}
     </section>
 
     <section class="sg-component">
