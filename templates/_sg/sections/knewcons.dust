@@ -67,5 +67,10 @@
         {>"_sg/components/knewcon" knewcon="icon-small-collapse" code="U+e02c" name="" /}
         {>"_sg/components/knewcon" knewcon="icon-small-expand" code="U+e02e" name="" /}
         {>"_sg/components/knewcon" knewcon="icon-user-crane" code="U+e02f" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-correct" code="U+e031" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-filter" code="U+e032" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-incorrect" code="U+e033" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-instructional" code="U+e034" name="" /}
+        {>"_sg/components/knewcon" knewcon="icon-skipped" code="U+e035" name="" /}
     </div>
 </section>
