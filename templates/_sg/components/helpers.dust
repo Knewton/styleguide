@@ -1,6 +1,0 @@
-More info on hover:
-<span class="helper-icon-gray" data-toggle="tooltip" title="Help is here!"></span>
-or on click:
-<a href="#" class="helper-icon-gray" onclick="alert('Help is here!')"></a>
-or a span clickable:
-<span class="helper-icon-gray clickable" onclick="alert('Help is here!')"></span>

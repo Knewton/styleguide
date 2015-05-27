@@ -5,9 +5,6 @@ dist/styles
 dist/js/tooltip.js
 dist/js/templates.js
 dist/js/bootstrap-datepicker.js
-dist/js/dust-core.js
-dist/js/dust-helpers.js
-dist/js/dust-runtime.js
 dist/js/highlight.pack.js
 dist/js/jquery.easydropdown.min.js
 dist/js/jquery.min.js
@@ -15,3 +12,7 @@ dist/js/modal.js
 .DS_Store
 _site
 dist/js/jquery.loading.js
+dist/js/styleguide.js
+dist/js/react-with-addons.js
+dist/js/beautify-html.js
+dist/js/beautify.js

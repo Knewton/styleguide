@@ -1,5 +1,0 @@
-<div class="knewcon-icon">
-    <div class="knewcon-sample knewcon {knewcon}"></div>
-    <div class="knewcon-name">{knewcon}</div>
-    <div class="knewcon-code">{code}</div>
-</div>

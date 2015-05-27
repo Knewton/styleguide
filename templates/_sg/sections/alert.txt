@@ -1,0 +1,18 @@
+function launchAlert(msg_type) {
+    Messenger.options = {
+        extraClasses: '',
+        maxMessages: 1
+    }
+
+    Messenger().post({
+        message: "This is a message",
+        type: msg_type,
+        hideAfter: 5,
+        showCloseButton: true
+    });
+}
+
+$('.alert-info-btn').on('click', function () { return launchAlert("info"); });
+$('.alert-succ-btn').on('click', function () { return launchAlert("success"); });
+$('.alert-warn-btn').on('click', function () { return launchAlert("warning"); });
+$('.alert-error-btn').on('click', function () { return launchAlert("error"); });

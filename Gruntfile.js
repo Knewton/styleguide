@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function (grunt) {
+module.exports = function(grunt) {
 
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
@@ -25,34 +25,35 @@ module.exports = function (grunt) {
         },
 
         growl : {
-            sassCompile : {
-                title : 'SASS COMPILE DONE!',
-                message : 'By the way, you look terrific today. Have you been working out? I love that shirt!'
+            sassCompile: {
+                title: 'SASS COMPILE DONE!',
+                message: 'By the way, you look terrific today. Have you been working out? I love that shirt!'
             },
-            dustCompile : {
-                title : 'DUST COMPILE DONE!',
-                message : 'boop'
+            browserify: {
+                title: 'BROWSERIFY COMPILE DONE!',
+                message: 'boop'
             },
             fontsUpdate: {
-                title : 'FONTS UPDATED',
-                message : 'bork'
+                title: 'FONTS UPDATED',
+                message: 'bork'
             }
         },
 
-        dust: {
+        browserify: {
             compile: {
-                files: [
-                    {
-                        "dist/js/templates.js": 'templates/**/*.dust'
-                    }
-                ],
                 options: {
-                    wrapper: false,
-                    runtime: true,
-                    relative: true,
-                    whitespace: true,
-                    basePath: 'templates/'
-                }
+                    transform: ['reactify', 'stringify'],
+                    browserifyOptions: {
+                        standalone: 'Styleguide'
+                    },
+                    // these are handled by browserify-shim in package.json
+                    exclude: ['react', 'flux', 'lodash', 'react/addons', 'jquery', 'moment',
+                        'react-router']
+                },
+                files: [{
+                    src: ['templates/_sg/styleguide.jsx'],
+                    dest: 'dist/js/styleguide.js'
+                }]
             }
         },
 
@@ -69,8 +70,8 @@ module.exports = function (grunt) {
                 }
             },
             partials: {
-                files: ['templates/**/*.dust'],
-                tasks: ['dust:compile', 'growl:dustCompile']
+                files: ['templates/**/*.jsx'],
+                tasks: ['browserify', 'growl:browserify']
             },
             fonts: {
                 files: ['styles/fonts/**/*'],
@@ -146,10 +147,11 @@ module.exports = function (grunt) {
                           'bower_components/easydropdown/jquery.easydropdown.min.js',
                           'bower_components/messenger/build/js/messenger.min.js',
                           'bower_components/bootstrap/js/modal.js',
+                          'bower_components/react/react-with-addons.js',
+                          'bower_components/js-beautify/js/lib/beautify.js',
+                          'bower_components/js-beautify/js/lib/beautify-html.js',
                           'bower_components/bootstrap/js/tooltip.js',
                           'bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js',
-                          'bower_components/dustjs-linkedin/dist/dust-core.js',
-                          'bower_components/dustjs-linkedin-helpers/dist/dust-helpers.js',
                           'lib/**'],
                     dest: 'dist/js/',
                     flatten: true
@@ -191,7 +193,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('build', 'Builds.', ['scsslint', 'copy', 'dust', 'sass', 'autoprefixer']);
+    grunt.registerTask('build', 'Builds.', ['scsslint', 'copy', 'browserify', 'sass', 'autoprefixer']);
     grunt.registerTask('run', 'Builds and watches the style guide for changes.', ['build', 'watch']);
     grunt.registerTask('deploy', 'Deploys to github', ['build', 'copy:deploy', 'githubPages:target']);
     grunt.registerTask('server', ['express', 'open', 'watch']);

@@ -1,1 +1,0 @@
-<input type="submit" name="name" value="{label}"{?class} class="{class}"{/class}{?disabled} disabled{/disabled} />
