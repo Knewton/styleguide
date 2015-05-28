@@ -1,8 +1,0 @@
-<div class="container-wrapper{?color} {color}{/color}">
-    <div class="container-header">
-        Title
-    </div>
-    <div class="container-content">
-        Content goes here.
-    </div>
-</div>

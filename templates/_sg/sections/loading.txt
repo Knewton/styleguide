@@ -1,0 +1,15 @@
+function startLoading() {
+    $('.loading-demo-block').loading();
+    var opts = {};
+    if ($('#loading-demo-text').val()) {
+        opts.text = $('#loading-demo-text').val();
+    }
+    $('.loading-demo-button').loading(opts);
+}
+
+$('#loading-on, .loading-demo-button').on('click', startLoading);
+
+$('#loading-off').on('click', function(e) {
+    $('.loading-demo-block').loading('off');
+    $('.loading-demo-button').loading('off');
+});

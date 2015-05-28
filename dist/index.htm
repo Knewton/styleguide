@@ -1,108 +1,47 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset=utf-8 />
+        <title>Knewton Style Guide</title>
+        <link rel="stylesheet" href="styles/css/sg.css" />
+    </head>
+    <body>
+        <div id="page"></div>
 
-<head>
-    <meta charset=utf-8 />
-    <title>Knewton Style Guide</title>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/react-with-addons.js"></script>
+        <script src="js/beautify.js"></script>
+        <script src="js/beautify-html.js"></script>
+        <script src="js/highlight.pack.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/jquery.easydropdown.min.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/tooltip.js"></script>
+        <script src="js/jquery.loading.js"></script>
+        <script src="js/messenger.min.js"></script>
+        <script src="js/styleguide.js"></script>
 
-    <link rel="stylesheet" href="styles/css/sg.css" />
-</head>
+        <script>
+            function showPage(id) {
+                $('.sg-nav li a').removeClass('active');
+                $('.sg-nav li a[href="'+id+'"]').addClass('active');
 
-<body>
+                // Find the parent sg-section if any
+                var $toShow = $(id).closest('.sg-sections > .sg-section');
 
-    <div class="content"></div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/dust-core.js"></script>
-    <script src="js/dust-helpers.js"></script>
-    <script src="js/helpers.js"></script>
-    <script src="js/highlight.pack.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/jquery.easydropdown.min.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/tooltip.js"></script>
-    <script src="js/templates.js"></script>
-    <script src="js/jquery.loading.js"></script>
-    <script src="js/messenger.min.js"></script>
-
-    <script>
-        function generateNav() {
-            var sections = $('.sg-sections > .sg-section'),
-                $nav = $('.sg-nav ul');
-
-            var getLiHtmlForSection = function($s) {
-                var title = $s.attr('title'),
-                    id = $s.attr('id');
-
-                var subSections = $s.find('.sg-section');
-                var subsectionHtml = '';
-                if (subSections.length) {
-                    subsectionHtml = '<ul>';
-                    subSections.each(function(i) {
-                        var $ss = $(subSections[i]);
-                        subsectionHtml += getLiHtmlForSection($ss);
-                    });
-                    subsectionHtml += '</ul>';
-                }
-
-                var liHtml = '<li><a href="#' + id + '">' + title + '</a>' + subsectionHtml + '</li>';
-                return liHtml;
+                $('.sg-section').removeClass('active');
+                $toShow.addClass('active');
             };
 
-            sections.each(function(i) {
-                var $s = $(sections[i]);
-                var liHtml = getLiHtmlForSection($s);
-                $nav.append(liHtml);
-            });
-
-            $('.sg-nav li a').on('click', function(e) {
-                var $el = $(this),
-                    id = $el.attr('href');
-
-                showPage(id);
-            });
-        };
-
-        function showPage(id) {
-            $('.sg-nav li a').removeClass('active');
-            $('.sg-nav li a[href="'+id+'"]').addClass('active');
-
-            // Find the parent sg-section if any
-            var $toShow = $(id).closest('.sg-sections > .sg-section');
-
-            $('.sg-section').removeClass('active');
-            $toShow.addClass('active');
-        };
-
-        function highlightSnippets() {
-            $('code[lang=html]').each(function() {
-                // remove pre/post space
-                this.innerHTML = this.innerHTML.replace(/^[ \n]+|[ \n]+$/g, '');
-
-                // highlight block
-                hljs.highlightBlock(this);
-            });
-        };
-
-        dust.render("_sg/styleguide", {}, function(err, out) {
-            if (err) {
-                console.error(err);
-            } else {
-                $('.content').html(out);
-
-                generateNav();
-                highlightSnippets();
-
+            React.render(React.createElement(window.Styleguide), $('#page')[0], function() {
                 // Make the first section visible
                 $('.sg-nav li a').first().addClass('active');
                 $('.sg-sections > .sg-section').first().addClass('active');
+            });
+
+            if (window.location.hash) {
+                showPage(window.location.hash);
             }
-        });
-
-        if (window.location.hash) {
-            showPage(window.location.hash);
-        }
-    </script>
-</body>
-
+        </script>
+    </body>
 </html>

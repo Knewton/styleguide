@@ -1,8 +1,0 @@
-<div class="input-date date" id="dp1">
-    <input type="text" placeholder="mm/dd/yyyy" class="form-control">
-    <span class="add-on"><i class="icon-calendar"></i></span>
-</div>
-
-<script>
-    $("#dp1").datepicker();
-</script>
