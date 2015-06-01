@@ -1,0 +1,72 @@
+// scss-lint:disable NestingDepth
+
+.dropdown-input {
+    position: relative;
+    background: $white;
+
+    .dropdown-hidden-input {
+        position: absolute;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .dropdown-selected {
+        border: 1px solid $cloudy2;
+        height: 32px;
+        cursor: pointer;
+
+        .dropdown-text {
+            margin-right: 40px;
+            margin-left: 10px;
+            height: 32px;
+            line-height: 32px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .dropdown-arrow {
+            float: right;
+            height: 32px;
+            width: 30px;
+            background: url('/styles/images/dropdown-arrow.png') no-repeat center center;
+        }
+    }
+
+    .dropdown-options {
+        display: none;
+        position: absolute;
+        top: 31px;
+        left: 0;
+        right: 0;
+        border: 1px solid $cloudy2;
+        overflow: scroll;
+        max-height: 320px;
+        z-index: 10;
+
+        .dropdown-option {
+            cursor: pointer;
+            height: 32px;
+            line-height: 32px;
+            padding: 0 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            background: $white;
+
+            &:hover {
+                background: $blue-tint;
+            }
+
+            &.selected {
+                background-color: $blue;
+                color: $white;
+            }
+        }
+    }
+
+    &.opened .dropdown-options {
+        display: block;
+    }
+}

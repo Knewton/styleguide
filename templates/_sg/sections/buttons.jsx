@@ -1,6 +1,8 @@
 'use strict';
 
 var Button = require('../components/button.jsx'),
+    ButtonDropdown = require('../components/button-dropdown.jsx'),
+    DropDownData = require('../components/data/dropdown-data.jsx'),
     InputSubmit = require('../components/input-submit.jsx'),
     Snippet = require('../snippet.jsx');
 
@@ -87,6 +89,21 @@ module.exports = React.createClass({
                     <Snippet>
                         <InputSubmit label="Input 1" />
                         <InputSubmit label="Input 2 (disabled)" disabled="disabled" />
+                    </Snippet>
+                </section>
+
+                <section id="dropdown-buttons" className="sg-component">
+                    <h4>Dropdown buttons</h4>
+
+                    A button-dropdown is displayed as a dropdown menu on hovering over it.
+
+                    <ButtonDropdown source={DropDownData}
+                        label="Button 1" className="text-button-gray" />
+
+
+                    <Snippet>
+                        <ButtonDropdown source={DropDownData}
+                            label="Button 1" className="text-button-gray" />
                     </Snippet>
                 </section>
             </section>

@@ -2,6 +2,7 @@
 
 var Fields = require('./forms/fields.jsx'),
     DropDown = require('../components/dropdown.jsx'),
+    DropDownData = require('../components/data/dropdown-data.jsx'),
     DatePicker = require('../components/datepicker.jsx'),
     Radio = require('../components/radio.jsx'),
     Checkbox = require('../components/checkbox.jsx'),
@@ -139,19 +140,12 @@ module.exports = React.createClass({
 
                     <section id="dropdown-buttons" className="sg-component">
                         <h4>Dropdown</h4>
-                        <DropDown />
+                        <DropDown source={DropDownData} placeholder="Select a value"/>
 
                         <div className="sample">
-                            <Snippet src={DropDown} />
-                        </div>
-                    </section>
-
-                    <section id="datepicker" className="sg-component">
-                        <h4>Datepicker</h4>
-                        <DatePicker label="pick a date!" />
-
-                        <div className="sample">
-                            <Snippet src={DatePicker} />
+                            <Snippet>
+                                <DropDown source={DropDownData}/>
+                            </Snippet>
                         </div>
                     </section>
                 </section>
