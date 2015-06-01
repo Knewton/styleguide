@@ -9,6 +9,8 @@ dist/js/highlight.pack.js
 dist/js/jquery.easydropdown.min.js
 dist/js/jquery.min.js
 dist/js/modal.js
+dist/js/lodash.min.js
+dist/js/jquery-ui.min.js
 .DS_Store
 _site
 dist/js/jquery.loading.js

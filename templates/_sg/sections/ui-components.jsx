@@ -3,9 +3,11 @@
 var Snippet = require('../snippet.jsx'),
     Helpers = require('../components/helpers.jsx'),
     DigitFlag = require('../components/digit-flag.jsx'),
+    Button = require('../components/button.jsx'),
     Label = require('../components/label.jsx'),
-    Modal = require('../components/modal.jsx'),
+    Modal = require('../components/simple-modal.jsx'),
     Container = require('../components/container.jsx'),
+    SidePanel = require('../components/side-panel.jsx'),
     Tooltip = require('../components/tooltip.jsx'),
     MessagingInline = require('../components/messaging-inline.jsx'),
     LoadingJavaScript = require('./loading.txt'),
@@ -20,10 +22,28 @@ module.exports = React.createClass({
      */
     displayName: 'UiComponents',
 
+    getInitialState: function() {
+        return {
+            current: 0,
+            max: 0
+        };
+    },
+
+    steps: [],
+
+    go: function(step) {
+        var max = step > this.state.max ? step : this.state.max;
+        this.setState({
+            current: step,
+            max: max
+        });
+    },
+
     /**
      * Renders the component.
      */
     render: function() {
+        var self = this;
         return (
             <section id="ui_components" title="Other UI components" className="sg-section">
                 <h1 className="sg">UI components</h1>
@@ -33,18 +53,10 @@ module.exports = React.createClass({
 
                     <p>We use <a href="http://github.hubspot.com/messenger/">Hubspot's Messenger</a> library for global messaging. Global messaging is displayed below the header, which is fixed at the top.</p>
 
-                    <button type="button" className="alert-info-btn">
-                        Info
-                    </button>
-                    <button type="button" className="alert-succ-btn">
-                        Success
-                    </button>
-                    <button type="button" className="alert-warn-btn">
-                        Warning
-                    </button>
-                    <button type="button" className="alert-error-btn">
-                        Error
-                    </button>
+                    <Button label="Info" className="alert-info-btn" />
+                    <Button label="Success" className="alert-succ-btn" />
+                    <Button label="Warning" className="alert-warn-btn" />
+                    <Button label="Error" className="alert-error-btn" />
 
                     <Script content={AlertJavaScript} />
                     <Snippet type="javascript" text={AlertExampleJavaScript} />
@@ -56,7 +68,9 @@ module.exports = React.createClass({
                         We use Boostrap for creating modals with our custom skin.<br />
                         More info can be found on <a href="http://getbootstrap.com/javascript/#modals">http://getbootstrap.com/javascript/#modals</a>.
                     </p>
-                    <Modal />
+
+                    <a href="#" onClick={function () { Modal.show({ message: "Here's a simple modal." }); }}>Trigger a modal.</a>
+
                     <Snippet>
                         <Modal />
                     </Snippet>
@@ -90,11 +104,49 @@ module.exports = React.createClass({
                         More info can be found on <a href="http://getbootstrap.com/javascript/#tooltips">http://getbootstrap.com/javascript/#tooltips</a>.<br />
                         <u>WARN</u>: tooltip conflicts with jquery-ui tooltip. Make sure that jquery-ui is not in the same page or is injected before bootstrap's tooltip.
                     </p>
-                    <Tooltip />
+                    <Tooltip placement="bottom" content="Some explanatory content" >
+                        <p className="heading">
+                            <i>Here's something unclear that needs an explanation. Hover over me.</i>
+                        </p>
+                    </Tooltip>
+                </section>
 
-                    <Snippet>
-                        <Tooltip />
-                    </Snippet>
+                <section className="sg-component">
+                    <h2>Loading</h2>
+                    <p>
+                        To give feedback to the user that something is happening, you can use the
+                        loading plugin on either a block or a button element.
+                    </p>
+                    <div className="loading-demo">
+                        <div className="loading-demo-menu">
+                            <button id="loading-on" className="button short">On</button>
+                            <button id="loading-off" className="button short">Off</button>
+                        </div>
+                        <div className="loading-demo-block">Block element</div>
+                        <div className="loading-demo-button-container">
+                            <input type="text" id="loading-demo-text" placeholder="Custom text"></input>
+                            <button className="loading-demo-button" type="button">Submit</button>
+                        </div>
+                    </div>
+                    <Script content={LoadingJavaScript} />
+                    <Snippet type="javascript" text={LoadingExampleJavaScript} />
+                </section>
+
+                <section className="sg-component">
+
+                    <h2>Side Panel</h2>
+
+                    <p>
+                        A side panel can be triggered for additional information
+                        or functionality, such as additional analytics or some
+                        form. The side panel requires a React component to be passed
+                        into it.
+                    </p>
+
+                    <a href="#" className="student" onClick={function () { SidePanel.show(<Button label="Some content" />); }}>
+                        <span className="display-name">Click here.</span>
+                    </a>
+
                 </section>
 
                 <section className="sg-component">
@@ -125,35 +177,7 @@ module.exports = React.createClass({
                         <Helpers />
                     </Snippet>
                 </section>
-
-                <section className="sg-component">
-                    <h2>Loading</h2>
-                    <p>
-                        To give feedback to the user that something is happening, you can use the
-                        loading plugin on either a block or a button element.
-                    </p>
-                    <div className="loading-demo">
-                        <div className="loading-demo-menu"><button id="loading-on" className="button short">On</button> <button id="loading-off" className="button short">Off</button></div>
-                        <div className="loading-demo-block">Block element</div>
-                        <div className="loading-demo-button-container">
-                            <input type="text" id="loading-demo-text" placeholder="Custom text"></input>
-                            <button className="loading-demo-button" type="button">Submit</button>
-                        </div>
-                    </div>
-                    <Script content={LoadingJavaScript} />
-                    <Snippet type="javascript" text={LoadingExampleJavaScript} />
-                </section>
-
-                <section className="sg-component">
-                    <h2>Loading animations</h2>
-                    ...
-                </section>
-
-                <section className="sg-component">
-                    <h2>Transitions</h2>
-                    ...
-                </section>
             </section>
         );
-    }
+    },
 });

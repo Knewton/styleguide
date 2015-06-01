@@ -1,0 +1,36 @@
+
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -550px;
+    bottom: 0;
+    width: 500px;
+    background: $background-foggy;
+    transition: right 0.33s ease-out;
+    z-index: 1025;
+    box-shadow: 0 0 20px 0 $cloudy2;
+
+    &.visible {
+        right: 0;
+    }
+
+    .panel-close {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: -72px;
+        width: 72px;
+        height: 106px;
+        background: url("/styles/images/side-panel-close.png");
+        padding: 39px 0 0 48px;
+        color: $cloudy2;
+
+        &:hover {
+            color: $stormy1;
+        }
+    }
+
+    .panel-content {
+        padding: 40px 50px;
+    }
+}
