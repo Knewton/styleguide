@@ -119,6 +119,11 @@ module.exports = React.createClass({
         }
     },
 
+    componentDidMount: function () {
+        //$(React.findDOMNode(this.refs.dropdownOpts)).perfectScrollbar({supressScrollX: false});
+        console.log(_.flatten(['yo','yo']));
+    },
+
     /**
      * Returns the classNames for the root element
      */
@@ -150,7 +155,7 @@ module.exports = React.createClass({
                     {state.selected ? state.selected.text : this.props.placeholder}
                 </div>
             </div>
-            <div className="dropdown-options">
+            <div ref="dropdownOpts" className="dropdown-options">
                 {this.renderOptions(source)}
             </div>
         </div>;

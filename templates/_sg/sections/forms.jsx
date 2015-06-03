@@ -1,12 +1,13 @@
 'use strict';
 
 var Fields = require('./forms/fields.jsx'),
-    DropDown = require('../components/dropdown.jsx'),
-    DropDownData = require('../components/data/dropdown-data.jsx'),
     DatePicker = require('../components/datepicker.jsx'),
     Radio = require('../components/radio.jsx'),
     Checkbox = require('../components/checkbox.jsx'),
     Snippet = require('../snippet.jsx');
+
+var DropDown = require('../../../components/dropdown.jsx'),
+    DropDownData = require('../components/data/dropdown-data.jsx');
 
 module.exports = React.createClass({
     /**

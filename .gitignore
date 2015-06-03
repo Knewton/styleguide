@@ -18,3 +18,4 @@ dist/js/styleguide.js
 dist/js/react-with-addons.js
 dist/js/beautify-html.js
 dist/js/beautify.js
+coverage/

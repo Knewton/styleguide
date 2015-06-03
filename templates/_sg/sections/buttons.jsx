@@ -1,10 +1,11 @@
 'use strict';
 
 var Button = require('../components/button.jsx'),
-    ButtonDropdown = require('../components/button-dropdown.jsx'),
     DropDownData = require('../components/data/dropdown-data.jsx'),
     InputSubmit = require('../components/input-submit.jsx'),
     Snippet = require('../snippet.jsx');
+
+var ButtonDropdown = require('../../../components/button-dropdown.jsx');
 
 module.exports = React.createClass({
     /**

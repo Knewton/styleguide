@@ -1,0 +1,8 @@
+{
+  "rootDir": "../",
+  "testDirectoryName" : "tests/components",
+  "testFileExtensions": ["js", "jsx"],
+  "scriptPreprocessor": "tests/preprocessor.js",
+  "setupEnvScriptFile": "tests/setup-env.js",
+  "unmockedModulePathPatterns": ["node_modules/react"]
+}

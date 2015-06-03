@@ -7,14 +7,15 @@ var Snippet = require('../snippet.jsx'),
     Label = require('../components/label.jsx'),
     Modal = require('../components/simple-modal.jsx'),
     Container = require('../components/container.jsx'),
-    SidePanel = require('../components/side-panel.jsx'),
-    Tooltip = require('../components/tooltip.jsx'),
     MessagingInline = require('../components/messaging-inline.jsx'),
     LoadingJavaScript = require('./loading.txt'),
     LoadingExampleJavaScript = require('./loading-example.txt'),
     Script = require('../script.jsx'),
     AlertJavaScript = require('./alert.txt'),
     AlertExampleJavaScript = require('./alert-example.txt');
+
+var SidePanel = require('../../../components/side-panel.jsx'),
+    Tooltip = require('../../../components/tooltip.jsx');
 
 module.exports = React.createClass({
     /**
