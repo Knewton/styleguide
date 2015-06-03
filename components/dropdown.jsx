@@ -119,11 +119,6 @@ module.exports = React.createClass({
         }
     },
 
-    componentDidMount: function () {
-        //$(React.findDOMNode(this.refs.dropdownOpts)).perfectScrollbar({supressScrollX: false});
-        console.log(_.flatten(['yo','yo']));
-    },
-
     /**
      * Returns the classNames for the root element
      */
