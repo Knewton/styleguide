@@ -30,6 +30,7 @@
     "react": "~0.13.3",
     "js-beautify": "~1.5.5",
     "lodash": "~3.9.3",
-    "jquery-ui": "~1.11.4"
+    "jquery-ui": "~1.11.4",
+    "jquery": "~2.1.4"
   }
 }

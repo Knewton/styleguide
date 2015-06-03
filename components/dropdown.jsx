@@ -150,7 +150,7 @@ module.exports = React.createClass({
                     {state.selected ? state.selected.text : this.props.placeholder}
                 </div>
             </div>
-            <div className="dropdown-options">
+            <div ref="dropdownOpts" className="dropdown-options">
                 {this.renderOptions(source)}
             </div>
         </div>;

@@ -70,7 +70,7 @@ module.exports = function(grunt) {
                 }
             },
             partials: {
-                files: ['templates/**/*.jsx'],
+                files: ['templates/**/*.jsx', 'components/*.jsx', 'mixins/*.jsx'],
                 tasks: ['browserify', 'growl:browserify']
             },
             fonts: {
@@ -181,6 +181,12 @@ module.exports = function(grunt) {
                 colorizeOutput: true
             },
         },
+        jest: {
+            options: {
+                config: 'tests/jest.json',
+                coverage: true
+            }
+        },
 
         // Follow instructions here: https://www.npmjs.com/package/grunt-github-pages
         githubPages: {
@@ -194,6 +200,24 @@ module.exports = function(grunt) {
             }
         }
     });
+
+    // Runs tasks in harmony mode for node
+    // Usage: grunt harmony:jest
+    grunt.registerTask('harmony', function() {
+        var done = this.async();
+        // Specify tasks to run spawned
+        var tasks = Array.prototype.slice.call(arguments, 0);
+        grunt.util.spawn({
+            // Use the existing node path
+            cmd: process.execPath,
+            // Add the flags and use process.argv[1] to get path to grunt bin
+            args: ['--harmony', process.argv[1]].concat(tasks),
+            // Print everything this process is doing to the parent stdio
+            opts: { stdio: 'inherit' }
+        }, done);
+    });
+
+    grunt.registerTask('test', ['harmony:jest']);
 
     grunt.registerTask('build', 'Builds.', ['scsslint', 'copy', 'browserify', 'sass', 'autoprefixer']);
     grunt.registerTask('run', 'Builds and watches the style guide for changes.', ['build', 'watch']);

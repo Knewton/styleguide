@@ -30,7 +30,7 @@
             float: right;
             height: 32px;
             width: 30px;
-            background: url('/styles/images/dropdown-arrow.png') no-repeat center center;
+            background: url('../images/dropdown-arrow.png') no-repeat center center;
         }
     }
 
@@ -41,7 +41,7 @@
         left: 0;
         right: 0;
         border: 1px solid $cloudy2;
-        overflow: scroll;
+        overflow: auto;
         max-height: 320px;
         z-index: 10;
 

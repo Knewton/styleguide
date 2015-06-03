@@ -14,23 +14,23 @@ module.exports = React.createClass({
             <table className="kn-stripe-table">
                 <tr>
                     <td className="title">Name</td>
-                    <td className="title">Dahell</td>
-                    <td className="title">How much?</td>
+                    <td className="title">Last Name</td>
+                    <td className="title">Balance due</td>
                 </tr>
                 <tr>
-                    <td>Dahell 1</td>
-                    <td>Much dahell</td>
-                    <td>Very dahell</td>
+                    <td>Name 1</td>
+                    <td>Last Name 1</td>
+                    <td>Very stuff</td>
                 </tr>
                 <tr>
-                    <td>Dahell 2</td>
-                    <td>Much dahell</td>
-                    <td>Very dahell</td>
+                    <td>Name 2</td>
+                    <td>Last Name 2</td>
+                    <td>Very stuff</td>
                 </tr>
                 <tr>
-                    <td>Dahell 3</td>
-                    <td>Much dahell</td>
-                    <td>Very dahell</td>
+                    <td>Name 3</td>
+                    <td>Last Name 3</td>
+                    <td>Very stuff</td>
                 </tr>
             </table>
         );
