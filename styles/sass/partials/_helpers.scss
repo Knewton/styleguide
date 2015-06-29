@@ -3,16 +3,16 @@
 .helper-icon-gray {
     display: inline-block;
     background: $rainy1;
-    width: rem(14);
-    height: rem(14);
+    width: 14px;
+    height: 14px;
     color: $white;
-    font-size: rem(10);
+    font-size: 10px;
     text-align: center;
     vertical-align: middle;
     font-weight: bold;
-    margin-left: rem(4);
+    margin-left: 4px;
     cursor: default;
-    line-height: rem(16);
+    line-height: 16px;
 
     &:after {
         content: '?';

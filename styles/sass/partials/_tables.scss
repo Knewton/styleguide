@@ -8,7 +8,7 @@
     border-collapse: collapse;
 
     tr {
-        height: rem(45);
+        height: 45px;
     }
 
     tr:first-child {
@@ -20,8 +20,8 @@
     td {
         @include table-row-font;
 
-        padding: rem(15) rem(50) rem(15) 0;
-        border-top: rem(1) solid $cloudy2;
+        padding: 15px 50px 15px 0;
+        border-top: 1px solid $cloudy2;
         color: $rainy2;
 
         a {
@@ -42,10 +42,10 @@
     th,
     td {
         @include table-row-font;
-        height: rem(45);
+        height: 45px;
         color: $stormy1;
         text-align: center;
-        padding: 0 rem(15);
+        padding: 0 15px;
 
         &:first-child {
             text-align: left;
