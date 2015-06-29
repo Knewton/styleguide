@@ -141,7 +141,7 @@ module.exports = React.createClass({
             state = this.state;
         return <div className={this.rootClassName()}>
             <div className="dropdown-hidden-input">
-                <input type="text" name={this.props.name} readOnly={true}
+                <input type="text" name={this.props.name}
                     value={state.selected ? state.selected.value : ''} />
             </div>
             <div className="dropdown-selected" onClick={this.onClick}>
