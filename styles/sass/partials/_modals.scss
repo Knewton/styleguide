@@ -112,7 +112,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
     .modal .modal-dialog.modal-lg {
       width: auto;
       margin: 30px 10px;
@@ -123,5 +123,11 @@
     .modal .modal-dialog.modal-lg {
       width: 900px;
       margin: 30px auto;
+    }
+}
+
+@media screen and (max-width: $tablet-width) {
+    .modal .modal-content {
+        padding: 30px;
     }
 }
