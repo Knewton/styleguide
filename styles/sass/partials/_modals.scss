@@ -99,7 +99,12 @@
             text-align: right;
             padding: 15px 40px 40px;
         }
+    }
 
+    &.simple-modal {
+        .modal-body {
+            padding: 0;
+        }
     }
 }
 
