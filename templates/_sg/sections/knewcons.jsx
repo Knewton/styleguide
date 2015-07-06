@@ -100,6 +100,9 @@ module.exports = React.createClass({
                     <Knewcon knewcon="icon-skipped" code="U+e035" name="" />
                     <Knewcon knewcon="icon-logout" code="U+e038" name="" />
                     <Knewcon knewcon="icon-help" code="U+e039" name="" />
+                    <Knewcon knewcon="icon-security-icon" code="U+e03A" name="" />
+                    <Knewcon knewcon="icon-terms-icon" code="U+e03B" name="" />
+                    <Knewcon knewcon="icon-account-icon" code="U+e03C" name="" />
                 </div>
             </section>
         );
