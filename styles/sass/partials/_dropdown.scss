@@ -69,4 +69,32 @@
     &.opened .dropdown-options {
         display: block;
     }
+
+    &.rounded {
+        .dropdown-selected {
+            height: 50px;
+            border-radius: 3px;
+
+            .dropdown-text {
+                height: 50px;
+                line-height: 50px;
+                margin-right: 50px;
+            }
+
+            .dropdown-arrow {
+                height: 50px;
+                width: 40px;
+                border-left: 1px solid $cloudy2;
+            }
+        }
+
+        .dropdown-options {
+            top: 48px;
+
+            .dropdown-option {
+                height: 50px;
+                line-height: 50px;
+            }
+        }
+    }
 }
