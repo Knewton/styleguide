@@ -12,12 +12,21 @@ module.exports = React.createClass({
     getInitialState: function() {
         // find value in source
         var source = this.props.source,
-            selected = _.find(source, {value: this.props.defaultValue});
+            selectValue = this.props.value || this.props.defaultValue,
+            selected = _.find(source, {value: selectValue});
 
         return {
             selected: selected,
             opened: false
         };
+    },
+
+    componentWillReceiveProps: function(nextProps) {
+        if (nextProps.hasOwnProperty('value')) {
+            this.setState({
+                selected: _.find(this.props.source, {value: nextProps.value})
+            });
+        }
     },
 
     /**
@@ -48,9 +57,16 @@ module.exports = React.createClass({
      * Called when a user clicks on an item.
      */
     onClickItem: function(item, event) {
-        // update selection
+        // was the value prop set?
+        if (!this.props.hasOwnProperty('value')) {
+            // update selection
+            this.setState({
+                selected: item
+            });
+        }
+
+        // close dropdown
         this.setState({
-            selected: item,
             opened: false
         });
 
