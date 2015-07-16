@@ -13,6 +13,27 @@
             height: 0;
             border-color: transparent;
             border-style: solid;
+        }
+    }
+
+    &.top .tooltip-arrow {
+        border-top-color: $rainy1;
+
+        &:after {
+            bottom: -4px;
+            left: 50%;
+            margin-left: -5px;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid $white;
+            border-bottom: 5px solid transparent;
+        }
+    }
+
+    &.bottom .tooltip-arrow {
+        border-bottom-color: $rainy1;
+
+        &:after {
             top: -4px;
             left: 50%;
             margin-left: -5px;
@@ -21,20 +42,6 @@
             border-top: 5px solid transparent;
             border-bottom: 5px solid $white;
         }
-    }
-
-    &.top .tooltip-arrow {
-        border-top-color: $rainy1;
-
-    }
-
-    &.bottom .tooltip-arrow {
-        top: 0;
-        left: 50%;
-        margin-left: -5px;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-bottom: 5px solid $cloudy2;
     }
 
     .tooltip-inner {

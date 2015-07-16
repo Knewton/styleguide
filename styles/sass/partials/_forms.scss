@@ -20,6 +20,7 @@
     box-shadow: none;
     overflow: auto;
     -webkit-font-smoothing: antialiased;
+    appearance: none;
 
     &.error {
         border-color: $red;
