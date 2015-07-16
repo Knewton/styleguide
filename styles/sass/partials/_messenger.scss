@@ -119,11 +119,15 @@ ul.messenger {
     top: 0;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 
+    .messenger-message {
+        position: relative;
+    }
+
     .messenger-message-inner {
         text-align: center;
-        line-height: 60px;
-        height: 60px;
+        line-height: 30px;
         color: $white;
+        padding: 15px 55px 15px 15px;
         font: {
             size: 14px;
             weight: 500;
@@ -133,9 +137,11 @@ ul.messenger {
     button.messenger-close {
         color: $white;
         background: none;
-        float: right;
-        height: 60px;
+        position: absolute;
+        top: 0;
         border-bottom: 0;
+        right: 0;
+        height: 100%;
 
         &:hover {
             background: none;
