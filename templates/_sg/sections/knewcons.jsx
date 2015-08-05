@@ -106,6 +106,13 @@ module.exports = React.createClass({
                     <Knewcon knewcon="icon-check-email" code="U+e03D" name="" />
                     <Knewcon knewcon="icon-check" code="U+e03E" name="" />
                     <Knewcon knewcon="icon-parent-child" code="U+e03F" name="" />
+                    <Knewcon knewcon="icon-less-icon" code="U+e040" name="" />
+                    <Knewcon knewcon="icon-more-icon" code="U+e041" name="" />
+                    <Knewcon knewcon="icon-edit-icon" code="U+e042" name="" />
+                    <Knewcon knewcon="icon-back-icon" code="U+e043" name="" />
+                    <Knewcon knewcon="icon-forward-icon" code="U+e044" name="" />
+                    <Knewcon knewcon="icon-view-icon" code="U+e045" name="" />
+                    <Knewcon knewcon="icon-add-assignment" code="U+e046" name="" />
                 </div>
             </section>
         );
