@@ -113,6 +113,7 @@ module.exports = React.createClass({
                     <Knewcon knewcon="icon-forward-icon" code="U+e044" name="" />
                     <Knewcon knewcon="icon-view-icon" code="U+e045" name="" />
                     <Knewcon knewcon="icon-add-assignment" code="U+e046" name="" />
+                    <Knewcon knewcon="icon-clock" code="U+e047" name="" />
                 </div>
             </section>
         );
