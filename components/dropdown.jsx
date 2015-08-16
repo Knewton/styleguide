@@ -12,14 +12,10 @@ module.exports = React.createClass({
     getInitialState: function() {
         // find value in source
         var source = this.props.source,
-            size = this.props.size || 5,
-            selectValue = this.props.value || this.props.defaultValue,
-            selectedElem = _.find(source, {value: selectValue}),
-            selected = selectedElem ? selectedElem.value : '';
+            selected = this.props.value || this.props.defaultValue;
 
         return {
             selected: selected,
-            opened: false
         };
     },
 
@@ -89,8 +85,7 @@ module.exports = React.createClass({
      * Renders the component.
      */
     render: function() {
-        var source = this.props.source,
-            state = this.state;
+        var source = this.props.source;
 
         return (
             <div className={this.rootClassName()}>
