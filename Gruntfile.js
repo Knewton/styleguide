@@ -64,7 +64,7 @@ module.exports = function(grunt) {
             },
             sass: {
                 files: ['styles/**/*.{scss,sass}'],
-                tasks: ['scsslint', 'sass', 'autoprefixer','growl:sassCompile'],
+                tasks: ['scsslint', 'sass', 'postcss','growl:sassCompile'],
                 options: {
                     livereload: false
                 }
@@ -105,16 +105,18 @@ module.exports = function(grunt) {
         },
 
         // Add vendor prefixed styles
-        autoprefixer: {
+        postcss: {
             options: {
-                browsers: ['last 1 version']
+                processors: [
+                    require('autoprefixer-core')({browsers: 'last 2 versions'})
+                ]
             },
             dist: {
                 files: [{
                     expand: true,
-                    cwd: 'styles/',
+                    cwd: 'dist/styles/css/',
                     src: '{,*/}*.css',
-                    dest: 'styles/'
+                    dest: 'dist/styles/css/'
                 }]
             }
         },
@@ -219,7 +221,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('test', ['harmony:jest']);
 
-    grunt.registerTask('build', 'Builds.', ['scsslint', 'copy', 'browserify', 'sass', 'autoprefixer']);
+    grunt.registerTask('build', 'Builds.', ['scsslint', 'copy', 'browserify', 'sass', 'postcss']);
     grunt.registerTask('run', 'Builds and watches the style guide for changes.', ['build', 'watch']);
     grunt.registerTask('deploy', 'Deploys to github', ['build', 'copy:deploy', 'githubPages:target']);
     grunt.registerTask('server', ['express', 'open', 'watch']);
