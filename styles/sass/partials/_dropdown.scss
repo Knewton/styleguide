@@ -3,98 +3,28 @@
 .dropdown-input {
     position: relative;
     background: $white;
+    margin-bottom: 5px;
 
-    .dropdown-hidden-input {
-        position: absolute;
-        width: 0;
-        height: 0;
-        overflow: hidden;
-    }
-
-    .dropdown-selected {
+    select {
+        width: 100%;
+        background: $white;
         border: 1px solid $cloudy2;
-        height: 32px;
-        cursor: pointer;
-
-        .dropdown-text {
-            margin-right: 40px;
-            margin-left: 10px;
-            height: 32px;
-            line-height: 32px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-
-        .dropdown-arrow {
-            float: right;
-            height: 32px;
-            width: 30px;
-            background: url('../images/dropdown-arrow.png') no-repeat center center;
-        }
+        appearance: none;
+        font-size: $normal;
+        color: $stormy1;
+        padding: 10px;
+        line-height: normal;
+        outline-width: 1px;
+        outline-color: $blue;
     }
 
-    .dropdown-options {
-        display: none;
+    &::after {
         position: absolute;
-        top: 31px;
-        left: 0;
-        right: 0;
-        border: 1px solid $cloudy2;
-        overflow: auto;
-        max-height: 320px;
-        z-index: 10;
-
-        .dropdown-option {
-            cursor: pointer;
-            height: 32px;
-            line-height: 32px;
-            padding: 0 10px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            background: $white;
-
-            &:hover {
-                background: $blue-tint;
-            }
-
-            &.selected {
-                background-color: $blue;
-                color: $white;
-            }
-        }
-    }
-
-    &.opened .dropdown-options {
-        display: block;
-    }
-
-    &.rounded {
-        .dropdown-selected {
-            height: 50px;
-            border-radius: 3px;
-
-            .dropdown-text {
-                height: 50px;
-                line-height: 50px;
-                margin-right: 50px;
-            }
-
-            .dropdown-arrow {
-                height: 50px;
-                width: 40px;
-                border-left: 1px solid $cloudy2;
-            }
-        }
-
-        .dropdown-options {
-            top: 48px;
-
-            .dropdown-option {
-                height: 50px;
-                line-height: 50px;
-            }
-        }
+        content: "";
+        width: 10px;
+        height: 8px;
+        top: 15px;
+        right: 18px;
+        background: url("../images/dropdown-arrow.png") no-repeat;
     }
 }

@@ -12,12 +12,10 @@ module.exports = React.createClass({
     getInitialState: function() {
         // find value in source
         var source = this.props.source,
-            selectValue = this.props.value || this.props.defaultValue,
-            selected = _.find(source, {value: selectValue});
+            selected = this.props.value || this.props.defaultValue;
 
         return {
             selected: selected,
-            opened: false
         };
     },
 
@@ -29,71 +27,14 @@ module.exports = React.createClass({
         }
     },
 
-    /**
-     * Called when a user has clicked in the page and the dropdown was opened.
-     */
-    onClickBody: function(event) {
-        var dropdown = $(event.target).closest('.dropdown-input')[0],
-            element = React.findDOMNode(this);
-        if (dropdown !== element) {
-            // close the dropdown
-            this.setState({
-                opened: false
-            });
-
-            // stop watching for clicks
-            this.setWatchClicks(false);
-        }
-    },
-
-    /**
-     * Starts or stops watching for dom events on body.
-     */
-    setWatchClicks: function(watch) {
-        $('body')[watch ? 'on' : 'off']('click', this.onClickBody);
-    },
-
-    /**
-     * Called when a user clicks on an item.
-     */
-    onClickItem: function(item, event) {
-        // was the value prop set?
-        if (!this.props.hasOwnProperty('value')) {
-            // update selection
-            this.setState({
-                selected: item
-            });
-        }
-
-        // close dropdown
+    onSelectChange: function(event) {
         this.setState({
-            opened: false
+            selected: event.target.value
         });
-
-        // stop watching for clicks
-        this.setWatchClicks(false);
 
         // call onChange prop if specified
         if (this.props.onChange) {
-            this.props.onChange(item.value);
-        }
-
-        // stop propagation
-        event.stopPropagation();
-    },
-
-    /**
-     * Called when a user clicks on the dropdown.
-     */
-    onClick: function() {
-        // switch between open and closed
-        this.setState({
-            opened: !this.state.opened
-        });
-
-        // temporary listen to click on document to close the dropdown
-        if (!this.state.opened) {
-            this.setWatchClicks(true);
+            this.props.onChange(event.target.value);
         }
     },
 
@@ -103,19 +44,8 @@ module.exports = React.createClass({
     getValue: function() {
         var selected = this.state.selected;
         if (selected) {
-            return selected.value;
+            return selected;
         }
-    },
-
-    /**
-     * returns the className for the option elements.
-     */
-    optionClassName: function(item) {
-        var ret = ['dropdown-option'];
-        if (this.state.selected === item) {
-            ret.push('selected');
-        }
-        return ret.join(' ');
     },
 
     /**
@@ -125,11 +55,9 @@ module.exports = React.createClass({
         if (source.length) {
             return source.map(function(item) {
                 return (
-                    <div key={item.value} data-value={item.value}
-                            className={this.optionClassName(item)}
-                            onClick={this.onClickItem.bind(this, item)}>
+                    <option key={item.value} value={item.value}>
                         {item.text}
-                    </div>
+                    </option>
                 );
             }, this);
         }
@@ -143,32 +71,30 @@ module.exports = React.createClass({
         if (this.props.className) {
             ret.push(this.props.className);
         }
-        if (this.state.opened) {
-            ret.push('opened');
-        }
         return ret.join(' ');
+    },
+
+    renderPlaceholder: function() {
+        if (this.props.placeholder) {
+            return <option disabled>{this.props.placeholder}</option>
+        }
     },
 
     /**
      * Renders the component.
      */
     render: function() {
-        var source = this.props.source,
-            state = this.state;
-        return <div className={this.rootClassName()}>
-            <div className="dropdown-hidden-input">
-                <input type="text" name={this.props.name}
-                    value={state.selected ? state.selected.value : ''} />
+        var source = this.props.source;
+
+        return (
+            <div className={this.rootClassName()}>
+                <select name={this.props.name} onChange={this.onSelectChange}
+                    value={this.state.selected ? this.state.selected: ''}
+                    defaultValue={this.props.value || this.props.defaultValue}>
+                    {this.renderPlaceholder()}
+                    {this.renderOptions(source)}
+                </select>
             </div>
-            <div className="dropdown-selected" onClick={this.onClick}>
-                <div className="dropdown-arrow"></div>
-                <div className="dropdown-text">
-                    {state.selected ? state.selected.text : this.props.placeholder}
-                </div>
-            </div>
-            <div ref="dropdownOpts" className="dropdown-options">
-                {this.renderOptions(source)}
-            </div>
-        </div>;
+        );
     }
 });
