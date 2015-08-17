@@ -55,8 +55,7 @@ module.exports = React.createClass({
         if (source.length) {
             return source.map(function(item) {
                 return (
-                    <option key={item.value} value={item.value}
-                            className="dropdown-option">
+                    <option key={item.value} value={item.value}>
                         {item.text}
                     </option>
                 );
