@@ -23,6 +23,16 @@ module.exports = {
     },
 
     /**
+     * Called when the modal is shown
+     */
+    onShown: function(event) {
+        // call onModalHidden if defined
+        if (this.onModalShown) {
+            this.onModalShown(event);
+        }
+    },
+
+    /**
      * Called when the modal is hidden.
      */
     onHidden: function(event) {
@@ -116,6 +126,7 @@ module.exports = {
 
             // initialize the component
             $(component.getDOMNode()).modal()
+                .on('shown.bs.modal', component.onShown)
                 .on('hide.bs.modal', component.onHide)
                 .on('hidden.bs.modal', component.onHidden);
 
