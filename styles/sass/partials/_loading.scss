@@ -20,9 +20,10 @@
 
     &:after {
         content: "";
-        width: 77px;
-        height: 77px;
-        background-image: url("../images/load_animation.gif");
+        width: 80px;
+        height: 80px;
+        background-image: url("../images/atom-logo.png");
+        background-repeat: no-repeat;
         background-size: 77px;
         position: absolute;
         top: 0;
@@ -32,6 +33,7 @@
         margin: auto;
         color: rgb(27, 172, 182);
         z-index: 2010;
+        animation: flipLogo 1.5s infinite linear;
     }
 }
 
@@ -40,5 +42,17 @@
 
     &:before {
         background-color: rgba(255, 255, 255, 0.80);
+    }
+}
+
+@keyframes flipLogo {
+    0%,
+    30%,
+    100% {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    15% {
+        transform: rotate3d(0, 1, 0, 180deg);
     }
 }
