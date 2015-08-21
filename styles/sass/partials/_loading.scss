@@ -20,10 +20,11 @@
 
     &:after {
         content: "";
-        width: 77px;
-        height: 77px;
-        background-image: url("../images/load_animation.gif");
-        background-size: 77px;
+        width: 100px;
+        height: 100px;
+        background-image: url("../images/atom-logo.gif");
+        background-repeat: no-repeat;
+        background-size: 110px;
         position: absolute;
         top: 0;
         bottom: 0;
