@@ -14,6 +14,31 @@ module.exports = React.createClass({
     },
 
     /**
+     * Called when the component is mounted to the DOM.
+     */
+    componentDidMount: function() {
+        $('html').on('click', this.onClickDocument);
+    },
+
+    /**
+     * Called when the component is removed from the dom.
+     */
+    componentWillUnmount: function() {
+        $('html').off('click', this.onClickDocument);
+    },
+
+    /**
+     * Called when the user clicks anywhere on the page.
+     */
+    onClickDocument: function(e) {
+        var $target = $(e.target);
+        if (!$target.closest('#side-panel').length) {
+            // Hide the panel
+            this.setState({ visible: false });
+        }
+    },
+
+    /**
      * Show the component in a modal.
      */
     show: function(component) {
@@ -69,7 +94,7 @@ module.exports = React.createClass({
      */
     render: function() {
         return (
-            <div className={this.rootClassName()}>
+            <div id="side-panel" className={this.rootClassName()}>
                 <div className="panel-close" onClick={this.hide}>X</div>
                 <div className="panel-content">
                     {this.state.content}
