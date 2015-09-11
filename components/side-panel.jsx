@@ -32,7 +32,7 @@ module.exports = React.createClass({
      */
     onClickDocument: function(e) {
         var $target = $(e.target);
-        if (!$target.closest('#side-panel').length) {
+        if (!$target.closest('.side-panel').length) {
             // Hide the panel
             this.setState({ visible: false });
         }
@@ -94,7 +94,7 @@ module.exports = React.createClass({
      */
     render: function() {
         return (
-            <div id="side-panel" className={this.rootClassName()}>
+            <div className={this.rootClassName()}>
                 <div className="panel-close" onClick={this.hide}>X</div>
                 <div className="panel-content">
                     {this.state.content}
