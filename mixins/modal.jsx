@@ -99,6 +99,22 @@ module.exports = {
         return ret.join(' ');
     },
 
+    componentDidMount: function() {
+        var self = this;
+        $(document).one('keydown.modal', function(e) {
+            // Escape dismisses the dialog
+            if (e.keyCode === 27) {
+                self.onCancelClick();
+            }
+        });
+
+        $(React.findDOMNode(this)).focus();
+    },
+
+    componentWillUnmount: function() {
+        $(document).off('keydown.modal');
+    },
+
     /**
      * Returns the modal's content.
      * Classes using this mixin should implement renderContent().
