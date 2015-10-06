@@ -4,6 +4,19 @@
  * Modal mixin.
  * This mixin makes a component a modal. The component should implement the method
  * renderContent(). This method should return the content of the modal.
+ *
+ * Modal Props:
+ *  className
+ *  large
+ *
+ * modalOptions:
+ * 	modalClass
+ * 	onModalHide
+ *  cannotBeDismissed
+ *
+ * Priority: props > modalOptions
+ * props are set when instantiating, modalOptions are on the component definition
+ *
  */
 module.exports = {
     /**
@@ -13,6 +26,12 @@ module.exports = {
         this.hideValue = null;
         document.body.appendChild(this.root);
         $(this.getDOMNode()).modal('show');
+    },
+
+    getOptions: function() {
+        return _.extend({
+            cannotBeDismissed: false
+        }, this.modalOptions, this.props);
     },
 
     /**
@@ -92,11 +111,32 @@ module.exports = {
      */
     rootClassName: function() {
         var ret = ['modal', 'fade'],
-            options = this.modalOptions || {};
+            options = this.getOptions();
         if (options.className) {
             ret.push(options.className);
         }
         return ret.join(' ');
+    },
+
+    componentDidMount: function() {
+        var self = this;
+
+        if (!this.getOptions().cannotBeDismissed) {
+            $(document).one('keydown.modal', function(e) {
+                // Escape dismisses the dialog
+                if (e.keyCode === 27) {
+                    self.hide();
+                }
+            });
+        }
+
+        $(React.findDOMNode(this)).focus();
+    },
+
+    componentWillUnmount: function() {
+        if (!this.getOptions().cannotBeDismissed) {
+            $(document).off('keydown.modal');
+        }
     },
 
     /**
@@ -124,8 +164,14 @@ module.exports = {
                 element = React.createElement(this, props),
                 component = React.render(element, root);
 
+            // See http://getbootstrap.com/javascript/#modals-options
+            var componentOptions = component.getOptions();
+            var bsModalOptions = {
+                backdrop: componentOptions.cannotBeDismissed ? 'static' : true
+            };
+
             // initialize the component
-            $(component.getDOMNode()).modal()
+            $(component.getDOMNode()).modal(bsModalOptions)
                 .on('shown.bs.modal', component.onShown)
                 .on('hide.bs.modal', component.onHide)
                 .on('hidden.bs.modal', component.onHidden);
