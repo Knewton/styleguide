@@ -4,17 +4,13 @@
   "description": "",
   "dependencies": {
     "react": "^0.13.3",
-    "babel": "^6.0.15",
-    "babel-core": "^6.0.20",
-    "babel-preset-es2015": "^6.0.15",
-    "babel-preset-react": "^6.0.15"
+    "react-tools": "^0.13.3"
   },
   "main": "./templates/_sg/**",
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
     "grunt": "^0.4.5",
-    "babelify": "^7.2.0",
-    "grunt-browserify": "~4.0.0",
+    "grunt-browserify": "^3.8.0",
     "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-dust": "git+https://github.com/lud2k/grunt-dust",
@@ -27,14 +23,12 @@
     "grunt-scss-lint": "^0.3.4",
     "jest-cli": "^0.5.10",
     "load-grunt-tasks": "^2.0.0",
+    "reactify": "^1.1.1",
     "stringify": "^3.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "browserify": {
-      "transform": [["babelify", {"presets": ["react", "es2015"]}]]
-  }
+  "license": "ISC"
 }
