@@ -225,4 +225,5 @@ module.exports = function(grunt) {
     grunt.registerTask('run', 'Builds and watches the style guide for changes.', ['build', 'watch']);
     grunt.registerTask('deploy', 'Deploys to github', ['build', 'copy:deploy', 'githubPages:target']);
     grunt.registerTask('server', ['express', 'open', 'watch']);
+    grunt.registerTask('default', ['build']);
 };
