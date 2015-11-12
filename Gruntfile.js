@@ -42,7 +42,11 @@ module.exports = function(grunt) {
         browserify: {
             compile: {
                 options: {
-                    transform: ['reactify', 'stringify'],
+                    transform: [
+                        ['babelify', {
+                            presets: ['react', 'es2015']
+                        }, 'stringify']
+                    ],
                     browserifyOptions: {
                         standalone: 'Styleguide'
                     },
