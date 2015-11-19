@@ -42,10 +42,10 @@ module.exports = function(grunt) {
         browserify: {
             compile: {
                 options: {
-                    transform: [
+                    transform: [ 'stringify',
                         ['babelify', {
                             presets: ['react', 'es2015']
-                        }, 'stringify']
+                        }]
                     ],
                     browserifyOptions: {
                         standalone: 'Styleguide'
@@ -154,6 +154,8 @@ module.exports = function(grunt) {
                           'bower_components/messenger/build/js/messenger.min.js',
                           'bower_components/bootstrap/js/modal.js',
                           'bower_components/react/react-with-addons.js',
+                          'bower_components/react/react-dom.js',
+                          'bower_components/react/react-dom-server.js',
                           'bower_components/js-beautify/js/lib/beautify.js',
                           'bower_components/js-beautify/js/lib/beautify-html.js',
                           'bower_components/jquery-ui/jquery-ui.min.js',
@@ -187,12 +189,6 @@ module.exports = function(grunt) {
                 colorizeOutput: true
             },
         },
-        jest: {
-            options: {
-                config: 'tests/jest.json',
-                coverage: true
-            }
-        },
 
         // Follow instructions here: https://www.npmjs.com/package/grunt-github-pages
         githubPages: {
@@ -207,24 +203,14 @@ module.exports = function(grunt) {
         }
     });
 
-    // Runs tasks in harmony mode for node
-    // Usage: grunt harmony:jest
-    grunt.registerTask('harmony', function() {
-        var done = this.async();
-        // Specify tasks to run spawned
-        var tasks = Array.prototype.slice.call(arguments, 0);
-        grunt.util.spawn({
-            // Use the existing node path
-            cmd: process.execPath,
-            // Add the flags and use process.argv[1] to get path to grunt bin
-            args: ['--harmony', process.argv[1]].concat(tasks),
-            // Print everything this process is doing to the parent stdio
-            opts: { stdio: 'inherit' }
-        }, done);
+    grunt.registerTask('jest', 'Run tests with Jest.', function() {
+        require('jest-cli').runCLI({
+            config: 'tests/jest.json',
+            coverage: true
+        }, process.cwd(), this.async());
     });
 
-    grunt.registerTask('test', ['harmony:jest']);
-
+    grunt.registerTask('test', ['jest']);
     grunt.registerTask('build', 'Builds.', ['scsslint', 'copy', 'browserify', 'sass', 'postcss']);
     grunt.registerTask('run', 'Builds and watches the style guide for changes.', ['build', 'watch']);
     grunt.registerTask('deploy', 'Deploys to github', ['build', 'copy:deploy', 'githubPages:target']);

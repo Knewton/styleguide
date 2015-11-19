@@ -130,7 +130,7 @@ module.exports = {
             });
         }
 
-        $(React.findDOMNode(this)).focus();
+        $(ReactDOM.findDOMNode(this)).focus();
     },
 
     componentWillUnmount: function() {
@@ -162,7 +162,7 @@ module.exports = {
             // create modal
             var root = document.createElement('div'),
                 element = React.createElement(this, props),
-                component = React.render(element, root);
+                component = ReactDOM.render(element, root);
 
             // See http://getbootstrap.com/javascript/#modals-options
             var componentOptions = component.getOptions();

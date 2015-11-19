@@ -20,22 +20,22 @@ describe('ButtonDropDown', function() {
                     {content}
                 </ButtonDropDown>
             );
-            element = React.findDOMNode(component);
+            element = ReactDOM.findDOMNode(component);
         });
 
         it('should render properly', function() {
             expect(element.className).toEqual('button-dropdown ' + className);
 
             var button = TestUtils.findRenderedDOMComponentWithClass(component, 'dropdown-button');
-            expect(React.findDOMNode(button).textContent).toEqual(content);
+            expect(ReactDOM.findDOMNode(button).textContent).toEqual(content);
         });
 
         it('should select the item with given value', function() {
             var options = TestUtils.scryRenderedDOMComponentsWithClass(component,
                 'dropdown-option');
-            expect(React.findDOMNode(options[0]).getAttribute('data-selected')).toEqual('false');
-            expect(React.findDOMNode(options[1]).getAttribute('data-selected')).toEqual('true');
-            expect(React.findDOMNode(options[2]).getAttribute('data-selected')).toEqual('false');
+            expect(ReactDOM.findDOMNode(options[0]).getAttribute('data-selected')).toEqual('false');
+            expect(ReactDOM.findDOMNode(options[1]).getAttribute('data-selected')).toEqual('true');
+            expect(ReactDOM.findDOMNode(options[2]).getAttribute('data-selected')).toEqual('false');
         });
 
         it('should update selected item if value changes', function() {
@@ -46,21 +46,21 @@ describe('ButtonDropDown', function() {
 
             var options = TestUtils.scryRenderedDOMComponentsWithClass(component,
                 'dropdown-option');
-            expect(React.findDOMNode(options[0]).getAttribute('data-selected')).toEqual('false');
-            expect(React.findDOMNode(options[1]).getAttribute('data-selected')).toEqual('false');
-            expect(React.findDOMNode(options[2]).getAttribute('data-selected')).toEqual('true');
+            expect(ReactDOM.findDOMNode(options[0]).getAttribute('data-selected')).toEqual('false');
+            expect(ReactDOM.findDOMNode(options[1]).getAttribute('data-selected')).toEqual('false');
+            expect(ReactDOM.findDOMNode(options[2]).getAttribute('data-selected')).toEqual('true');
         });
 
         it('should call on change if an item is clicked', function() {
             var options = TestUtils.scryRenderedDOMComponentsWithClass(component,
                 'dropdown-option');
-            TestUtils.Simulate.click(React.findDOMNode(options[0]));
+            TestUtils.Simulate.click(ReactDOM.findDOMNode(options[0]));
             expect(onChange).toBeCalledWith(source[0].value);
         });
 
         it('should open dropdown when button is clicked', function() {
             var button = TestUtils.findRenderedDOMComponentWithClass(component, 'dropdown-button');
-            TestUtils.Simulate.click(React.findDOMNode(button));
+            TestUtils.Simulate.click(ReactDOM.findDOMNode(button));
             expect(component.state.opened).toEqual(true);
         });
     });

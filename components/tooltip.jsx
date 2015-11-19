@@ -20,7 +20,7 @@ module.exports = React.createClass({
      */
     componentDidMount: function() {
         // call bootstrap's tooltip component
-        $(React.findDOMNode(this)).tooltip({
+        $(ReactDOM.findDOMNode(this)).tooltip({
             html: true,
             title: this.renderContent,
             placement: this.props.placement || 'top',

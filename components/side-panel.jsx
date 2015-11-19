@@ -116,7 +116,7 @@ module.exports = React.createClass({
                 // create side panel element singleton
                 var root = document.createElement('div'),
                     element = React.createElement(this),
-                    component = React.render(element, root);
+                    component = ReactDOM.render(element, root);
 
                 // save root element
                 component.root = root;

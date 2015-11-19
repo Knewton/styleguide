@@ -7,7 +7,7 @@ module.exports = {
             var babelOptions = {
                 presets: ['es2015', 'react']
             };
-            return babel.transform(src, babelOptions);
+            return babel.transform(src, babelOptions).code;
         }
         return src;
     }
