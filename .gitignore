@@ -16,6 +16,8 @@ _site
 dist/js/jquery.loading.js
 dist/js/styleguide.js
 dist/js/react-with-addons.js
+dist/js/react-dom.js
 dist/js/beautify-html.js
 dist/js/beautify.js
 coverage/
+dist/js/react-dom-server.js

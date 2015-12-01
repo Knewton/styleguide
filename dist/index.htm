@@ -9,6 +9,8 @@
         <div id="page"></div>
         <script src="js/jquery.min.js"></script>
         <script src="js/react-with-addons.js"></script>
+        <script src="js/react-dom.js"></script>
+        <script src="js/react-dom-server.js"></script>
         <script src="js/beautify.js"></script>
         <script src="js/beautify-html.js"></script>
         <script src="js/highlight.pack.js"></script>
@@ -34,7 +36,7 @@
                 $toShow.addClass('active');
             };
 
-            React.render(React.createElement(window.Styleguide), $('#page')[0], function() {
+            ReactDOM.render(React.createElement(window.Styleguide), $('#page')[0], function() {
                 // Make the first section visible
                 $('.sg-nav li a').first().addClass('active');
                 $('.sg-sections > .sg-section').first().addClass('active');

@@ -20,7 +20,7 @@ module.exports = React.createClass({
      */
     componentDidMount: function() {
         // call bootstrap's tooltip component
-        $(React.findDOMNode(this)).tooltip({
+        $(ReactDOM.findDOMNode(this)).tooltip({
             html: true,
             title: this.renderContent,
             placement: this.props.placement || 'top',
@@ -45,7 +45,7 @@ module.exports = React.createClass({
                 return data;
             } else {
                 // generated content is a React component
-                return React.renderToString(data);
+                return ReactDOMServer.renderToString(data);
             }
         }
     },

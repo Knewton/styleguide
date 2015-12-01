@@ -112,7 +112,7 @@ module.exports = {
             // create modal
             var root = document.createElement('div'),
                 element = React.createElement(this, props),
-                component = React.render(element, root);
+                component = ReactDOM.render(element, root);
 
             // initialize the component
             $(component.getDOMNode()).modal()
