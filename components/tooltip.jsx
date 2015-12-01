@@ -45,7 +45,7 @@ module.exports = React.createClass({
                 return data;
             } else {
                 // generated content is a React component
-                return React.renderToString(data);
+                return ReactDOMServer.renderToString(data);
             }
         }
     },

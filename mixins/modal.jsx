@@ -25,7 +25,7 @@ module.exports = {
     show: function() {
         this.hideValue = null;
         document.body.appendChild(this.root);
-        $(this.getDOMNode()).modal('show');
+        $(ReactDOM.findDOMNode(this)).modal('show');
     },
 
     getOptions: function() {
@@ -38,7 +38,7 @@ module.exports = {
      * Hides the modal.
      */
     hide: function() {
-        $(this.getDOMNode()).modal('hide');
+        $(ReactDOM.findDOMNode(this)).modal('hide');
     },
 
     /**
@@ -161,7 +161,7 @@ module.exports = {
         create: function(props) {
             // create modal
             var root = document.createElement('div'),
-                element = React.createElement(this, props),
+                element = React.createElement(this, props || {}),
                 component = ReactDOM.render(element, root);
 
             // See http://getbootstrap.com/javascript/#modals-options
@@ -171,7 +171,7 @@ module.exports = {
             };
 
             // initialize the component
-            $(component.getDOMNode()).modal(bsModalOptions)
+            $(ReactDOM.findDOMNode(component)).modal(bsModalOptions)
                 .on('shown.bs.modal', component.onShown)
                 .on('hide.bs.modal', component.onHide)
                 .on('hidden.bs.modal', component.onHidden);
@@ -179,8 +179,6 @@ module.exports = {
             // save root element
             component.root = root;
 
-            // update properties
-            component.setProps(props || {});
             return component;
         },
 
