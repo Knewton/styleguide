@@ -64,11 +64,11 @@
     border: 1px solid $cloudy2;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url('../images/dropdown-arrow.png');
+    background-image: url('/images/dropdown-arrow.png');
 }
 
 .dropdown:not(.disabled):hover .carat {
-    background-image: url('../images/dropdown-arrow-active.png');
+    background-image: url('/images/dropdown-arrow-active.png');
 }
 
 /* OLD SELECT (HIDDEN) */
