@@ -27,7 +27,7 @@
     "messenger": "~1.4.1",
     "neat": "~1.7.2",
     "compass-mixins": "~1.0.2",
-    "react": "~0.13.3",
+    "react": "~0.14.3",
     "js-beautify": "~1.5.5",
     "lodash": "~3.9.3",
     "jquery-ui": "~1.11.4",

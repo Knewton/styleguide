@@ -10,7 +10,7 @@ module.exports = React.createClass({
      * Called when the component is mounted to the DOM.
      */
     componentDidMount: function() {
-        var ele = React.findDOMNode(this);
+        var ele = ReactDOM.findDOMNode(this);
         eval(ele.textContent);
     },
 

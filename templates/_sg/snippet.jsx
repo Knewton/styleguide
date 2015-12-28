@@ -11,7 +11,7 @@ module.exports = React.createClass({
      */
     componentDidMount: function() {
         // highlight block
-        hljs.highlightBlock(React.findDOMNode(this));
+        hljs.highlightBlock(ReactDOM.findDOMNode(this));
     },
 
     /**
@@ -25,16 +25,16 @@ module.exports = React.createClass({
             content = props.text;
 
         } else if (props.src) {
-            content = React.renderToStaticMarkup(React.createElement(props.src, props));
+            content = ReactDOMServer.renderToStaticMarkup(React.createElement(props.src, props));
 
         } else {
             var html = [];
             if (props.children.length > 0) {
                 for (var i=0; i<props.children.length; i++) {
-                    html.push(React.renderToStaticMarkup(props.children[i]));
+                    html.push(ReactDOMServer.renderToStaticMarkup(props.children[i]));
                 }
             } else {
-                html.push(React.renderToStaticMarkup(props.children));
+                html.push(ReactDOMServer.renderToStaticMarkup(props.children));
             }
             content = html.join('');
         }

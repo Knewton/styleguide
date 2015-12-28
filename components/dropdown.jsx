@@ -76,7 +76,7 @@ module.exports = React.createClass({
 
     renderPlaceholder: function() {
         if (this.props.placeholder) {
-            return <option disabled>{this.props.placeholder}</option>
+            return <option disabled value="">{this.props.placeholder}</option>
         }
     },
 
