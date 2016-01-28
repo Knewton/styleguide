@@ -77,7 +77,7 @@ module.exports = React.createClass({
                     <Knewcon knewcon="icon-content-video" code="U+e01d" name="" />
                     <Knewcon knewcon="icon-search" code="U+e030" name="" />
                     <Knewcon knewcon="icon-search-solid" code="U+e003" name="" />
-                    <Knewcon knewcon="icon-settings-solid" code="U+ee" name="" />
+                    <Knewcon knewcon="icon-settings-solid" code="U+e04a" name="" />
                     <Knewcon knewcon="icon-support-solid" code="U+e014" name="" />
                     <Knewcon knewcon="icon-popular" code="U+e130" name="" />
                     <Knewcon knewcon="icon-content-text" code="U+e013" name="" />
@@ -116,6 +116,7 @@ module.exports = React.createClass({
                     <Knewcon knewcon="icon-clock" code="U+e047" name="" />
                     <Knewcon knewcon="icon-lightbulb" code="U+e048" name="" />
                     <Knewcon knewcon="icon-info-icon" code="U+e049" name="" />
+                    <Knewcon knewcon="icon-circle-star" code="U+e04c" name="" />
                 </div>
             </section>
         );

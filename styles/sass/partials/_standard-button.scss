@@ -211,4 +211,37 @@ button {
             margin-left: -1px;
         }
     }
+
+    &.x-rounded {
+        height: 18px;
+        width: 18px;
+        background-color: $cloudy2;
+        border: 0;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        line-height: 18px;
+        font-size: 8px;
+        transition: background-color 0.1s;
+
+        &:focus,
+        &:active {
+            background-color: $rainy1;
+        }
+
+        &:before {
+            color: $white;
+            font-family: "knewcons";
+            content: '\e060';
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+        }
+
+        &:hover {
+            background-color: $blue;
+        }
+    }
 }
