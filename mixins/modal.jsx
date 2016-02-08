@@ -10,8 +10,8 @@
  *  large
  *
  * modalOptions:
- * 	modalClass
- * 	onModalHide
+ *  modalClass
+ *  onModalHide
  *  cannotBeDismissed
  *
  * Priority: props > modalOptions
@@ -25,6 +25,9 @@ module.exports = {
     show: function() {
         this.hideValue = null;
         document.body.appendChild(this.root);
+
+        this.triggerElement = window.document.activeElement;
+
         $(ReactDOM.findDOMNode(this)).modal('show');
     },
 
@@ -45,6 +48,7 @@ module.exports = {
      * Called when the modal is shown
      */
     onShown: function(event) {
+        ReactDOM.findDOMNode(this).querySelector('button').focus();
         // call onModalHidden if defined
         if (this.onModalShown) {
             this.onModalShown(event);
@@ -73,6 +77,11 @@ module.exports = {
      * Called when the modal is going to hide.
      */
     onHide: function(event) {
+        // Re-focus on the element that triggered the modal
+        if (this.triggerElement) {
+            this.triggerElement.focus();
+        }
+
         // call onModalHide if defined
         if (this.onModalHide) {
             return this.onModalHide(event);
