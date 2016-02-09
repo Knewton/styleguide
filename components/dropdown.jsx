@@ -15,22 +15,24 @@ module.exports = React.createClass({
             selected = this.props.value || this.props.defaultValue;
 
         return {
-            selected: selected,
+            selected: selected
         };
     },
 
     componentWillReceiveProps: function(nextProps) {
         if (nextProps.hasOwnProperty('value')) {
             this.setState({
-                selected: _.find(this.props.source, {value: nextProps.value})
+                selected: nextProps.value
             });
         }
     },
 
     onSelectChange: function(event) {
-        this.setState({
-            selected: event.target.value
-        });
+        if (!this.props.hasOwnProperty('value')) {
+            this.setState({
+                selected: event.target.value
+            });
+        }
 
         // call onChange prop if specified
         if (this.props.onChange) {
