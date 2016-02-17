@@ -48,7 +48,12 @@ module.exports = {
      * Called when the modal is shown
      */
     onShown: function(event) {
-        ReactDOM.findDOMNode(this).querySelector('button').focus();
+        let button = ReactDOM.findDOMNode(this).querySelector('button, .button')
+
+        if (button) {
+            button.focus();
+        }
+
         // call onModalHidden if defined
         if (this.onModalShown) {
             this.onModalShown(event);
