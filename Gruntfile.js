@@ -44,7 +44,7 @@ module.exports = function(grunt) {
                 options: {
                     transform: [ 'stringify',
                         ['babelify', {
-                            presets: ['react', 'es2015']
+                            presets: ['react', 'stage-2', 'es2015']
                         }]
                     ],
                     browserifyOptions: {
