@@ -48,11 +48,7 @@ module.exports = {
      * Called when the modal is shown
      */
     onShown: function(event) {
-        let button = ReactDOM.findDOMNode(this).querySelector('button, .button')
-
-        if (button) {
-            button.focus();
-        }
+        this.refs.modal.focus();
 
         // call onModalHidden if defined
         if (this.onModalShown) {
@@ -159,7 +155,7 @@ module.exports = {
      */
     render: function() {
         return <div className={this.rootClassName()}>
-            <div className={this.dialogClassName()}>
+            <div className={this.dialogClassName()} role="dialog" tabIndex="0" ref="modal">
                 {this.renderContent()}
             </div>
         </div>;
