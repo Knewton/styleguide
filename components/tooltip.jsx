@@ -55,6 +55,10 @@ module.exports = React.createClass({
      * Does not do anything beside wrapping the children.
      */
     render: function() {
-        return <span className={this.props.className}>{this.props.children}</span>;
+        return (
+            <span className={this.props.className} aria-label={this.props['aria-label']}>
+                {this.props.children}
+            </span>
+        );
     }
 });
