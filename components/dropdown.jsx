@@ -19,6 +19,12 @@ module.exports = React.createClass({
         };
     },
 
+    getDefaultProps: function() {
+        return {
+            disabled: false
+        };
+    },
+
     componentWillReceiveProps: function(nextProps) {
         if (nextProps.hasOwnProperty('value')) {
             this.setState({
@@ -92,7 +98,8 @@ module.exports = React.createClass({
             <div className={this.rootClassName()}>
                 <select name={this.props.name} onChange={this.onSelectChange}
                     value={this.state.selected ? this.state.selected: ''}
-                    defaultValue={this.props.value || this.props.defaultValue}>
+                    defaultValue={this.props.value || this.props.defaultValue}
+                    disabled={this.props.disabled}>
                     {this.renderPlaceholder()}
                     {this.renderOptions(source)}
                 </select>
