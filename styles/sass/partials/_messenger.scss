@@ -117,7 +117,6 @@ ul.messenger {
     position: fixed;
     z-index: 1200;
     top: 0;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 
     .messenger-message {
         position: relative;
@@ -125,12 +124,11 @@ ul.messenger {
 
     .messenger-message-inner {
         text-align: center;
-        line-height: 30px;
+        line-height: 1.2;
         color: $white;
-        padding: 15px 55px 15px 15px;
+        padding: 17px 50px 17px 20px;
         font: {
-            size: 14px;
-            weight: 500;
+            size: $small;
         }
     }
 
@@ -150,41 +148,25 @@ ul.messenger {
     }
 
     .alert-success {
-        background: $green;
-        border-bottom: solid 1px hover-state-darken($green);
+        background: $apple;
     }
 
     .alert-error {
-        background: $red;
-        border-bottom: solid 1px hover-state-darken($red);
+        background: $tomato;
     }
 
     .alert-info {
-        background: $blue;
-        border-bottom: solid 1px hover-state-darken($blue);
+        background: $chathams-blue;
     }
 
     .alert-warning {
-        background: $orange;
-        border-bottom: solid 1px hover-state-darken($orange);
-    }
+        background: $banana;
 
-    button {
-        &:hover {
-            background: none;
-            color: hover-state-darken($white);
+        .messenger-message-inner,
+        button.messenger-close {
+            color: $stormy1;
         }
     }
 }
-
-/*.global-messaging {
-    display: none;
-    width: 100%;
-    text-align: center;
-    height: 60px;
-    position: absolute;
-    z-index: 1200;
-    background-color: #f3fceb;
-}*/
 
 // scss-lint:enable QualifyingElement
