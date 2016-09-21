@@ -106,9 +106,6 @@
 .icon-draft:before {
   content: "\e001";
 }
-.icon-edit-icon:before {
-  content: "\e042";
-}
 .icon-exit:before {
   content: "\e053";
 }
@@ -159,12 +156,6 @@
 }
 .icon-less-icon:before {
   content: "\e040";
-}
-.icon-lightbulb:before {
-  content: "\e048";
-}
-.icon-logout:before {
-  content: "\e038";
 }
 .icon-more-icon:before {
   content: "\e041";
@@ -361,6 +352,18 @@
 .icon-edit:before {
   content: "\e065";
 }
+.icon-edit-icon:before {
+  content: "\e042";
+}
+.icon-lightbulb:before {
+  content: "\e048";
+}
 .icon-copy-clipboard:before {
   content: "\e066";
+}
+.icon-logout:before {
+  content: "\e038";
+}
+.icon-link:before {
+  content: "\e067";
 }
